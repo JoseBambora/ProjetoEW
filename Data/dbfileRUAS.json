@@ -1,0 +1,52 @@
+{
+    "_id":"nome",
+    "figuras_antigas":
+    [
+        {
+            "path" : "path",
+            "legenda" : "legenda"
+        }
+    ],
+    "figuras_atuais":
+    [
+        {
+            "path" : "path",
+            "legenda" : "legenda"
+        }
+    ],
+    "paragrafos":
+    [
+        "Pequena rua, entre a #L0 e a #L1, existente ja na Idade Media, entao com o nome de #L0",
+        "Actualmente toda esta rua tem feição diferente: a porta de S. Francisco foi demolida em data que desconhecemos e a parte central do lado Nascente foi destruida em 1754 para aí se construir o novo edificio da Camara Municipal (so concluido em #D0) que ficou com a fachada traseira para esta rua. O lado Sul foi integralmente perdido no final da decada de oitenta do seculo passado, quando se fez o alargamento e rectificação do traçado desta artéria.",
+        "Se, na Idade Media, esta rua teve, possivelmente, grande importância (tinha uma porta num dos seus extremos, dava imediato acesso a saída de Braga para Prado, Ponte de Lima e Valença, atraves da rua da Conega), no #D1, o seu peso deve ter decaído bastante.",
+        "Das 10 casas do lado Nascente e 14 do Poente, apenas três deste lado pertenciam ao #E_CABIDO."
+    ],
+    "casas": 
+    [
+        {
+            "num":"1",
+            "enfiteuta": "Domingos Dias",
+            "foro": "620 reis e galinhas",
+            "desc": [
+                "Desde o ano de #D2 que os nº 1 e 2 se encontravam unidos. A frontaria que dá para a #L2 corresponde ao nº15 da dita rua e é foreira à comenda de #L3."
+            ]
+        }
+    ],
+    "lugares": 
+    [
+        "Rua Nova",
+        "Porta de S. Francisco",
+        "Rua Nova de Sousa",
+        "São Pedro de Merelim"
+    ],
+    "datas": 
+    [
+        "1865",
+        "sec. XVIII",
+        "1719"
+    ],
+    "entidades":
+    [
+        
+    ]
+}
