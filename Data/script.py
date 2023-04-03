@@ -113,7 +113,7 @@ def trata_paragrafos(corpo):
     trata_replace2(entidades,par)
     lugares = list(map(lambda str: re.sub(r'[\n\s]+',' ', str),lugares))
     lugares = list(map(lambda str: re.sub(r'\b(?!e\b|dos?\b|das?\b|de\b)\w', lambda x: x.group().upper(), str),lugares))
-    lugares = list(set(lugares))
+    # lugares = list(set(lugares))
     dates = formata_dates(dates)
     return (par,dates,lugares,entidades)
 
@@ -131,7 +131,7 @@ for filename in os.listdir(directory):
     meta = root.find('meta')
     nome = meta.find('nome')
     numero = meta.find('número').text
-    rua['_id'] = nome.text
+    rua['_id'] = nome.text.replace(' ','_')
     corpo = root.find('corpo')
     rua['figuras_antigas'] = trata_figuras_antigas(corpo)
     rua['figuras_atuais']  = trata_figuras_atuais(numero)

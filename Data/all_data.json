@@ -1,6 +1,6 @@
 [
     {
-        "_id": "Rua de Sto. António",
+        "_id": "Rua_de_Sto._António",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-19-RuaDeStoAntonio-nascente.jpg",
@@ -33,8 +33,8 @@
         ],
         "lugares": [
             "Rua das Travessas",
-            "Judiaria Nova",
-            "Terreiro de Santo António"
+            "Terreiro de Santo António",
+            "Judiaria Nova"
         ],
         "entidades": [
             {
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "_id": "Rua da Ponte de Guimarães",
+        "_id": "Rua_da_Ponte_de_Guimarães",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-a.jpg",
@@ -90,21 +90,21 @@
             "1747"
         ],
         "lugares": [
-            "Rua da Ponte",
-            "Largo das Latinhas Ou do Senhor dos Aflitos",
-            "Capela de S. Lázaro",
+            "Ágoas",
             "S. Lázaro",
-            "Rua 25 de Abril",
-            "Troço da Avenida da Liberdade",
-            "Rua de S. Lázaro",
             "Arcada",
             "Ponte de Guimarães",
-            "Ágoas"
+            "Rua da Ponte",
+            "Rua de S. Lázaro",
+            "Capela de S. Lázaro",
+            "Troço da Avenida da Liberdade",
+            "Rua 25 de Abril",
+            "Largo das Latinhas Ou do Senhor dos Aflitos"
         ],
         "entidades": []
     },
     {
-        "_id": "Rua de Santo André",
+        "_id": "Rua_de_Santo_André",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-46-RuaDeSantoAndre-a(norte).jpg",
@@ -138,9 +138,9 @@
             "1750"
         ],
         "lugares": [
-            "Rua de Santo André",
             "Praça do Gavião",
-            "Largo dos Penedos"
+            "Largo dos Penedos",
+            "Rua de Santo André"
         ],
         "entidades": [
             {
@@ -150,7 +150,7 @@
         ]
     },
     {
-        "_id": "Rua de S.João",
+        "_id": "Rua_de_S.João",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-9-RuaDeSJoao-Norte.jpg",
@@ -180,16 +180,16 @@
             "finais do séc. XVI"
         ],
         "lugares": [
-            "Braga",
-            "Casa dos Paivas",
+            "Rua Ampla",
             "Rua de S. Marcos",
-            "Capela Mor da Sé",
-            "Rua da Ponte de Guimarães",
-            "Campo dos Remédios e Granginhos",
-            "Florença",
             "Cappella Maior da Sé",
             "Porta de S. João",
-            "Rua Ampla"
+            "Capela Mor da Sé",
+            "Campo dos Remédios e Granginhos",
+            "Rua da Ponte de Guimarães",
+            "Braga",
+            "Casa dos Paivas",
+            "Florença"
         ],
         "entidades": [
             {
@@ -219,7 +219,7 @@
         ]
     },
     {
-        "_id": "Rua de S. Lázaro",
+        "_id": "Rua_de_S._Lázaro",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-37-RuaDeSLazaro-Nascente.jpg",
@@ -252,14 +252,14 @@
             "1750"
         ],
         "lugares": [
-            "Largo do Rechicho",
-            "Avenida da Liberdade",
-            "Guimarães",
-            "Rua 25 de Abril",
-            "Rua de S. Lázaro",
             "Arcada",
+            "Guimarães",
+            "Rua de Águas",
             "Terreiro de S. Lázaro",
-            "Rua de Águas"
+            "Rua de S. Lázaro",
+            "Avenida da Liberdade",
+            "Largo do Rechicho",
+            "Rua 25 de Abril"
         ],
         "entidades": [
             {
@@ -269,7 +269,7 @@
         ]
     },
     {
-        "_id": "Ponte de Guimarães",
+        "_id": "Ponte_de_Guimarães",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-39-PonteDeGuimaraes-Norte.jpg",
@@ -303,12 +303,12 @@
             "séc. XVII"
         ],
         "lugares": [
-            "Largo do Senhor dos Aflitos",
+            "Arcada",
             "Ponte Sobre O Rio Este",
-            "Avenida da Liberdade",
+            "Largo do Senhor dos Aflitos",
             "Latinhas",
-            "Rua Conselheiro Lobato",
-            "Arcada"
+            "Avenida da Liberdade",
+            "Rua Conselheiro Lobato"
         ],
         "entidades": [
             {
@@ -318,7 +318,7 @@
         ]
     },
     {
-        "_id": "Travessa da Rua do Poço para a de D.Gualdim",
+        "_id": "Travessa_da_Rua_do_Poço_para_a_de_D.Gualdim",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-15-TravessaDaRuaDoPocoParaADeDGualdim-Norte.jpg",
@@ -347,8 +347,8 @@
         ],
         "datas": [],
         "lugares": [
-            "Ruas D. Gonçalo Pereira e D. Gualdim Pais",
-            "Rua D. Afonso Henriques"
+            "Rua D. Afonso Henriques",
+            "Ruas D. Gonçalo Pereira e D. Gualdim Pais"
         ],
         "entidades": [
             {
@@ -358,7 +358,7 @@
         ]
     },
     {
-        "_id": "Terreiro de Sto. António e Postigo",
+        "_id": "Terreiro_de_Sto._António_e_Postigo",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-20-TerreiroDeStoAntonioEPostigo-norte.jpg",
@@ -394,13 +394,13 @@
             "1759"
         ],
         "lugares": [
-            "Rua de S. Paulo",
             "Terreiro de S. Tiago",
             "Postigo de S.Sebastião",
-            "Rua do Terreiro de Santo António",
+            "Rua Travessa",
             "Rua do Postigo",
+            "Rua do Terreiro de Santo António",
             "«Postigo» da Muralha",
-            "Rua Travessa"
+            "Rua de S. Paulo"
         ],
         "entidades": [
             {
@@ -418,7 +418,7 @@
         ]
     },
     {
-        "_id": "Rua Verde",
+        "_id": "Rua_Verde",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-21-RuaVerde-nascente.jpg",
@@ -455,20 +455,21 @@
         ],
         "lugares": [
             "Postigo de S. Sebastião",
+            "Rua de Maximinos",
             "Porta de S. Francisco",
-            "Couto do Arvoredo",
-            "Rua Verde",
-            "Capela de S. Sebastião",
-            "Campo de S. Miguel O Anjo",
             "Ruas dos Sapateiros e do Campo",
             "Maximinos",
+            "Capela de S. Sebastião",
+            "Campo de S. Miguel O Anjo",
             "Rua das Travessas",
-            "Rua de Maximinos"
+            "Couto do Arvoredo",
+            "Couto do Arvoredo",
+            "Rua Verde"
         ],
         "entidades": []
     },
     {
-        "_id": "Rua do Paymanta",
+        "_id": "Rua_do_Paymanta",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-40-RuaDoPaymanta-Sul.jpg",
@@ -502,9 +503,9 @@
             "1750"
         ],
         "lugares": [
-            "Braga",
-            "Pontilhão das Lages",
             "Rua da Ponte de Guimarães",
+            "Pontilhão das Lages",
+            "Braga",
             "Pai Amante",
             "Conselheiro Lobato"
         ],
@@ -520,7 +521,7 @@
         ]
     },
     {
-        "_id": "Campo de S. Tiago",
+        "_id": "Campo_de_S._Tiago",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-33-CampoDeSTiagoRuaDoAnjo-primeira.jpg",
@@ -567,18 +568,19 @@
             "1750"
         ],
         "lugares": [
-            "Colégio de S. Paulo",
-            "Rua S. Paulo",
-            "Rua dos Pellames",
-            "Casa dos Falcões Cota",
-            "Seminário de Santiago",
-            "Largo de S. Paulo",
             "Porto",
             "Rua dos Pelames",
-            "Igreja de Santa Cruz",
+            "Colégio de S. Paulo",
+            "Seminário de Santiago",
             "Ruas dos Pelames",
+            "Rua S. Paulo",
+            "Largo de S. Paulo",
             "Campo de S. Tiago",
-            "Campo dos Remédios"
+            "Rua dos Pellames",
+            "Campo de S. Tiago",
+            "Casa dos Falcões Cota",
+            "Campo dos Remédios",
+            "Igreja de Santa Cruz"
         ],
         "entidades": [
             {
@@ -616,7 +618,7 @@
         ]
     },
     {
-        "_id": "Travessa da Rua de S. João para a do Forno",
+        "_id": "Travessa_da_Rua_de_S._João_para_a_do_Forno",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-10-TravessaDaRuaDeSJoaoParaADoForno-Norte.jpg",
@@ -652,21 +654,23 @@
             "1892"
         ],
         "lugares": [
+            "Igreja de S. João de Souto",
+            "Porta de S. João",
+            "Braga",
+            "«Rexio de S. João»",
+            "Sé",
+            "Bairro das Travessas",
+            "«Travessa Para A Rua de S. João»",
+            "Rua da Carrapata",
+            "Rua de Paio Manta",
+            "Rua Coelho",
+            "Rua de «Coelho»",
+            "«Rexio de S. João»",
             "«Travessa Para O Rexio de S. João»",
             "Largo de S. João de Souto",
-            "Braga",
-            "«Travessa Para A Rua de S. João»",
-            "Rua Coelho",
-            "Rua da Carrapata",
-            "Rua D. Afonso Henriques",
-            "Rua de «Coelho»",
             "Rua de S. João",
-            "Igreja de S. João de Souto",
-            "Sé",
-            "«Rexio de S. João»",
-            "Rua de Paio Manta",
-            "Porta de S. João",
-            "Bairro das Travessas"
+            "Rua D. Afonso Henriques",
+            "Largo de S. João de Souto"
         ],
         "entidades": [
             {
@@ -688,7 +692,7 @@
         ]
     },
     {
-        "_id": "Rua de S. Marcos",
+        "_id": "Rua_de_S._Marcos",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-35-RuaDeSMarcosRuaDosGranjinhos-primeira.jpg",
@@ -727,15 +731,15 @@
             "1509"
         ],
         "lugares": [
-            "Granjinhos",
-            "Braga",
-            "Rua dos Granjinhos",
             "Porta do Souto",
-            "Rua da Ponte de Guimarães",
-            "S. Lázaro",
-            "Porta de S. João",
             "Campo dos Remédios",
-            "Hospital de S. Marcos"
+            "Braga",
+            "Porta de S. João",
+            "Rua da Ponte de Guimarães",
+            "Hospital de S. Marcos",
+            "Rua dos Granjinhos",
+            "S. Lázaro",
+            "Granjinhos"
         ],
         "entidades": [
             {
@@ -757,7 +761,7 @@
         ]
     },
     {
-        "_id": "Campo de S. Sebastião e em Frente do Açougue",
+        "_id": "Campo_de_S._Sebastião_e_em_Frente_do_Açougue",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-25-CampoDeSSebastiaoEEmFrenteDoAcougue-Poente-A.png",
@@ -801,17 +805,26 @@
             "1915"
         ],
         "lugares": [
-            "Campo das Carvalheiras",
-            "Rua de S.Miguel O Anjo",
-            "Capela de S. Miguel O Anjo",
-            "Rua do Matadouro Velho",
-            "Em Frente do Açougue",
-            "Cruzeiro",
-            "Campo de S. Sebastião",
-            "Rua de S. Miguel O Anjo",
-            "Avenida de S. Miguel O Anjo",
             "Campo das Hortas",
-            "Rua de Maximinos"
+            "Campo de S. Sebastião",
+            "Em Frente do Açougue",
+            "Rua de S.Miguel O Anjo",
+            "Rua de Maximinos",
+            "Capela de S. Miguel O Anjo",
+            "Campo de S. Sebastião",
+            "Campo de S. Sebastião",
+            "Capela de S. Miguel O Anjo",
+            "Rua de S. Miguel O Anjo",
+            "Cruzeiro",
+            "Campo das Hortas",
+            "Campo de S. Sebastião",
+            "Em Frente do Açougue",
+            "Campo de S. Sebastião",
+            "Em Frente do Açougue",
+            "Avenida de S. Miguel O Anjo",
+            "Campo de S. Sebastião",
+            "Campo das Carvalheiras",
+            "Rua do Matadouro Velho"
         ],
         "entidades": [
             {
@@ -833,7 +846,7 @@
         ]
     },
     {
-        "_id": "Rua de Sta. Maria ou do Poço",
+        "_id": "Rua_de_Sta._Maria_ou_do_Poço",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-14-RuaDeSMariaOuDoPoco-Nascente.jpg",
@@ -880,23 +893,25 @@
         "lugares": [
             "Catedral",
             "Terreiro de S. Paulo Ou de S. Tiago",
-            "Sé",
-            "Igreja de Santiago",
-            "Igreja de Santa Maria de Braga",
-            "Rua de S. Tiago",
-            "Rua de Santa Maria",
-            "Rua das Travessas",
-            "Sinagoga",
-            "Rua do Poço",
-            "Judiaria Velha",
-            "Rua da Erva",
-            "Rua do Souto-Arcada",
-            "Colégio",
             "Porta de S. Tiago",
-            "Terreiro de S. Tiago",
-            "Rua D. Gonçalo Pereira",
+            "Colégio",
+            "Rua do Souto-Arcada",
             "Muralha",
-            "Rua da Judiaria"
+            "Terreiro de S. Tiago",
+            "Rua da Erva",
+            "Igreja de Santiago",
+            "Sinagoga",
+            "Rua da Judiaria",
+            "Sé",
+            "Catedral",
+            "Igreja de Santa Maria de Braga",
+            "Rua de Santa Maria",
+            "Judiaria Velha",
+            "Terreiro de S. Tiago",
+            "Rua do Poço",
+            "Rua das Travessas",
+            "Rua de S. Tiago",
+            "Rua D. Gonçalo Pereira"
         ],
         "entidades": [
             {
@@ -914,7 +929,7 @@
         ]
     },
     {
-        "_id": " Rua do Souto Porta do Souto ",
+        "_id": "_Rua_do_Souto_Porta_do_Souto_",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-06-RuaDoSouto.PortaDoSouto-norte.png",
@@ -954,22 +969,23 @@
             "1853"
         ],
         "lugares": [
-            "Campo da Vinha",
-            "Porta da Muralha",
-            "Rua Justino Cruz ",
+            "Rua do Souto",
             "Muralhas de Braga",
+            "Rua Nova",
             "Paço dos Arcebispos",
-            "Rua dos Janes",
-            "Porta do Souto",
-            "Largo Barão de S. Martinho",
             "Castelo",
+            "Porta da Muralha",
             "Largo do Paço",
-            "Casa do Passadiço",
-            "Arco da Porta do Souto",
+            "Rua do Souto",
+            "Rua Justino Cruz ",
+            "Campo da Vinha",
             "Rua Francisco Sanches",
             "Largo de S. João do Souto",
-            "Rua do Souto",
-            "Rua Nova"
+            "Casa do Passadiço",
+            "Porta do Souto",
+            "Largo Barão de S. Martinho",
+            "Rua dos Janes",
+            "Arco da Porta do Souto"
         ],
         "entidades": [
             {
@@ -987,7 +1003,7 @@
         ]
     },
     {
-        "_id": "Rua do Alcaide",
+        "_id": "Rua_do_Alcaide",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-31-DoAlcaide-Sul.png",
@@ -1015,9 +1031,9 @@
             "1750"
         ],
         "lugares": [
-            "Câmara",
+            "Campo de S.Tiago",
             "Terreiro de S.Sebastião.",
-            "Campo de S.Tiago"
+            "Câmara"
         ],
         "entidades": [
             {
@@ -1027,7 +1043,7 @@
         ]
     },
     {
-        "_id": "Rua de S. Gonçalo",
+        "_id": "Rua_de_S._Gonçalo",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-49-RuaDeSGoncalo-a.jpg",
@@ -1061,11 +1077,12 @@
         ],
         "lugares": [
             "Campo Novo",
-            "Recolhimento das Convertidas",
-            "Rua de S. Gonçalo.",
             "Campo de Santa Ana",
+            "Recolhimento das Convertidas",
+            "Campo de Santa Ana",
+            "Mosteiro de Vilar de Frades",
             "Praça do Gavião",
-            "Mosteiro de Vilar de Frades"
+            "Rua de S. Gonçalo."
         ],
         "entidades": [
             {
@@ -1075,7 +1092,7 @@
         ]
     },
     {
-        "_id": "Rua Direita",
+        "_id": "Rua_Direita",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-28-RuaDireita-Poente.png",
@@ -1104,15 +1121,16 @@
         ],
         "datas": [],
         "lugares": [
-            "Monte das Penas",
             "Rua Cruz de Pedra",
+            "Monte das Penas",
+            "Largo de Maximinos",
             "Praça do Condestável",
-            "Largo de Maximinos"
+            "Monte das Penas"
         ],
         "entidades": []
     },
     {
-        "_id": "Rua de Infias",
+        "_id": "Rua_de_Infias",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-55-RuaDeInfias-norte.jpg",
@@ -1143,13 +1161,14 @@
         ],
         "lugares": [
             "Rua da Escoura",
-            "Rua Conselheiro Januário",
-            "Casal do Lagarto"
+            "Casal do Lagarto",
+            "Rua da Escoura",
+            "Rua Conselheiro Januário"
         ],
         "entidades": []
     },
     {
-        "_id": "Rua de S.Miguel O Anjo",
+        "_id": "Rua_de_S.Miguel_O_Anjo",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-26-SaoMiguelOAnjo-Norte.png",
@@ -1182,12 +1201,12 @@
             "1750"
         ],
         "lugares": [
-            "Rua de Cruz de Pedra",
             "Rua Em Frente dos Açogues",
-            "Rua Visconde Pindela",
-            "Capela de S.Miguel O Anjo",
             "Campo das Hortas",
-            "Rua de Maximinos"
+            "Rua de Cruz de Pedra",
+            "Capela de S.Miguel O Anjo",
+            "Rua de Maximinos",
+            "Rua Visconde Pindela"
         ],
         "entidades": [
             {
@@ -1205,7 +1224,7 @@
         ]
     },
     {
-        "_id": "Rua Pequena",
+        "_id": "Rua_Pequena",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-13-RuaPequena-Nascente.jpg",
@@ -1239,15 +1258,15 @@
             "1620"
         ],
         "lugares": [
-            "Rua do Teive",
-            "Rua Pequena",
-            "Rua Painsalvos",
-            "Sé",
-            "Catedral",
             "Rua das Oucias",
             "Travessa da Rua do Forno Para A do Poço",
             "Bairro Medieval",
-            "Mercado da Olaria"
+            "Catedral",
+            "Mercado da Olaria",
+            "Sé",
+            "Rua do Teive",
+            "Rua Pequena",
+            "Rua Painsalvos"
         ],
         "entidades": [
             {
@@ -1269,7 +1288,7 @@
         ]
     },
     {
-        "_id": "Campo de Santa Ana",
+        "_id": "Campo_de_Santa_Ana",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-41-CampoDeSantaAna-Norte.jpg",
@@ -1317,18 +1336,20 @@
             "segunda metade do séc.XIX"
         ],
         "lugares": [
+            "Porta de Souto",
             "Corredoura",
             "Senhora A Branca",
             "S.Victor",
-            "Avenida Central",
+            "Chaves",
             "Bom Jesus",
             "Porta do Souto",
             "Santa Maria A Branca",
-            "Campo de Santa Ana",
-            "Chaves",
             "Rua da Corredoura",
-            "Porta de Souto",
-            "Rua de Águas"
+            "Porta do Souto",
+            "Campo de Santa Ana",
+            "Rua de Águas",
+            "Campo de Santa Ana",
+            "Avenida Central"
         ],
         "entidades": [
             {
@@ -1374,7 +1395,7 @@
         ]
     },
     {
-        "_id": "Rua da Cónega",
+        "_id": "Rua_da_Cónega",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-58-RuaDaCónega-norte.jpg",
@@ -1413,12 +1434,12 @@
             "1735"
         ],
         "lugares": [
-            "S.Jerónimo de Real",
             "Braga",
+            "S.Jerónimo de Real",
+            "Braga-Lugo",
             "Nova da Cónega",
-            "Boavista",
             "Cónega",
-            "Braga-Lugo"
+            "Boavista"
         ],
         "entidades": [
             {
@@ -1440,7 +1461,7 @@
         ]
     },
     {
-        "_id": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara",
+        "_id": "Campo_de_Nossa_Senhora_a_Branca._Rua_da_Régua._Rua_Nova_da_Seara",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-43-CampoDeNossaSenhoraABranca-RuaDaRegua-RuaDaSeara-Norte.jpg",
@@ -1478,17 +1499,21 @@
             "1865"
         ],
         "lugares": [
-            "Rua de S. Victor",
-            "Braga",
-            "Rua Nova da Seara",
-            "Bom Jesus",
-            "Campo de Nossa Senhora A Branca",
-            "Barroso",
             "Chaves",
             "Rua da Corredoura",
             "Régua",
+            "Rua Nova da Seara",
+            "Barroso",
+            "Bom Jesus",
+            "Campo de Nossa Senhora A Branca",
             "Rua da Régua",
-            "Ruas da Régua e Nova da Seara"
+            "Rua Nova da Seara",
+            "Braga",
+            "Campo de Nossa Senhora A Branca",
+            "Rua da Régua",
+            "Rua Nova da Seara",
+            "Ruas da Régua e Nova da Seara",
+            "Rua de S. Victor"
         ],
         "entidades": [
             {
@@ -1510,7 +1535,7 @@
         ]
     },
     {
-        "_id": "Rua dos Sapateiros e Rossio da Praça",
+        "_id": "Rua_dos_Sapateiros_e_Rossio_da_Praça",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-23-RuaDosSapateirosERossioDaPraca-nascente.jpg",
@@ -1548,18 +1573,20 @@
             "1890"
         ],
         "lugares": [
-            "Rua D. Frei Caetano Brandão",
             "Rua Verde",
+            "Rua de Maximinos",
+            "Rua Nova",
+            "Maximinos",
             "Rossio da Praça",
             "Rua dos Sapateiros",
-            "Maximinos",
-            "Rua Nova",
-            "Rua de Maximinos"
+            "Rossio da Praça",
+            "Rossio da Praça",
+            "Rua D. Frei Caetano Brandão"
         ],
         "entidades": []
     },
     {
-        "_id": "Travessa da Rua de D.Gualdim até ao Couto do Arvoredo",
+        "_id": "Travessa_da_Rua_de_D.Gualdim_até_ao_Couto_do_Arvoredo",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-17-TravessaDaRuaDeDGualdimAteAoCoutoDoArvoredo-norte.jpg",
@@ -1588,14 +1615,14 @@
         ],
         "datas": [],
         "lugares": [
+            "Rua das Travessas",
+            "Rua Verde",
+            "Couto do Arvoredo",
+            "Muralha",
             "Campo das Carvalheiras",
             "S.Miguel O Anjo",
-            "Rua Verde",
             "Rua de D. Gualdim",
-            "Couto do Arvoredo",
-            "Rua D. Afonso Henriques",
-            "Rua das Travessas",
-            "Muralha"
+            "Rua D. Afonso Henriques"
         ],
         "entidades": [
             {
@@ -1605,7 +1632,7 @@
         ]
     },
     {
-        "_id": "Rua de S. Barnabé",
+        "_id": "Rua_de_S._Barnabé",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-47-RuaDeS.Barnabe-a(nascente).jpg",
@@ -1633,10 +1660,10 @@
             "1743"
         ],
         "lugares": [
-            "S. Barnabé",
-            "Rua dos Chãos de Cima",
             "Praça do Gavião",
-            "Campo Novo"
+            "Campo Novo",
+            "Rua dos Chãos de Cima",
+            "S. Barnabé"
         ],
         "entidades": [
             {
@@ -1646,7 +1673,7 @@
         ]
     },
     {
-        "_id": "Rua Da Oliveira",
+        "_id": "Rua_Da_Oliveira",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-51-RuaDaOliveira-a.jpg",
@@ -1678,14 +1705,14 @@
             "1725"
         ],
         "lugares": [
-            "Rua de Santa Margarida",
-            "Largo das Teresinhas",
             "Campo Novo",
-            "Praça do Gavião",
+            "Largo das Teresinhas",
             "Cangosta",
+            "Rua de Santa Margarida",
             "Igreja de S. Vicente",
-            "Rua das Oliveiras",
-            "Capela de Guadalupe"
+            "Capela de Guadalupe",
+            "Praça do Gavião",
+            "Rua das Oliveiras"
         ],
         "entidades": [
             {
@@ -1695,7 +1722,7 @@
         ]
     },
     {
-        "_id": "Cangosta das Cruzes",
+        "_id": "Cangosta_das_Cruzes",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-34-QuingostaDasCruzes-primeira.jpg",
@@ -1728,7 +1755,9 @@
         ],
         "lugares": [
             "Campo de S. Tiago",
-            "Hospital de S. Marcos"
+            "Hospital de S. Marcos",
+            "Campo de S. Tiago",
+            "Campo de S. Tiago"
         ],
         "entidades": [
             {
@@ -1742,7 +1771,7 @@
         ]
     },
     {
-        "_id": "Rua em Frente de Nossa Senhora de Guadalupe",
+        "_id": "Rua_em_Frente_de_Nossa_Senhora_de_Guadalupe",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-52-RuaEmFrenteDeNossaSDeGuadalupe-a.jpg",
@@ -1784,15 +1813,15 @@
             "5 de Junho de 1880"
         ],
         "lugares": [
-            "Rua de Nossa Senhora de Guadalupe",
-            "Rua de Arrabalde",
             "Cangosta de Guadalupe",
+            "Rua de Nossa Senhora de Guadalupe",
             "Rua de Guadalupe",
-            "Convento e Capela das Teresinhas",
-            "Monte de Santa Margarida",
             "Igreja de S. Vicente",
-            "Rua de Camões",
-            "Capela de Guadalupe"
+            "Capela de Guadalupe",
+            "Rua de Arrabalde",
+            "Monte de Santa Margarida",
+            "Convento e Capela das Teresinhas",
+            "Rua de Camões"
         ],
         "entidades": [
             {
@@ -1806,7 +1835,7 @@
         ]
     },
     {
-        "_id": "Rua dos Açougues velhos",
+        "_id": "Rua_dos_Açougues_velhos",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-03-RuaDosAcouguesVelhos-nascente.PNG",
@@ -1841,11 +1870,12 @@
             "1857"
         ],
         "lugares": [
-            "Rua do Cabido",
-            "Rua do Poço",
-            "Travessa dos Açougues Velhos",
             "Sé",
-            "Rua Nova"
+            "Rua Nova",
+            "Rua do Poço",
+            "Sé",
+            "Rua do Cabido",
+            "Travessa dos Açougues Velhos"
         ],
         "entidades": [
             {
@@ -1855,7 +1885,7 @@
         ]
     },
     {
-        "_id": "Praça do Pão",
+        "_id": "Praça_do_Pão",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-04-PracaDoPao-norte.PNG",
@@ -1893,17 +1923,20 @@
             "26-11-1925"
         ],
         "lugares": [
-            "D. Gualdim",
-            "Praça do Pão",
-            "D. Diogo de Sousa",
-            "Rua D. Paio Mendes",
-            "D. Gualdim Pais",
-            "Rua D. Gonçalo Pereira",
-            "Rua do Souto",
-            "Palácio dos Arcebispos",
             "Sé",
             "Rua dos Açougues",
-            "Rua de Maximinos"
+            "Rua D. Gonçalo Pereira",
+            "D. Gualdim Pais",
+            "Praça do Pão",
+            "D. Diogo de Sousa",
+            "Rua de Maximinos",
+            "D. Gualdim",
+            "Rua do Souto",
+            "Palácio dos Arcebispos",
+            "Praça do Pão",
+            "Rua de Maximinos",
+            "Praça do Pão",
+            "Rua D. Paio Mendes"
         ],
         "entidades": [
             {
@@ -1913,7 +1946,7 @@
         ]
     },
     {
-        "_id": "Rua das Oucias",
+        "_id": "Rua_das_Oucias",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-05-RuaDasOucias.png",
@@ -1944,19 +1977,20 @@
         ],
         "datas": [],
         "lugares": [
-            "Rua de Nossa Senhora do Leite",
-            "Rua de S. João ",
-            "Capela Mor da Sé",
+            "Sé",
             "Rua do Souto ",
-            "Residência Académica",
-            "Porta de S. João",
+            "Fonte de S. Geraldo",
             "Capela da Glória",
+            "Casa do Conselho Municipal",
+            "Capela Mor da Sé",
+            "Rua de S. João ",
+            "Porta de S. João",
             "Lado Sul da Sé, Entre O Braço do Transepto e A Fachada",
             "Rocio da Sé",
-            "Casa do Conselho Municipal",
             "Edifício do Tribunal do Trabalho/Delegação Escolar",
-            "Sé",
-            "Fonte de S. Geraldo",
+            "Residência Académica",
+            "Rua de Nossa Senhora do Leite",
+            "Rocio da Sé",
             "Escola Coimbrã"
         ],
         "entidades": [
@@ -1971,7 +2005,7 @@
         ]
     },
     {
-        "_id": "Estrada de Real",
+        "_id": "Estrada_de_Real",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-57-EstradaDeReal-norte.jpg",
@@ -2001,16 +2035,16 @@
             "1750"
         ],
         "lugares": [
+            "Braga",
             "Rua Andrade Corvo",
             "S.Jerónimo de Real",
-            "Braga",
             "Cabido",
             "Quinta da Cónega"
         ],
         "entidades": []
     },
     {
-        "_id": "Cangosta De S. Sebastião",
+        "_id": "Cangosta_De_S._Sebastião",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-30-CangostaDeSSbebastiao-Norte.png",
@@ -2043,12 +2077,12 @@
             "1369-1380"
         ],
         "lugares": [
-            "Rua dos Marchantes",
-            "Beco",
+            "Cividade",
             "Terreiro de S. Sebastião",
             "Capela de S.Sebastião das Carvalheiras)",
+            "Beco",
             "Igreja Paroquial de Maximinos",
-            "Cividade"
+            "Rua dos Marchantes"
         ],
         "entidades": [
             {
@@ -2058,7 +2092,7 @@
         ]
     },
     {
-        "_id": "Rua de Janes ",
+        "_id": "Rua_de_Janes_",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-08-RuaDeJanes.JPG",
@@ -2084,12 +2118,12 @@
         ],
         "datas": [],
         "lugares": [
-            "Jano ",
-            "Igreja de S. João de Souto",
-            "Porta de S. João",
-            "Janoas",
+            "Igreja de S. João do Souto",
             "Porta de Souto",
-            "Igreja de S. João do Souto"
+            "Jano ",
+            "Janoas",
+            "Porta de S. João",
+            "Igreja de S. João de Souto"
         ],
         "entidades": [
             {
@@ -2103,7 +2137,7 @@
         ]
     },
     {
-        "_id": "Rua de D. Gualdim",
+        "_id": "Rua_de_D._Gualdim",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-16-RuaDeDGualdim-Poente.jpg",
@@ -2138,26 +2172,32 @@
             "1754"
         ],
         "lugares": [
-            "Cidade Medieval",
-            "Terreiro de Sto. António",
-            "Arquivo da Câmara Municipal de Braga",
-            "Rua D. Afonso Henriques",
-            "Rua dos Burgueses",
-            "Sé",
-            "Igreja da Cividade",
-            "Igreja de Santiago",
-            "Rua de S. Paulo",
-            "Rua de D. Gualdim",
-            "A Igreja de Santiago",
-            "Rua de S. Tiago",
-            "Câmara",
-            "Braga",
-            "Rua de D. Gualdím",
-            "Palácio ",
             "Praça do Pão",
+            "Terreiro de Sto. António",
+            "Bairro das Travessas",
+            "Rua de D. Gualdim",
+            "Sé",
+            "Rua D. Afonso Henriques",
+            "Rua de S. Tiago",
+            "Rua de S. Paulo",
+            "Arquivo da Câmara Municipal de Braga",
+            "Câmara",
+            "Rua de D. Gualdím",
+            "Sé",
+            "Praça do Pão",
+            "Cidade Medieval",
+            "Câmara",
+            "A Igreja de Santiago",
+            "Igreja da Cividade",
+            "Palácio ",
+            "Câmara",
+            "Rua dos Burgueses",
             "Souto",
+            "Igreja de Santiago",
             "Rua D. Gonçalo Pereira",
-            "Bairro das Travessas"
+            "Rua de D. Gualdim",
+            "Câmara",
+            "Braga"
         ],
         "entidades": [
             {
@@ -2191,7 +2231,7 @@
         ]
     },
     {
-        "_id": "Rua dos Chãos de Cima",
+        "_id": "Rua_dos_Chãos_de_Cima",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-53-RuaDosChaosDeCima-norte.JPG",
@@ -2224,22 +2264,24 @@
             "1860-70"
         ],
         "lugares": [
-            "Casal das Oliveiras e Leira da Agra da Escoura",
             "Rua dos Chãos de Baixo",
             "Igreja de S. Vicente.",
-            "Rua de Espanha",
             "S. Barnabé e Oliveiras",
-            "Rua do Carvalhal",
+            "Rua de Espanha",
+            "Casal das Oliveiras e Leira da Agra da Escoura",
             "Casal dos Chãos Ou do Quinteiro,",
-            "Rua de S. Vicente",
+            "Largo dos Penedos",
             "Rua dos Chãos de Sima",
             "Ruas de S. Barnabé e Oliveiras",
-            "Largo dos Penedos"
+            "Largo dos Penedos",
+            "Rua do Carvalhal",
+            "Rua dos Chãos de Sima",
+            "Rua de S. Vicente"
         ],
         "entidades": []
     },
     {
-        "_id": "Rua da Vielinha",
+        "_id": "Rua_da_Vielinha",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-24-RuaDaVielinha-nascente.jpg",
@@ -2275,13 +2317,13 @@
             "1750"
         ],
         "lugares": [
-            "Rexio da Praça",
-            "Rua de Maximinos"
+            "Rua de Maximinos",
+            "Rexio da Praça"
         ],
         "entidades": []
     },
     {
-        "_id": "Rua dos Biscaínhos",
+        "_id": "Rua_dos_Biscaínhos",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-59-RuaDosBiscainhos-norte.jpg",
@@ -2311,9 +2353,9 @@
             " séc.XVI"
         ],
         "lugares": [
-            "Rua dos Biscaínhos",
+            "Campo da Vinha Com O Campo das Hortas",
             "Cabido",
-            "Campo da Vinha Com O Campo das Hortas"
+            "Rua dos Biscaínhos"
         ],
         "entidades": [
             {
@@ -2323,7 +2365,7 @@
         ]
     },
     {
-        "_id": "Rua do Campo",
+        "_id": "Rua_do_Campo",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-01-RuaDoCampo-nascente.PNG",
@@ -2359,21 +2401,23 @@
             "28-07-1890"
         ],
         "lugares": [
-            "Ponte de Lima",
-            "Campo da Vinha",
-            "Braga",
-            "Rua D. Frei Caetano Brandao",
-            "Rua do Campo",
-            "Largo Conselheiro Torres e Almeida",
-            "Porta de S. Francisco",
-            "Valença",
             "Rua Nova",
-            "Rua da Conega",
+            "Porta de S. Francisco",
+            "Rua Nova",
+            "Porta de S. Francisco",
             "Edificio da Camara Municipal",
-            "Rua D. Diogo de Sousa",
+            "Braga",
+            "Prado",
+            "Ponte de Lima",
+            "Valença",
+            "Rua da Conega",
             "Campo",
             "Primeiro Quartel",
-            "Prado"
+            "Campo da Vinha",
+            "Rua do Campo",
+            "Rua D. Frei Caetano Brandao",
+            "Rua D. Diogo de Sousa",
+            "Largo Conselheiro Torres e Almeida"
         ],
         "entidades": [
             {
@@ -2383,7 +2427,7 @@
         ]
     },
     {
-        "_id": "Travessa Da Rua Do Forno Para A Do Poco",
+        "_id": "Travessa_Da_Rua_Do_Forno_Para_A_Do_Poco",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-12-TravessaDaRuaDoFornoParaADoPoco-Norte.jpg",
@@ -2417,12 +2461,12 @@
             "1892"
         ],
         "lugares": [
-            "Velho Bairro Medieval",
-            "Rua D. Gonçalo Pereira",
-            "Rua do Forno",
-            "Rua D. Afonso Henriques",
             "Rua das Travessas",
-            "Velha Rua Romana"
+            "Velho Bairro Medieval",
+            "Velha Rua Romana",
+            "Rua D. Afonso Henriques",
+            "Rua do Forno",
+            "Rua D. Gonçalo Pereira"
         ],
         "entidades": [
             {
@@ -2436,7 +2480,7 @@
         ]
     },
     {
-        "_id": "Rua Da Cruz De Pedra",
+        "_id": "Rua_Da_Cruz_De_Pedra",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-27-RuaDaCruzDePedra-Poente.png",
@@ -2472,12 +2516,12 @@
             "1750"
         ],
         "lugares": [
-            "Largo do Beco",
-            "Igreja de Maximinos",
+            "Rua de S. Miguel O Anjo",
             "Beco e Direita",
             "Nossa Senhora da Ajuda",
-            "Rua de S. Miguel O Anjo",
-            "Rua do Caires"
+            "Igreja de Maximinos",
+            "Rua do Caires",
+            "Largo do Beco"
         ],
         "entidades": [
             {
@@ -2491,7 +2535,7 @@
         ]
     },
     {
-        "_id": "Rua do Beco",
+        "_id": "Rua_do_Beco",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-29-Beco-Norte.png",
@@ -2524,10 +2568,10 @@
             "1881-1884"
         ],
         "lugares": [
-            "Beco",
-            "Maximinos",
             "Enfiamento da Cangosta de S.Sebastião",
-            "Rua do Caires"
+            "Maximinos",
+            "Rua do Caires",
+            "Beco"
         ],
         "entidades": [
             {
@@ -2537,7 +2581,7 @@
         ]
     },
     {
-        "_id": "Rua das Palhotas",
+        "_id": "Rua_das_Palhotas",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-54-RuaDasPalhotas-nascente.jpg",
@@ -2573,17 +2617,18 @@
             "1742"
         ],
         "lugares": [
-            "Rua Andrade Corvo",
-            "Nova do Bico",
+            "Rua dos Chãos de Sima",
+            "Alto Minho",
+            "Rua Nova do Bico",
             "Geira",
+            "Gerês",
+            "Astorga",
             "Alto Minho",
             "Palmeira",
             "Pico de Regalados",
-            "Astorga",
-            "Gerês",
-            "Rua dos Chãos de Sima",
-            "Rua Nova do Bico",
-            "Infias"
+            "Rua Andrade Corvo",
+            "Infias",
+            "Nova do Bico"
         ],
         "entidades": [
             {
@@ -2593,7 +2638,7 @@
         ]
     },
     {
-        "_id": "Campo e Calçada de Nossa Senhora a Branca",
+        "_id": "Campo_e_Calçada_de_Nossa_Senhora_a_Branca",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-42-CampoECalcadaDeNossaSenhoraABranca-Norte.jpg",
@@ -2637,6 +2682,7 @@
             "Santa Ana",
             "Rua de Santa Margarida",
             "Rua do Sardoal",
+            "Rua de Santa Margarida",
             "Ruas de Restauração e 31 de Janeiro"
         ],
         "entidades": [
@@ -2651,7 +2697,7 @@
         ]
     },
     {
-        "_id": "Rua das Águas",
+        "_id": "Rua_das_Águas",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-36-RuaDasAgoas-primeira.jpg",
@@ -2684,15 +2730,17 @@
             "1750"
         ],
         "lugares": [
-            "Rechicho",
-            "Avenida da Liberdade",
             "S. Lázaro",
             "Porta de Guimarães",
-            "Rua das Águas",
-            "Rua do Souto",
             "Arcada",
             "Ponte de Guimarães",
-            "Convento dos Remédios"
+            "Rua do Souto",
+            "Convento dos Remédios",
+            "Rua das Águas",
+            "Rua das Águas",
+            "Avenida da Liberdade",
+            "Arcada",
+            "Rechicho"
         ],
         "entidades": [
             {
@@ -2702,7 +2750,7 @@
         ]
     },
     {
-        "_id": "Rua dos Pelames",
+        "_id": "Rua_dos_Pelames",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-32-Nascente.png",
@@ -2739,12 +2787,13 @@
             "1725"
         ],
         "lugares": [
-            "Rua do Infante",
             "Largo de S.Tiago",
-            "Porto",
-            "de Pelames",
             "Ponte dos Pelames",
+            "Porto",
+            "Rua do Infante",
+            "de Pelames",
             "Rua de S.Geraldo",
+            "Convento da Conceição",
             "Convento da Conceição"
         ],
         "entidades": [
@@ -2779,7 +2828,7 @@
         ]
     },
     {
-        "_id": "Rua Nova",
+        "_id": "Rua_Nova",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-02-RuaNova-norte.png",
@@ -2818,22 +2867,25 @@
             "1750"
         ],
         "lugares": [
+            "Rua do Souto",
             "Braga",
-            "Praça do Pão",
-            "Praça Velha",
-            "Igreja da Misericórdia",
-            "Praça da Hortalice",
-            "Centro Comercial da Cidade",
-            "Rua Nova",
-            "Porta Nova",
-            "Praça do Pescado",
-            "Pracinha",
-            "Rua de D. Diogo de Sousa",
-            "Sé",
             "Rua do Souto",
             "Campo das Hortas",
+            "Porta Nova",
+            "Igreja da Misericórdia",
+            "Casa Brasonada de Familiares de D. Jorge da Costa",
+            "Pracinha",
+            "Praça da Hortalice",
+            "Praça do Pescado",
+            "Praça do Pão",
+            "Centro Comercial da Cidade",
+            "Sé",
             "Arcada",
-            "Casa Brasonada de Familiares de D. Jorge da Costa"
+            "Rua Nova",
+            "Rua de D. Diogo de Sousa",
+            "Pracinha",
+            "Praça Velha",
+            "Pracinha"
         ],
         "entidades": [
             {
@@ -2859,7 +2911,7 @@
         ]
     },
     {
-        "_id": "Rua dos Cegos ou do Forno",
+        "_id": "Rua_dos_Cegos_ou_do_Forno",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-11-RuaDosCegosOuDoForno-Nascente.jpg",
@@ -2896,12 +2948,13 @@
         ],
         "lugares": [
             "Igreja do Colégio da Companhia de Jesus",
-            "Rua das Oucias",
-            "Rua do Forno",
-            "Rua de Pay Manta",
-            "Rua de S. João",
             "Sé",
-            "Rua Pay Manta"
+            "Sé",
+            "Rua de S. João",
+            "Rua das Oucias",
+            "Rua Pay Manta",
+            "Rua de Pay Manta",
+            "Rua do Forno"
         ],
         "entidades": [
             {
@@ -2919,7 +2972,7 @@
         ]
     },
     {
-        "_id": "Praça do Gavião",
+        "_id": "Praça_do_Gavião",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-48-PracaDoGaviao-a(nascente).jpg",
@@ -2959,9 +3012,9 @@
             "século XVIII"
         ],
         "lugares": [
-            "Praça Mouzinho de Albuquerque",
             "Praça do Gavião",
-            "Braga"
+            "Braga",
+            "Praça Mouzinho de Albuquerque"
         ],
         "entidades": [
             {
@@ -2975,7 +3028,7 @@
         ]
     },
     {
-        "_id": "Rua das Chagas",
+        "_id": "Rua_das_Chagas",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-18-RuaDasChagas-nascente.jpg",
@@ -3009,11 +3062,12 @@
             "1593"
         ],
         "lugares": [
-            "Rua D. Frei Caetano Brandão",
-            "Rua das Chagas",
-            "Triparia",
             "Rua das Travessas",
-            "Rua de Maximinos"
+            "Rua de Maximinos",
+            "Triparia",
+            "Rua das Chagas",
+            "Rua de Maximinos",
+            "Rua D. Frei Caetano Brandão"
         ],
         "entidades": [
             {
@@ -3023,7 +3077,7 @@
         ]
     },
     {
-        "_id": "Rua de Nossa Senhora de Guadalupe",
+        "_id": "Rua_de_Nossa_Senhora_de_Guadalupe",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-50-RuaDeNossaSenhoraDeGuadalupe-a.jpg",
@@ -3055,12 +3109,12 @@
             "1725"
         ],
         "lugares": [
-            "Rua Em Frente de Nossa Senhora de Guadalupe",
-            "Rua de S. Gonçalo",
             "Campo Novo",
-            "Rua de Guadalupe",
+            "Capela de Guadalupe",
             "Praça do Gavião",
-            "Capela de Guadalupe"
+            "Rua de S. Gonçalo",
+            "Rua Em Frente de Nossa Senhora de Guadalupe",
+            "Rua de Guadalupe"
         ],
         "entidades": [
             {
@@ -3070,7 +3124,7 @@
         ]
     },
     {
-        "_id": "Cangosta da Escoura",
+        "_id": "Cangosta_da_Escoura",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-56-CangostaDaEscoura-norte.jpg",
@@ -3103,9 +3157,9 @@
             "14 de Setembro de 1885"
         ],
         "lugares": [
-            "Rua da Escoura",
             "Rua dos Chãos de Cima",
-            "Rua Gabriel Pereira de Castro"
+            "Rua Gabriel Pereira de Castro",
+            "Rua da Escoura"
         ],
         "entidades": [
             {
@@ -3119,7 +3173,7 @@
         ]
     },
     {
-        "_id": " Loura e Terreiro do Castelo  ",
+        "_id": "_Loura_e_Terreiro_do_Castelo__",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-07-LouraETerreiroDoCastelo.JPG",
@@ -3156,15 +3210,19 @@
             "1905"
         ],
         "lugares": [
-            "Terreiro do Castelo",
-            "Rua do Castelo",
-            "Igreja do Terceiros",
-            "Cidadela",
-            "Castelo",
             "Igreja dos Terceiros",
-            "Loura",
+            "Cidadela",
             "Rua do Souto",
-            "Casa do Definitório"
+            "Cidadela",
+            "Terreiro do Castelo",
+            "Loura",
+            "Castelo",
+            "Igreja do Terceiros",
+            "Casa do Definitório",
+            "Loura",
+            "Terreiro do Castelo",
+            "Cidadela",
+            "Rua do Castelo"
         ],
         "entidades": [
             {
@@ -3182,7 +3240,7 @@
         ]
     },
     {
-        "_id": "Rua da Fonte da Carcova",
+        "_id": "Rua_da_Fonte_da_Carcova",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-44-RuaDaFonteDaCarcova.RuaDoCarvalhal-Norte.jpg",
@@ -3227,13 +3285,13 @@
             "1750"
         ],
         "lugares": [
+            "Santa Ana",
+            "Vinha",
             "Fonte da Cárcova Ou Cárcoda",
             "Rua dos Mercadores",
-            "Vinha",
-            "Santa Ana",
             "Rua dos Capelistas",
-            "Rua do Carvalhal",
-            "Largo dos Penedos"
+            "Largo dos Penedos",
+            "Rua do Carvalhal"
         ],
         "entidades": [
             {
@@ -3247,7 +3305,7 @@
         ]
     },
     {
-        "_id": "Rua dos Chãos de Baixo",
+        "_id": "Rua_dos_Chãos_de_Baixo",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-45-RuaDosChaosDeBaixo-a(nascente).jpg",
@@ -3283,12 +3341,12 @@
             "XVIII"
         ],
         "lugares": [
-            "Eyrado",
-            "Rua dos Chãos",
             "Arcada",
-            "Rua dos Chaos de Baixo",
             "Largo dos Penedos",
             "Largo do Eyrado",
+            "Rua dos Chaos de Baixo",
+            "Rua dos Chãos",
+            "Eyrado",
             "Largo de S. Francisco"
         ],
         "entidades": [
@@ -3311,7 +3369,7 @@
         ]
     },
     {
-        "_id": "Cangosta da Rua das Águas",
+        "_id": "Cangosta_da_Rua_das_Águas",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-60-CangostaDaRuaDasAguas-norte.jpg",
@@ -3339,17 +3397,18 @@
             " 1891 "
         ],
         "lugares": [
+            "Rua das Águas",
             "Palha",
             "Campo de Nossa Senhora A Branca",
             "Cabido",
-            "Rua do Raio e Largo João Penha (Ou do Rechicho). ",
-            "Rua das Águas",
-            "(O Rechicho)"
+            "Cabido",
+            "(O Rechicho)",
+            "Rua do Raio e Largo João Penha (Ou do Rechicho). "
         ],
         "entidades": []
     },
     {
-        "_id": "Rua de Maximinos",
+        "_id": "Rua_de_Maximinos",
         "figuras_antigas": [
             {
                 "path": "/Data/imagem/MRB-22-RuaDeMaximinos-norte.jpg",
@@ -3389,11 +3448,12 @@
             "1925"
         ],
         "lugares": [
-            "Porta de Maximinos",
             "Praça do Pão",
+            "Porta de Maximinos",
             "Nossa Senhora da Ajuda",
+            "Rua de Maximinos",
             "Rua do Souto",
-            "Rua de Maximinos"
+            "Praça do Pão"
         ],
         "entidades": []
     }
