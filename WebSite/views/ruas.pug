@@ -1,0 +1,21 @@
+extends template 
+block content
+    table.w3-table.w3-hoverable
+        thead
+            tr.w3-blue
+                th Nome da Rua
+                th(style="text-align: center") Descrição
+                th Referencias temporais
+        each rua in ruas
+            tr
+                td.w3-border
+                    br
+                    a(href="/rua/"+rua._id)=rua._id.replaceAll("_", " ")
+                td.w3-border
+                    each value in [0,1,2]
+                        if rua.paragrafos[value]
+                            p=rua.paragrafos[value]
+                    p='...'
+                td.w3-border
+                    each data in rua.datas 
+                        p=data
