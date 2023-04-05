@@ -37,7 +37,7 @@ function formatRua(rua) {
     }
     rua.paragrafos = parares
     rua.lugares = [...new Set(rua.lugares)].sort()
-    rua.datas = rua.datas.sort()
+    rua.datas = [...new Set(rua.datas)].sort()
     rua.entidades = rua.entidades.sort((e1,e2) => e1.nome.localeCompare(e2.nome))
     return rua
 }

@@ -1,0 +1,51 @@
+extends template
+
+block content 
+    .w3-container 
+        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+            b Fotografias antigas
+        each f in rua.figuras_antigas
+            .w3-card-4
+                img(src=f.path)
+                if f.legenda.length > 0
+                    .w3-container 
+                        h8 Legenda: #{f.legenda}
+        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+            b Fotografias atuais
+        each f in rua.figuras_atuais
+            .w3-card-4
+                img(src=f.path)
+                if f.legenda.length > 0
+                    .w3-container 
+                        h8 Legenda: #{f.legenda}
+        hr 
+        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+            b Descrição
+        each p in rua.paragrafos
+            p=p
+        hr 
+        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+            b Links pesquisa
+        .w3-container
+            h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                b Lugares  
+            ul
+                each l in rua.lugares
+                    li
+                        a(href="/")=l
+            center 
+                hr(style="width:90%")
+            h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                b Datas 
+            ul
+                each d in rua.datas
+                    li
+                        a(href="/ruas/data/"+d)=d
+            center
+                hr(style="width:90%")
+            h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                b Entidades  
+            ul
+                each e in rua.entidades
+                    li
+                        a(href="/ruas/entidade/"+e.nome)=e.nome
