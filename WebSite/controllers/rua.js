@@ -1,7 +1,6 @@
 const Rua = require('../models/rua')
 
 function formatRua(rua) {
-    console.log(rua)
     parares = []
     datas = rua.datas
     entidades = rua.entidades
@@ -22,22 +21,24 @@ function formatRua(rua) {
         for(var l of ml)
         {
             l = l[0]
-            sub = sub.replace(l,'#L_'+lugares[Number(l.slice(2))]+ '#')
+            sub = sub.replace(l,lugares[Number(l.slice(2))])
         }
         for(var e of me)
         {
             e = e[0]
-            sub = sub.replace(e,'#E_'+entidades[Number(e.slice(2))].nome+'#')
+            sub = sub.replace(e,entidades[Number(e.slice(2))].nome)
         }
         for(var d of md)
         {
             d = d[0]
-            sub = sub.replace(d,'#D_'+datas[Number(d.slice(2))]+'#')
+            sub = sub.replace(d,datas[Number(d.slice(2))])
         }
         parares.push(sub)
     }
-    console.log(parares)
     rua.paragrafos = parares
+    rua.lugares = [...new Set(rua.lugares)].sort()
+    rua.datas = rua.datas.sort()
+    rua.entidades = rua.entidades.sort((e1,e2) => e1.nome.localeCompare(e2.nome))
     return rua
 }
 
