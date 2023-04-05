@@ -6,16 +6,16 @@ router.get('/:idrua', function(req, res, next) {
   // Rua.getRua(req.params.idrua)
   // .then(data => res.json(Rua.formatParagraphRua(data)))
   // .catch(erro => res.json(erro))
+  var d = new Date().toISOString().substring(0, 16)
+  d = d.replace('T', ' ')
   Rua.getRua(req.params.idrua)
   .then(data => 
     {
-      r = Rua.formatParagraphRua(data) 
-      // r.figuras_antigas.map(f => { f.path = __dirname+'..'+f.path, f.legenda})
-      // r.figuras_atuais.map(f => { f.path = __dirname+'..'+f.path, f.legenda})
-      res.render('rua',{ rua: r}); 
+      r = Rua.formatParagraphRua(data)
+      res.render('rua',{ rua: r, d:d, nome_rua: r._id.replaceAll('_',' ')}); 
       console.log('Página rua ' + req.params.idrua)
     })
-  .catch(erro => res.render('error', {error: erro}))
+  .catch(erro => res.render('error', {error: erro, d:d}))
 });
 
 router.post('/edit/:id',function(req,res,next){
