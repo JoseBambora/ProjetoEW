@@ -1,7 +1,5 @@
-$(function(){
+function buscaRua(nomeRua) {
+    var rua = nomeRua.replaceAll(' ', '_');
+    window.location.replace('/rua/' + rua);
+  }
 
-})
-
-function buscaRua(nomeRua){
-    var rua = "rua"+nomeRua.replace(" ","-")
-}
