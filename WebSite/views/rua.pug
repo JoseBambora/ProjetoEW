@@ -24,34 +24,38 @@ block content
         hr 
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Descrição
-        each p in rua.paragrafos
-            p=p
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+            each p in rua.paragrafos
+                p=p
         hr 
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Links pesquisa
         .w3-container
             h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                 b Lugares  
-            ul
-                each l in rua.lugares
-                    li
-                        a(href="/")=l
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+                ul
+                    each l in rua.lugares
+                        li
+                            a(href="/")=l
             center 
-                hr(style="width:90%")
+                hr(style="width:95%")
             h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                b Datas 
-            ul
-                each d in rua.datas
-                    li
-                        a(href="/ruas/data/"+d)=d
+                b Datas  
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+                ul
+                    each d in rua.datas
+                        li
+                            a(href="/ruas/data/"+d)=d
             center
-                hr(style="width:90%")
+                hr(style="width:95%")
             h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                b Entidades  
-            ul
-                each e in rua.entidades
-                    li
-                        a(href="/ruas/entidade/"+e.nome)=e.nome
+                b Entidades   
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+                ul
+                    each e in rua.entidades
+                        li
+                            a(href="/ruas/entidade/"+e.nome)=e.nome
         hr
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Opções  
@@ -59,5 +63,5 @@ block content
             .w3-col.m12(style="width:20%")
                 a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/edit/" + rua._id) Atualizar Rua
             .w3-col.m12(style="width:20%")
-                a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/edit/" + rua._id) Eliminar Rua
+                a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/delete/" + rua._id) Eliminar Rua
         br
