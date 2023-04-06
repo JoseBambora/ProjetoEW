@@ -16,6 +16,7 @@ db.on('open', function() {
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var ruasRouter = require('./routes/ruas');
+var datasRouter = require('./routes/datas');
 var ruaRouter = require('./routes/rua');
 var imagemRouter = require('./routes/imagem');
 var app = express();
