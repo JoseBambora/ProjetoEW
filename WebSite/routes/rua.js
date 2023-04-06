@@ -32,21 +32,27 @@ router.get('/edit/:idrua', function(req, res, next) {
     d = d.replace('T', ' ')
     Rua.getRua(req.params.idrua)
     .then(data => 
-        {
+    {
         texto = data.paragrafos.join('\n')
         res.render('ruaedit',{ rua: data, d:d, nome_rua: data._id.replaceAll('_',' '), texto: texto}); 
         console.log('Página edit rua ' + req.params.idrua)
-        })
+    })
     .catch(erro => res.render('error', {error: erro, d:d}))
 });
 
 router.post('/edit/:idrua',function(req,res,next){
+    var d = new Date().toISOString().substring(0, 16)
+    d = d.replace('T', ' ')
+    console.log('Post edit ' +req.params.idrua)
     Rua.getRua(req.params.idrua)
     .then(data => {
-        data.paragrafos = req.body.paragrafos.split('\n')
-        console.log(data)
+        request = JSON.parse(req.body.d)
+        data.paragrafos = request.paragrafos
+        data.lugares = request.lugares
+        data.datas = request.datas
+        data.entidades = request.entidades
         Rua.updateRua(data)
-        .then(_ => { getRua(req,res)})
+        .then(_ => { console.log('Rua atualizada'); res.redirect('/rua/'+req.params.idrua)})
         .catch(erro => res.render('error', {error: erro, d:d}))
     })
     .catch(erro => res.render('error', {error: erro, d:d}))
