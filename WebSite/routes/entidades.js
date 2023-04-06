@@ -7,13 +7,11 @@ router.get('/', function(req,res,next){
     var d = new Date().toISOString().substring(0, 16)
     Rua.list()
     .then(data => {
-      ruas = Rua.formatParagraphRuas(data)
+      ruas = data
       entidades = []
       for(var rua of ruas){
         const entityNames = rua.entidades.map(entity => entity.nome);
-        for (var elem of entityNames){
-            entidades.push(elem)
-        }
+        entidades = entidades.concat(entityNames);
     }
       entidades = [...new Set(entidades)];
       entidades = Array.from(entidades).map(str => str.charAt(0).toUpperCase() + str.slice(1)).sort();
