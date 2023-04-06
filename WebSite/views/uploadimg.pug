@@ -1,0 +1,33 @@
+extends template
+
+block content 
+    h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;")
+        b.w3-margin-left #{nome_rua}
+    .w3-container
+        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444") 
+            b Adicionar imagem
+        form.w3-container(action="/rua/fotos/"+rua._id method="POST" enctype="multipart/form-data")
+            p 
+                input.w3-radio(type="radio" name="epoca" value="antiga" id="antigacb")
+                label.w3-text-blue 
+                    b Antiga
+            p
+                input.w3-radio(type="radio" name="epoca" value="atual" id="atualcb")
+                label.w3-text-blue 
+                    b Atual
+            hr
+            label.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(for="myfile")
+                b Selecionar fotografia 
+            input.w3-input.w3-border.w3-ligth-grey(type="file" name="myfile" style="display:none;" id="myfile")
+            hr
+            label.w3-text-blue 
+                b Legenda 
+            input.w3-input.w3-border.w3-ligth-grey(type="text" name="desc")
+            br 
+
+            .w3-row-padding.w3-center
+                .w3-col.m12(style="width:20%")
+                    input.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(type="submit" value="Enviar imagem")
+                .w3-col.m12(style="width:20%")        
+                    a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/" + rua._id) Voltar
+        br

@@ -6,21 +6,23 @@ block content
     .w3-container
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Fotografias antigas
+        .w3-cell-row
         each f in rua.figuras_antigas
-            .w3-card-4
-                // img(src=f.path)
+            .w3-cell(style="width:" + fwan + '%')
+                img(src=f.path, style="width:100%;")
                 if f.legenda.length > 0
-                    .w3-container 
-                        h8 Legenda: #{f.legenda}
+                    .w3-container.w3-text-blue.w3-center
+                        h8 #[b Legenda]: #{f.legenda}
         hr
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Fotografias atuais
+        .w3-cell-row.w3-center
         each f in rua.figuras_atuais
-            .w3-card-4
-                // img(src=f.path)
+            .w3-cell(style="width:" + fwat + '%')
+                img(src=f.path, style="width:100%;")
                 if f.legenda.length > 0
-                    .w3-container 
-                        h8 Legenda: #{f.legenda}
+                    .w3-container.w3-text-blue.w3-center
+                        h8 #[b Legenda]: #{f.legenda}
         hr 
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Descrição
@@ -61,7 +63,7 @@ block content
             b Opções  
         .w3-row-padding.w3-center
             .w3-col.m12(style="width:20%")
-                a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/edit/" + rua._id) Atualizar Rua
+                a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/fotos/" + rua._id) Adicionar Imagem
             .w3-col.m12(style="width:20%")
-                a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/delete/" + rua._id) Eliminar Rua
+                a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/edit/" + rua._id) Atualizar Rua
         br

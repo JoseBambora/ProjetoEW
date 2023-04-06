@@ -52,4 +52,13 @@ $(function(){
             window.location.href = '/rua/' + id;         
         })
     })
+    $('#antigacb').click(function(){
+        $('#atualcb').prop('checked', false);
+        $('#antigacb').prop('checked', true);
+    })
+
+    $('#atualcb').click(function(){
+        $('#atualcb').prop('checked', true);
+        $('#antigacb').prop('checked', false);
+    })
 })

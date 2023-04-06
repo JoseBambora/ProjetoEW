@@ -1,0 +1,1 @@
+Diretoria para guardar ficheiros de imagens temporariamente
