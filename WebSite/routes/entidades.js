@@ -5,18 +5,19 @@ var Rua = require('../controllers/rua')
 
 router.get('/', function(req,res,next){
     var d = new Date().toISOString().substring(0, 16)
-    console.log("ola")
     Rua.list()
     .then(data => {
       ruas = Rua.formatParagraphRuas(data)
       entidades = []
       for(var rua of ruas){
-        eRua = rua.entidades
-        for (var e in eRua){
-            if(!(e in entidades)) entidades.push(e)}
-      }
-      console.log(entidades)
-      res.render('entidades',{entidades:entidades})
+        const entityNames = rua.entidades.map(entity => entity.nome);
+        for (var elem of entityNames){
+            entidades.push(elem)
+        }
+    }
+      entidades = [...new Set(entidades)];
+      entidades = Array.from(entidades).map(str => str.charAt(0).toUpperCase() + str.slice(1)).sort();
+      res.render('entidades',{entidades:entidades,ruas:ruas})
     })
     .catch(erro => res.render('error', {error: erro}))
 })

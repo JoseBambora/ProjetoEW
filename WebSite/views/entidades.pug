@@ -1,2 +1,24 @@
-each e in entidades
-    p=e
+extends template 
+block content
+    h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;") 
+        b.w3-margin-left Entidades registadas no sistema
+        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+            b Nome das Entidades:
+        ul.w3-ul
+        each e in entidades
+            li.w3-hover-light-blue
+                .w3-panel.w3-leftbar.w3-border-blue
+                    b
+                        a(href=`/entidade/${e}`)= e
+                    -var r=[]
+                    each rua in ruas 
+                        -var aux = rua.entidades
+                        -const regex = new RegExp(e,"i")
+                        each a in aux
+                            -nome = a.nome
+                            -if(nome.match(regex)) r.push((rua._id).replaceAll('_',' '))
+                    p Referenciado nas Ruas: 
+                        each street in r
+                            a(href=`/rua/${street.replaceAll(' ','_')}`)= street
+        
+        
