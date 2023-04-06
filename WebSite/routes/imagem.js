@@ -13,4 +13,12 @@ router.get('/atual/:imagem', function(req, res, next) {
     console.log(im)
     res.download(im)
 })
+
+router.get('/entitytypes/:imagem', function(req, res, next) {
+    im = __dirname+'/../../Data/entitytypes/'+req.params.imagem
+    console.log(im)
+    res.download(im)
+})
+
+
 module.exports = router;

@@ -6,10 +6,10 @@ block content
             b Nome das Entidades:
         ul.w3-ul
         each e in entidades
-            li.w3-hover-light-blue
+            li
                 .w3-panel.w3-leftbar.w3-border-blue
                     b
-                        a(href=`/entidade/${e}`)= e
+                        a.w3-hover-light-blue(href=`entidade/${e}`)= e
                     -var r=[]
                     each rua in ruas 
                         -var aux = rua.entidades
@@ -21,9 +21,9 @@ block content
                         - var i = 1
                         each street in r
                             if(i < r.length)
-                                a(href=`/rua/${street.replaceAll(' ','_')}`) #{street}, 
+                                a.w3-hover-light-blue(href=`/rua/${street.replaceAll(' ','_')}`) #{street}, 
                             else 
-                                a(href=`/rua/${street.replaceAll(' ','_')}`) #{street}
+                                a.w3-hover-light-blue(href=`/rua/${street.replaceAll(' ','_')}`) #{street}
                             - i+=1
         
         
