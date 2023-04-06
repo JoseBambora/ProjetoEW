@@ -18,7 +18,12 @@ block content
                             -nome = a.nome
                             -if(nome.match(regex)) r.push((rua._id).replaceAll('_',' '))
                     p Referenciado nas Ruas: 
+                        - var i = 1
                         each street in r
-                            a(href=`/rua/${street.replaceAll(' ','_')}`)= street
+                            if(i < r.length)
+                                a(href=`/rua/${street.replaceAll(' ','_')}`) #{street}, 
+                            else 
+                                a(href=`/rua/${street.replaceAll(' ','_')}`) #{street}
+                            - i+=1
         
         
