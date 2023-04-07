@@ -61,7 +61,7 @@ block content
                             b Entidades  
                     each e in rua.entidades
                         li
-                            a(href="/entidade/"+e.nome)=e.nome
+                            a(href="/entidades/entidade/"+e.nome.replaceAll(' ','_'))=e.nome
         hr
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Opções  
