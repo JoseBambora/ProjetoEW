@@ -5,21 +5,23 @@ block content
         b.w3-margin-left Editar #{nome_rua}
     form(method="POST")
         .w3-container
-            h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+            h2.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                 b Instruções
-            .w3-container 
-                h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                    b Descrição  
-                ul 
-                    li Códigos de lugar: #L(indice lugar em lugares)
-                    li Códigos de data: #D(indice data em datas)
-                    li Códigos de entidade: #E(indice entidade em entidades)
-                center 
-                    hr(style="width:95%")
-                h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                    b Entidades   
-                ul 
-                    li Entidade: nome entidade (tipo entidade)
+            .w3-container  
+                .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+                    ul.w3-ul
+                        li
+                            h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                                b Descrição 
+                        li Códigos de lugar: #L(indice lugar em lugares)
+                        li Códigos de data: #D(indice data em datas)
+                        li Códigos de entidade: #E(indice entidade em entidades)
+                ul.w3-ul
+                    .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+                        li
+                            h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                                b Entidades   
+                        li Entidade: nome entidade (tipo entidade)
         hr 
         .w3-container
             h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
@@ -33,10 +35,10 @@ block content
             h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                 b Links pesquisa
             .w3-container
-                .w3-container
-                    h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                        b Lugares  
+                .w3-container 
                     .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+                        h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                            b Lugares 
                         ol(id='listalugares',start='0')
                             each l in rua.lugares
                                 li.lugareelem=l
@@ -46,9 +48,9 @@ block content
                 center 
                     hr(style="width:95%")
                 .w3-container
-                    h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                        b Datas
                     .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+                        h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                            b Datas
                         ol(id='listadatas',start='0')
                             each d in rua.datas
                                 li.dataelem=d
@@ -58,9 +60,9 @@ block content
                 center
                     hr(style="width:95%")
                 .w3-container
-                    h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                        b Entidades
                     .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+                        h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                            b Entidades
                         ol(id='listaentidades',start='0')
                             each e in rua.entidades
                                 li.entidadeelem #{e.nome} (#{e.tipo})

@@ -24,40 +24,44 @@ block content
                     .w3-container.w3-text-blue.w3-center
                         h8 #[b Legenda]: #{f.legenda}
         hr 
-        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-            b Descrição
         .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+            p 
+                h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                    b Descrição
             each p in rua.paragrafos
                 p=p
         hr 
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Links pesquisa
         .w3-container
-            h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                b Lugares  
             .w3-panel.w3-light-grey.w3-border.w3-border-indigo
-                ul
+                ul.w3-ul
+                    li
+                        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                            b Lugares  
                     each l in rua.lugares
                         li
                             a(href="/")=l
             center 
-                hr(style="width:95%")
-            h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                b Datas  
+                hr(style="width:95%") 
             .w3-panel.w3-light-grey.w3-border.w3-border-indigo
-                ul
+                ul.w3-ul
+                    li 
+                        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                            b Datas 
                     each d in rua.datas
                         li
-                            a(href="/ruas/data/"+d)=d
+                            a(href="/data/"+d)=d
             center
-                hr(style="width:95%")
-            h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                b Entidades   
+                hr(style="width:95%") 
             .w3-panel.w3-light-grey.w3-border.w3-border-indigo
-                ul
+                ul.w3-ul
+                    li
+                        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                            b Entidades  
                     each e in rua.entidades
                         li
-                            a(href="/ruas/entidade/"+e.nome)=e.nome
+                            a(href="/entidade/"+e.nome)=e.nome
         hr
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Opções  
@@ -66,4 +70,6 @@ block content
                 a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/fotos/" + rua._id) Adicionar Imagem
             .w3-col.m12(style="width:20%")
                 a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/edit/" + rua._id) Atualizar Rua
+            .w3-col.m12(style="width:20%")
+                a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/add/") Criar Rua
         br

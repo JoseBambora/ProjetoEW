@@ -61,4 +61,25 @@ $(function(){
         $('#atualcb').prop('checked', true);
         $('#antigacb').prop('checked', false);
     })
+
+    $('#btnSubmitRua').click(function()
+    {
+        event.preventDefault();
+        id = $('#id').val().replaceAll(' ','_')
+        data = {
+            _id:id,
+            figuras_antigas: [],
+            figuras_atuais: [],
+            paragrafos : [],
+            lugares: [],
+            datas: [],
+            entidades: []
+        }
+        console.log(data)
+        send = {d: JSON.stringify(data)}
+        url = 'http://localhost:7777/rua/add/'
+        $.post(url,send,function(response){
+            window.location.href = '/ruas/';         
+        })
+    })
 })

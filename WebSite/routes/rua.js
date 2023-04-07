@@ -13,6 +13,26 @@ function getDate()
     return d
 }
 
+
+
+
+router.get('/add/', (req, res, next)=>{
+    var d = getDate()
+    res.render('ruaform',{d:d})
+})
+
+router.post("/add/", (req, res, next)=>{
+    var d = getDate()
+    request = JSON.parse(req.body.d)
+    Rua.insertRua(request)
+    .then(data => 
+    {
+        res.redirect('/ruas/')
+    })
+    .catch(erro => res.render('error', {error: erro, d:d}))
+
+})
+
 function getRua(req,res)
 {
     var d = getDate()
@@ -111,6 +131,6 @@ router.post("/fotos/:idrua", upload.single('myfile'), (req, res)=>{
         updateRua(data,d)    
     })
     .catch(erro => res.render('error', {error: erro, d:d}))
-  })
+})
 
 module.exports = router;

@@ -1,0 +1,15 @@
+extends template
+
+block content 
+    h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;")
+        b.w3-margin-left Criar rua
+    form(method="POST")
+        .w3-container
+            h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                b Nome da rua
+            input.w3-input.w3-border.w3-border-indigo(type="text",id='id')
+        p
+        .w3-row-padding.w3-center
+            .w3-col.m12(style="width:20%")
+                button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnSubmitRua") Inserir Rua
+        br
