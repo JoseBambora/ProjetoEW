@@ -55,7 +55,7 @@ function getRua(req,res)
     .catch(erro => res.render('error', {error: erro, d:d}))
 }
 
-function updateRua(data, d)
+function updateRua(data, d,res)
 {
     Rua.updateRua(data)
     .then(_ => { console.log('Rua atualizada'); res.redirect('/rua/'+req.params.idrua)})
@@ -87,9 +87,10 @@ router.post('/edit/:idrua',function(req,res,next){
         request = JSON.parse(req.body.d)
         data.paragrafos = request.paragrafos
         data.lugares = request.lugares
+        console.log(request.lugares)
         data.datas = request.datas
         data.entidades = request.entidades
-        updateRua(data,d)
+        updateRua(data,d,res)
     })
     .catch(erro => res.render('error', {error: erro, d:d}))
 })
