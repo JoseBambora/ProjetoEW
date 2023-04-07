@@ -88,4 +88,21 @@ module.exports.deleteRua = id => {
     return Rua.deleteOne({_id: id})
 }
  
-
+module.exports.getNomeEntidades = () => {
+    return this.list()
+      .then(data => {
+        ruas = data
+        entidades = []
+        for(var rua of ruas){
+          const entityNames = rua.entidades.map(entity => entity.nome);
+          entidades = entidades.concat(entityNames);
+        }
+        entidades = Array.from(entidades).map(str => str.charAt(0).toUpperCase() + str.slice(1)).sort();
+        entidades = [...new Set(entidades)];
+        return entidades
+      })
+      .catch(erro => {
+        throw erro;
+      })
+  }
+  
