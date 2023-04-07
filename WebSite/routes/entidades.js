@@ -26,8 +26,9 @@ router.get('/entidade/:entidade', function(req, res, next) {
           for (var e of rua.entidades) {
             const regex = new RegExp("^"+entidade["nome"]+"$", "i");
             if (e["nome"].match(regex)) {
+              entidade["nome"]=e["nome"].charAt(0).toUpperCase() + e["nome"].slice(1)
               entidade["tipo"] = e["tipo"]
-              r.push(rua._id.replace("-"," "))
+              r.push(rua._id.replace(" ","_"))
               f = true
               break;
             }
