@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
   // Página inicial
   var d = new Date().toISOString().substring(0, 16)
   Rua.list()
-  .then(data => res.render('template',{d:d}))
+  .then(data => res.render('index',{d:d}))
   .catch(erro => res.json(erro))
 })
 

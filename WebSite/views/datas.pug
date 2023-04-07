@@ -1,0 +1,20 @@
+extends template 
+block content
+    h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;") 
+        b.w3-margin-left Datas registadas no sistema
+        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+            b Datas:
+        ul.w3-ul
+        each d in datas
+            li.w3-hover-light-blue
+                .w3-panel.w3-leftbar.w3-border-blue
+                    b
+                        a(href=`/data/${d}`)= d
+                    p Referenciado nas Ruas:
+                    ul
+                        each r in ruas.filter(r => r.datas.includes(d))
+                            li
+                                a(href=`/rua/${r._id}`)= r._id.replaceAll('_', ' ')
+                                
+                           
+                
