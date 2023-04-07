@@ -5,22 +5,26 @@ block content
     .w3-center
         p Nesta página estão listadas todas as entidades presentes no nosso sistema, se clicar no nome de uma entidade será redirecionado para uma nova página com informação individual da mesma.
         p Caso pretanda aceder diretamente à pagina de uma entidade registada no sistema utilize a barra de pesquisas.
-        label.w3-text-blue(for="nomeEntidade") Pesquisar Rua
+        label.w3-text-blue(for="nomeEntidade") Pesquisar Entidades
         input.w3-input.w3-border(type="text" placeholder="Nome da Entidade" id="nomeEntidade" name="nomeEntidade")
         button.w3-btn.w3-blue(onclick="buscaEntidade($('#nomeEntidade').val())") Submeter Pesquisa
     br
     h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-        b Nome das Entidades:
-    ul.w3-ul
+        b Nome das Entidades registadas:
+    ul.w3-ul.w3-card-4
     each e in entidades
-        li
+        li.w3-bar
             .w3-panel.w3-leftbar.w3-border-blue
+                if e["tipo"] == "pessoa" || e["tipo"] == "instituição"  || e["tipo"] == "empresa"
+                    img(src="../../Data/entitytypes/"+e["tipo"]+".png", class="w3-bar-item w3-circle", style="width:85px")
+                else
+                    img(src="../../Data/entitytypes/outro.png", class="w3-bar-item w3-circle", style="width:85px")
                 b
-                    a.w3-hover-light-blue(href=`entidade/${e.replaceAll(' ','_')}`)= e
+                    a.w3-hover-light-blue(href=`entidade/${e["nome"].replaceAll(' ','_')}`)= e["nome"]
                 -var r=[]
                 each rua in ruas 
                     -var aux = rua.entidades
-                    -const regex = new RegExp(e,"i")
+                    -const regex = new RegExp(e["nome"],"i")
                     each a in aux
                         -nome = a.nome
                         -if(nome.match(regex)) r.push((rua._id).replaceAll('_',' '))

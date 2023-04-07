@@ -106,3 +106,25 @@ module.exports.getNomeEntidades = () => {
       })
   }
   
+  module.exports.getEntidades = () => {
+    return this.list()
+      .then(data => {
+        ruas = data
+        entidades = []
+        for(var rua of ruas){
+          for(entidade of rua.entidades){
+            e={}
+            e["nome"] = entidade["nome"].charAt(0).toUpperCase() + entidade["nome"].slice(1)
+            e["tipo"] = entidade["tipo"]
+            if(!entidades.some(x => x.nome === e.nome)){
+                entidades.push(e)
+            }
+          }
+        }
+        entidades.sort((a, b) => a.nome.localeCompare(b.nome))
+        return entidades
+      })
+      .catch(erro => {
+        throw erro;
+      })
+  }
