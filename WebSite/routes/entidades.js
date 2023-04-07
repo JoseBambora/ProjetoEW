@@ -7,7 +7,6 @@ router.get('/', function(req,res,next){
     var d = new Date().toISOString().substring(0, 16)
     Rua.getEntidades()
     .then(data => {
-      console.log(data)
       res.render('entidades',{entidades:data,ruas:ruas,d:d})
     })
     .catch(erro => res.render('error', {error: erro,d:d}))
