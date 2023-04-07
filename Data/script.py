@@ -44,6 +44,8 @@ def trata_entidades(para,entidades,eid):
         text = entidade.text
         text = re.sub('^\s*','',text)
         text = re.sub('\s*$','',text)
+        text = re.sub('\n','',text)
+        text = re.sub(r' {2,}',' ',text)
         if text not in eid:
             e = {}
             e['nome'] = text

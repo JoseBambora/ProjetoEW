@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
     ruas = Rua.formatParagraphRuas(data)
     res.render('ruas',{ruas:ruas,d:d})
   })
-  .catch(erro => res.render('error', {error: erro}))
+  .catch(erro => res.render('error', {error: erro,d:d}))
 });
 
 router.get('/data/:data', function(req,res,next){

@@ -1,0 +1,46 @@
+extends template 
+block content
+    h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;") 
+        b.w3-margin-left Pagina da entidade #{entidade.nome}
+    .w3-container
+        .w3-cell(style="width:40%")
+            .w3-container
+                if entidade.tipo == "pessoa" || entidade.tipo == "instituição"  || entidade.tipo == "empresa"
+                    img(src="../../Data/entitytypes/"+entidade.tipo+".png", style="width:250px; height:250px;")
+                    .w3-text-blue.w3-center
+                        h8=entidade.tipo.slice(0,1).toUpperCase() + entidade.tipo.slice(1)
+                else
+                    img(src="../../Data/entitytypes/outro.png", style="width:250px; height:250px;")
+                    .w3-text-blue.w3-center
+                        if entidade.tipo
+                            h8=entidade.tipo.slice(0,1).toUpperCase() + entidade.tipo.slice(1)
+                        else
+                            h8 Outro
+        .w3-cell(style="width:60")
+            br
+            br
+            br
+            h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                b Nome da Entidade: 
+                span.w3-text-black(style="display:inline;")=entidade.nome
+            h3.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                p
+                    span.w3-text-black(style="display:inline;") Tipo de entidade: 
+                    if entidade.tipo
+                        span.w3-text-black(style="display:inline;")=entidade.tipo.slice(0,1).toUpperCase() + entidade.tipo.slice(1)
+                    else
+                        span.w3-text-black(style="display:inline;") Outro
+                p Referenciado na descrição de #{ruas.length} rua/s
+        .w3-container.w3-center
+            h3.w3-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                b Lista de Ruas em que é referenciado/a:
+                br
+            h3.w3-text-black.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                -ruas.sort()
+                ul.w3-ul
+                    each r in ruas 
+                        li
+                            a(href=`/rua/${r}`) #{r.replaceAll('_',' ')}
+            br
+            a.w3-btn.w3-blue.w3-hover-light-blue(href="/entidades/") Voltar
+                
