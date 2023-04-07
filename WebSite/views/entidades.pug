@@ -2,28 +2,35 @@ extends template
 block content
     h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;") 
         b.w3-margin-left Entidades registadas no sistema
-        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-            b Nome das Entidades:
-        ul.w3-ul
-        each e in entidades
-            li
-                .w3-panel.w3-leftbar.w3-border-blue
-                    b
-                        a.w3-hover-light-blue(href=`entidade/${e.replaceAll(' ','_')}`)= e
-                    -var r=[]
-                    each rua in ruas 
-                        -var aux = rua.entidades
-                        -const regex = new RegExp(e,"i")
-                        each a in aux
-                            -nome = a.nome
-                            -if(nome.match(regex)) r.push((rua._id).replaceAll('_',' '))
-                    p Referenciado nas Ruas: 
-                        - var i = 1
-                        each street in r
-                            if(i < r.length)
-                                a.w3-hover-light-blue(href=`/rua/${street.replaceAll(' ','_')}`) #{street}, 
-                            else 
-                                a.w3-hover-light-blue(href=`/rua/${street.replaceAll(' ','_')}`) #{street}
-                            - i+=1
-        
-        
+    .w3-center
+        p Nesta página estão listadas todas as entidades presentes no nosso sistema, se clicar no nome de uma entidade será redirecionado para uma nova página com informação individual da mesma.
+        p Caso pretanda aceder diretamente à pagina de uma entidade registada no sistema utilize a barra de pesquisas.
+        label.w3-text-blue(for="nomeEntidade") Pesquisar Rua
+        input.w3-input.w3-border(type="text" placeholder="Nome da Entidade" id="nomeEntidade" name="nomeEntidade")
+        button.w3-btn.w3-blue(onclick="buscaEntidade($('#nomeEntidade').val())") Submeter Pesquisa
+    br
+    h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+        b Nome das Entidades:
+    ul.w3-ul
+    each e in entidades
+        li
+            .w3-panel.w3-leftbar.w3-border-blue
+                b
+                    a.w3-hover-light-blue(href=`entidade/${e.replaceAll(' ','_')}`)= e
+                -var r=[]
+                each rua in ruas 
+                    -var aux = rua.entidades
+                    -const regex = new RegExp(e,"i")
+                    each a in aux
+                        -nome = a.nome
+                        -if(nome.match(regex)) r.push((rua._id).replaceAll('_',' '))
+                p Referenciado nas Ruas: 
+                    - var i = 1
+                    each street in r
+                        if(i < r.length)
+                            a.w3-hover-light-blue(href=`/rua/${street.replaceAll(' ','_')}`) #{street}, 
+                        else 
+                            a.w3-hover-light-blue(href=`/rua/${street.replaceAll(' ','_')}`) #{street}
+                        - i+=1
+    
+    
