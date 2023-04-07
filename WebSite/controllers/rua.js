@@ -87,3 +87,5 @@ module.exports.updateRua = rua => {
 module.exports.deleteRua = id => {
     return Rua.deleteOne({_id: id})
 }
+ 
+
