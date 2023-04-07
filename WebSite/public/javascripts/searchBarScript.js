@@ -3,8 +3,8 @@ function buscaRua(nomeRua) {
     window.location.replace('/rua/' + rua);
   }
 
-  function buscaEntidade(nomeEntidade) {
-    var rua = nomeEntidade.replaceAll(' ', '_');
-    window.location.replace('/entidades/entidade/' + rua);
-  }
+function buscaEntidade(nomeEntidade) {
+  var entidade = nomeEntidade.replaceAll(' ', '_');
+  window.location.replace('/entidades/entidade/' + entidade);
+}
 
