@@ -9,7 +9,7 @@ block content
             li
                 .w3-panel.w3-leftbar.w3-border-blue
                     b
-                        a.w3-hover-light-blue(href=`entidade/${e}`)= e
+                        a.w3-hover-light-blue(href=`entidade/${e.replaceAll(' ','_')}`)= e
                     -var r=[]
                     each rua in ruas 
                         -var aux = rua.entidades

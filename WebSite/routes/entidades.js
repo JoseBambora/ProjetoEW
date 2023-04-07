@@ -25,7 +25,7 @@ router.get('/entidade/:entidade', function(req, res, next) {
     var d = new Date().toISOString().substring(0, 16);
     var entidade = {}
     var r = []
-    entidade["nome"] = req.params.entidade
+    entidade["nome"] = req.params.entidade.replaceAll("_"," ")
     Rua.list()
       .then(data => {
         var ruas = data;
