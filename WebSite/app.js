@@ -36,6 +36,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/ruas', ruasRouter);
 app.use('/rua', ruaRouter);
+app.use('/datas', datasRouter);
 app.use('/entidades', entidadesRouter);
 app.use('/Data', imagemRouter);
 
