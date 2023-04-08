@@ -1,11 +1,8 @@
 const Rua = require('../models/rua')
 
-function formatRua(rua) {
+function formatAux(pars,lugares,datas,entidades)
+{
     parares = []
-    datas = rua.datas
-    entidades = rua.entidades
-    lugares = rua.lugares
-    pars = rua.paragrafos
     for(var par of pars)
     {
         sub = par
@@ -35,7 +32,19 @@ function formatRua(rua) {
         }
         parares.push(sub)
     }
-    rua.paragrafos = parares
+    return parares
+}
+
+function formatRua(rua) {
+    datas = rua.datas
+    entidades = rua.entidades
+    lugares = rua.lugares
+    pars = rua.paragrafos
+    rua.paragrafos = formatAux(pars,lugares,datas,entidades)
+    for(var c of rua.casas)
+    {
+        c.desc = formatAux(c.desc,lugares,datas,entidades)
+    }
     rua.lugares = [...new Set(rua.lugares)].sort()
     rua.datas = [...new Set(rua.datas)].sort()
     rua.entidades = rua.entidades.sort((e1,e2) => e1.nome.localeCompare(e2.nome))

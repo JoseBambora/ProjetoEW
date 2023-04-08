@@ -24,17 +24,32 @@ block content
                     .w3-container.w3-text-blue.w3-center
                         h8 #[b Legenda]: #{f.legenda}
         hr 
-        .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
             p 
                 h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                     b Descrição
             each p in rua.paragrafos
                 p=p
         hr 
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+            p 
+                h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                    b Lista casas   
+                ul.w3-ul.w3-card-4
+                    each c in rua.casas
+                        li.w3-bar
+                            .w3-panel.w3-leftbar.w3-border-blue
+                                p #[b Número: #{c.num}] 
+                                if c.enfiteuta.length > 0
+                                    p Enfiteuta: #{c.enfiteuta.slice(0,30)} 
+                                if c.foro.length > 0
+                                    p Foro: #{c.foro.slice(0,30)}
+                                p Descrição: #{c.desc.join('\n')}
+        hr
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Links pesquisa
         .w3-container
-            .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
                 ul.w3-ul
                     li
                         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
@@ -44,7 +59,7 @@ block content
                             a(href="/")=l
             center 
                 hr(style="width:95%") 
-            .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
                 ul.w3-ul
                     li 
                         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
@@ -54,7 +69,7 @@ block content
                             a(href="/data/"+d)=d
             center
                 hr(style="width:95%") 
-            .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
                 ul.w3-ul
                     li
                         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")

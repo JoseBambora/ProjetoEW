@@ -19,6 +19,7 @@ $(function(){
     }
     function validaInfo(data, join)
     {
+        console.log(join)
         let ll = data.lugares.length
         let ld = data.datas.length
         let le = data.entidades.length
@@ -160,6 +161,8 @@ $(function(){
         lug = [...$('.lugareelem')].map(e => e.innerText.replace(expL2,''))
         dat = [...$('.dataelem')].map(e => e.innerText.replace(expD2,''))
         ent = [...$('.entidadeelem')].map(e => { s = e.innerText.replace(expE2,'').split('('); return { nome: s[0], tipo: s[1].slice(0,-1)}})
+        casas = [...$('.casaatrib')].map(c => {return {num: c.querySelector('.num').value,enfiteuta:c.querySelector('.enfiteuta').value,foro:c.querySelector('.foro').value,desc:c.querySelector('.desc').value.split('\n')}})
+        console.log(casas)
         console.log(lug)
         console.log(dat)
         console.log(ent)
@@ -168,9 +171,10 @@ $(function(){
             paragrafos : par,
             lugares: lug,
             datas: dat,
-            entidades: ent
+            entidades: ent,
+            casas: casas
         }
-        let mensagemerro = validaInfo(data,$("#paragrafos").val())
+        let mensagemerro = validaInfo(data,$("#paragrafos").val() + '\n'+ casas.map(c => c.desc.join('\n')).join('\n'))
         if(mensagemerro.length == 0)
         {
             send = {d: JSON.stringify(data)}

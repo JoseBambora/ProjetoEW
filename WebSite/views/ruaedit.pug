@@ -33,11 +33,24 @@ block content
                 b Descrição
             textarea.w3-input.w3-border.w3-border-indigo(type="text",id="paragrafos",rows=rua.paragrafos.length*3/2)=texto
             hr 
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+                p 
+                    h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                        b Lista casas   
+                    ul.w3-ul.w3-card-4
+                        each c in rua.casas
+                            li.w3-bar.casaatrib
+                                .w3-panel.w3-leftbar.w3-border-blue
+                                    p #[b Número: #[input.w3-input.w3-border.w3-border-indigo.num(type="text",value=c.num readonly)]] 
+                                    p Enfiteuta: #[input.w3-input.w3-border.w3-border-indigo.enfiteuta(type="text",value=c.enfiteuta)] 
+                                    p Foro: #[input.w3-input.w3-border.w3-border-indigo.foro(type="text",value=c.foto)]
+                                    p Descrição: #[textarea.w3-input.w3-border.w3-border-indigo.desc(type="text")=c.desc.join('\n')]
+            hr 
             h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                 b Links pesquisa
             .w3-container
                 .w3-container 
-                    .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+                    .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
                         h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                             b Lugares 
                         ul.w3-ul(id='listalugares',start='0')
@@ -65,7 +78,7 @@ block content
                 center 
                     hr(style="width:95%")
                 .w3-container
-                    .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+                    .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
                         h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                             b Datas
                         ul.w3-ul(id='listadatas',start='0')
@@ -93,7 +106,7 @@ block content
                 center
                     hr(style="width:95%")
                 .w3-container
-                    .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+                    .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
                         h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                             b Entidades
                         ul.w3-ul(id='listaentidades',start='0')

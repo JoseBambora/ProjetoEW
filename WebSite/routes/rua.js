@@ -87,9 +87,9 @@ router.post('/edit/:idrua',function(req,res,next){
         request = JSON.parse(req.body.d)
         data.paragrafos = request.paragrafos
         data.lugares = request.lugares
-        console.log(request.lugares)
         data.datas = request.datas
         data.entidades = request.entidades
+        data.casas = request.casas
         updateRua(data,d,res)
     })
     .catch(erro => res.render('error', {error: erro, d:d}))

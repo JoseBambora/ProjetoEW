@@ -10,6 +10,13 @@ var entidadeSchema = new mongoose.Schema({
     tipo: String
 })
 
+var casaSchema = new mongoose.Schema({
+    num: String,
+    enfiteuta: String,
+    foro: String,
+    desc: [String]
+})
+
 var ruaSchema = new mongoose.Schema({
     _id : String,
     figuras_antigas: [figuraSchema],
@@ -17,7 +24,8 @@ var ruaSchema = new mongoose.Schema({
     paragrafos: [String],
     datas: [String],
     lugares: [String],
-    entidades: [entidadeSchema]
+    entidades: [entidadeSchema],
+    casas: [casaSchema]
     
 })
 
