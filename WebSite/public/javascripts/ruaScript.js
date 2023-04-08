@@ -9,6 +9,7 @@ $(function(){
     let selectedlilugar = 'selectedlilugars'
     let selectedlidata = 'selectedlidata'
     let selectedlientidade = 'selectedlientidade'
+    let selectedlicasa = 'selectedlicasa'
     let ee = 'entidadeelem'
     let de = 'dataelem'
     let le = 'lugareelem'
@@ -276,5 +277,28 @@ $(function(){
     })
     $('.entidadeelem').click(function(){
         selectFun(this,selectedlientidade)
+    })
+    $('.casaatrib').click(function(){
+        selectFun(this,selectedlicasa)
+    })
+    $('#btnncasa').click(function(){
+        event.preventDefault();
+        var casanum = $('#novacasa').val()
+        if(casanum.length > 0)
+        {
+            pnum = '<p> Número: <input class="w3-input w3-border w3-border-indigo num" type="text" value='+casanum+' readonly></input></p>'
+            penf = '<p> Enfiteuta: <input class="w3-input w3-border w3-border-indigo enfiteuta" type="text"></input></p>'
+            pfor = '<p> Foro: <input class="w3-input w3-border w3-border-indigo foro" type="text"></input></p>'
+            pdes = '<p> Descrição:<input class="w3-input w3-border w3-border-indigo desc" type="text"></input></p>'
+            elem = '<div class="w3-panel w3-leftbar w3-border-blue">'+pnum+penf+pfor+pdes+'</div>'
+            $('#listacasas').append('<li class="casaatrib w3-bar">'+elem+'</li>')
+            $('#novacasa').val("")
+            $('#listacasas').on('click', '.casaatrib', function() {selectFun(this, selectedlicasa);});
+        
+        }
+    })
+    $('#btnCasaElimina').click(function(){
+        event.preventDefault();
+        $('.'+selectedlicasa).remove()
     })
 })

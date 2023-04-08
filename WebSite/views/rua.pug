@@ -35,7 +35,7 @@ block content
             p 
                 h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                     b Lista casas   
-                ul.w3-ul.w3-card-4
+                ul.w3-ul
                     each c in rua.casas
                         li.w3-bar
                             .w3-panel.w3-leftbar.w3-border-blue
@@ -56,7 +56,7 @@ block content
                             b Lugares  
                     each l in rua.lugares
                         li
-                            a(href="/")=l
+                            a(href="/rua/"+l.replaceAll(' ','_'))=l
             center 
                 hr(style="width:95%") 
             .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
