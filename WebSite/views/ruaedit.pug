@@ -8,21 +8,20 @@ block content
         .w3-container
             h2.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                 b Instruções
-            .w3-container
-                .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
-                    ul.w3-ul
-                        li
-                            h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                                b Descrição 
-                        li Códigos de lugar: #L(indice lugar em lugares)
-                        li Códigos de data: #D(indice data em datas)
-                        li Códigos de entidade: #E(indice entidade em entidades)
-                .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
-                    ul.w3-ul
-                        li
-                            h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                                b Entidades   
-                        li Entidade: nome entidade (tipo entidade)
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+                ul.w3-ul
+                    li
+                        h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                            b Descrição 
+                    li Códigos de lugar: #L(indice lugar em lugares)
+                    li Códigos de data: #D(indice data em datas)
+                    li Códigos de entidade: #E(indice entidade em entidades)
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+                ul.w3-ul
+                    li
+                        h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                            b Entidades   
+                    li Entidade: nome entidade (tipo entidade)
         hr 
         .w3-container
             .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
@@ -37,124 +36,118 @@ block content
                 textarea.w3-input.w3-border.w3-border-indigo(type="text",id="paragrafos",rows=rua.paragrafos.length*3/2)=texto
                 br
             hr 
-            .w3-container
-                .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
-                    p 
-                        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                            b Lista casas   
-                        ul.w3-ul(id="listacasas")
-                            each c in rua.casas
-                                li.w3-bar.casaatrib
-                                    .w3-panel.w3-leftbar.w3-border-blue
-                                        p Número: #[input.w3-input.w3-border.w3-border-indigo.num(type="text",value=c.num readonly)]
-                                        p Enfiteuta: #[input.w3-input.w3-border.w3-border-indigo.enfiteuta(type="text",value=c.enfiteuta)] 
-                                        p Foro: #[input.w3-input.w3-border.w3-border-indigo.foro(type="text",value=c.foto)]
-                                        p Descrição: #[textarea.w3-input.w3-border.w3-border-indigo.desc(type="text")=c.desc.join('\n')]
-                    .w3-row-padding.w3-left-align
-                        .w3-col.m12(style="width:65%")
-                            input.w3-input.w3-border.w3-border-indigo(type="text" placeholder="Insira número" id="novacasa")
-                        .w3-col.m12(style="width:20%")
-                            button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnncasa") Adicionar Casa
-                        .w3-col.m12(style="width:5%")
-                            button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnCasaElimina") 
-                                span 
-                                    b &#10005;
-                    br
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+                p 
+                    h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                        b Lista casas   
+                    ul.w3-ul(id="listacasas")
+                        each c in rua.casas
+                            li.w3-bar.casaatrib
+                                .w3-panel.w3-leftbar.w3-border-blue
+                                    p Número: #[input.w3-input.w3-border.w3-border-indigo.num(type="text",value=c.num readonly)]
+                                    p Enfiteuta: #[input.w3-input.w3-border.w3-border-indigo.enfiteuta(type="text",value=c.enfiteuta)] 
+                                    p Foro: #[input.w3-input.w3-border.w3-border-indigo.foro(type="text",value=c.foto)]
+                                    p Descrição: #[textarea.w3-input.w3-border.w3-border-indigo.desc(type="text")=c.desc.join('\n')]
+                .w3-row-padding.w3-left-align
+                    .w3-col.m12(style="width:65%")
+                        input.w3-input.w3-border.w3-border-indigo(type="text" placeholder="Insira número" id="novacasa")
+                    .w3-col.m12(style="width:20%")
+                        button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnncasa") Adicionar Casa
+                    .w3-col.m12(style="width:5%")
+                        button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnCasaElimina") 
+                            span 
+                                b &#10005;
+                br
             hr 
             h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                 b Links pesquisa
-            .w3-container
-                .w3-container 
-                    .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
-                        h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                            b Lugares 
-                        ul.w3-ul(id='listalugares')
-                            - var i = 0
-                            each l in rua.lugares
-                                li.lugareelem(id="L"+i) #L#{i}: #{l} 
-                                - i+=1
-                        br
-                        .w3-row-padding
-                            .w3-col.m12(style="width:65%")
-                                input.w3-input.w3-border.w3-border-indigo(type="text" placeholder="Insira Lugar" id="novolugar")
-                            .w3-col.m12(style="width:20%")
-                                button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnnlugar") Adicionar Lugar   
-                            .w3-col.m12(style="width:5%")
-                                button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnLugElimina") 
-                                    span 
-                                        b &#10005;
-                            .w3-col.m12(style="width:5%")
-                                button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnLugSobe") 
-                                    span 
-                                        b &mapstoup;
-                            .w3-col.m12(style="width:5%")
-                                button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnLugDesce") 
-                                    span 
-                                        b &mapstodown;
-                        br
-                center 
-                    hr(style="width:95%")
-                .w3-container
-                    .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
-                        h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                            b Datas
-                        ul.w3-ul(id='listadatas')
-                            -var i = 0
-                            each d in rua.datas
-                                li.dataelem(id="D"+i) #D#{i}: #{d}
-                                - i+=1 
-                        br
-                        .w3-row-padding.w3-left-align
-                            .w3-col.m12(style="width:65%")
-                                input.w3-input.w3-border.w3-border-indigo(type="text" placeholder="Insira Data" id="novadata")
-                            .w3-col.m12(style="width:20%")
-                                button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnndata") Adicionar Data
-                            .w3-col.m12(style="width:5%")
-                                button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnDatElimina") 
-                                    span 
-                                        b &#10005;
-                            .w3-col.m12(style="width:5%")
-                                button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnDatSobe") 
-                                    span 
-                                        b &mapstoup;
-                            .w3-col.m12(style="width:5%")
-                                button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnDatDesce") 
-                                    span 
-                                        b &mapstodown;
-                        br
-                center
-                    hr(style="width:95%")
-                .w3-container
-                    .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
-                        h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                            b Entidades
-                        ul.w3-ul(id='listaentidades')
-                            -var i = 0
-                            each e in rua.entidades
-                                li.entidadeelem(id="E"+i) #E#{i}: #{e.nome} (#{e.tipo})
-                                - i+=1   
-                        br                
-                        .w3-row-padding.w3-left-align
-                            .w3-col.m12(style="width:65%")
-                                input.w3-input.w3-border.w3-border-indigo(type="text" placeholder="Insira Entidade"  id="novaentidade")
-                            .w3-col.m12(style="width:20%")
-                                button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnnentidade") Adicionar Entidade
-                            .w3-col.m12(style="width:5%")
-                                button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnEntElimina") 
-                                    span 
-                                        b &#10005;
-                            .w3-col.m12(style="width:5%")
-                                button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnEntSobe") 
-                                    span 
-                                        b &mapstoup;
-                            .w3-col.m12(style="width:5%")
-                                button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnEntDesce") 
-                                    span 
-                                        b &mapstodown;
-                        br
-                    
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+                h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                    b Lugares 
+                ul.w3-ul(id='listalugares')
+                    - var i = 0
+                    each l in rua.lugares
+                        li.lugareelem(id="L"+i) #L#{i}: #{l} 
+                        - i+=1
+                br
+                .w3-row-padding
+                    .w3-col.m12(style="width:65%")
+                        input.w3-input.w3-border.w3-border-indigo(type="text" placeholder="Insira Lugar" id="novolugar")
+                    .w3-col.m12(style="width:20%")
+                        button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnnlugar") Adicionar Lugar   
+                    .w3-col.m12(style="width:5%")
+                        button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnLugElimina") 
+                            span 
+                                b &#10005;
+                    .w3-col.m12(style="width:5%")
+                        button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnLugSobe") 
+                            span 
+                                b &mapstoup;
+                    .w3-col.m12(style="width:5%")
+                        button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnLugDesce") 
+                            span 
+                                b &mapstodown;
+                br
+            center 
+                hr(style="width:95%")
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+                h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                    b Datas
+                ul.w3-ul(id='listadatas')
+                    -var i = 0
+                    each d in rua.datas
+                        li.dataelem(id="D"+i) #D#{i}: #{d}
+                        - i+=1 
+                br
+                .w3-row-padding.w3-left-align
+                    .w3-col.m12(style="width:65%")
+                        input.w3-input.w3-border.w3-border-indigo(type="text" placeholder="Insira Data" id="novadata")
+                    .w3-col.m12(style="width:20%")
+                        button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnndata") Adicionar Data
+                    .w3-col.m12(style="width:5%")
+                        button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnDatElimina") 
+                            span 
+                                b &#10005;
+                    .w3-col.m12(style="width:5%")
+                        button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnDatSobe") 
+                            span 
+                                b &mapstoup;
+                    .w3-col.m12(style="width:5%")
+                        button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnDatDesce") 
+                            span 
+                                b &mapstodown;
+                br
+            center
+                hr(style="width:95%")
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+                h4.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                    b Entidades
+                ul.w3-ul(id='listaentidades')
+                    -var i = 0
+                    each e in rua.entidades
+                        li.entidadeelem(id="E"+i) #E#{i}: #{e.nome} (#{e.tipo})
+                        - i+=1   
+                br                
+                .w3-row-padding.w3-left-align
+                    .w3-col.m12(style="width:65%")
+                        input.w3-input.w3-border.w3-border-indigo(type="text" placeholder="Insira Entidade"  id="novaentidade")
+                    .w3-col.m12(style="width:20%")
+                        button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnnentidade") Adicionar Entidade
+                    .w3-col.m12(style="width:5%")
+                        button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnEntElimina") 
+                            span 
+                                b &#10005;
+                    .w3-col.m12(style="width:5%")
+                        button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnEntSobe") 
+                            span 
+                                b &mapstoup;
+                    .w3-col.m12(style="width:5%")
+                        button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnEntDesce") 
+                            span 
+                                b &mapstodown;
+                br
             hr
-            .w3-container
+            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
                 h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                     b Opções  
                 .w3-row-padding.w3-center
@@ -162,4 +155,4 @@ block content
                         button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="btnSubmitEditRua") Submeter
                     .w3-col.m12(style="width:20%")        
                         a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/" + rua._id) Voltar
-            br
+                br

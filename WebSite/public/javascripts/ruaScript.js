@@ -13,6 +13,32 @@ $(function(){
     let ee = 'entidadeelem'
     let de = 'dataelem'
     let le = 'lugareelem'
+    function getMapa()
+    {
+        let streetname = $('#nome_rua')[0].textContent
+        const countryname = 'Portugal'
+        const cityname = 'Braga';
+        const query = `${streetname}, ${cityname}, ${countryname}`;
+        const url = `https://nominatim.openstreetmap.org/search?q=${query}&format=json`;
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.onload = () => 
+        {
+            console.log(streetname)
+            if (xhr.status === 200) 
+            {
+                const response = JSON.parse(xhr.responseText);
+                if (response.length > 0) 
+                {
+                    const lat = response[0].lat;
+                    const lon = response[0].lon;
+                    $('#linkrua').attr("href",`https://www.openstreetmap.org/#map=17/${lat}/${lon}`);
+                }
+            }
+        };
+        xhr.send();
+    }
+    getMapa()
     function matchAuxiliar(join,exp)
     {
         res = join.match(exp)

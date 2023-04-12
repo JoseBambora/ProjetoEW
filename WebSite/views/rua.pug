@@ -2,7 +2,7 @@ extends template
 
 block content 
     h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;")
-        b.w3-margin-left #{nome_rua}
+        b.w3-margin-left(id="nome_rua") #{nome_rua}
     .w3-container
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Fotografias antigas
@@ -48,43 +48,45 @@ block content
         hr
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Links pesquisa
-        .w3-container
-            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
-                ul.w3-ul
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+            ul.w3-ul
+                li
+                    h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                        b Lugares  
+                each l in rua.lugares
                     li
-                        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                            b Lugares  
-                    each l in rua.lugares
-                        li
-                            a(href="/rua/"+l.replaceAll(' ','_'))=l
-            center 
-                hr(style="width:95%") 
-            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
-                ul.w3-ul
-                    li 
-                        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                            b Datas 
-                    each d in rua.datas
-                        li
-                            a(href="/data/"+d)=d
-            center
-                hr(style="width:95%") 
-            .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
-                ul.w3-ul
+                        a(href="/rua/"+l.replaceAll(' ','_'))=l
+        center 
+            hr(style="width:95%") 
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+            ul.w3-ul
+                li 
+                    h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                        b Datas 
+                each d in rua.datas
                     li
-                        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                            b Entidades  
-                    each e in rua.entidades
-                        li
-                            a(href="/entidades/entidade/"+e.nome.replaceAll(' ','_'))=e.nome
+                        a(href="/data/"+d)=d
+        center
+            hr(style="width:95%") 
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+            ul.w3-ul
+                li
+                    h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                        b Entidades  
+                each e in rua.entidades
+                    li
+                        a(href="/entidades/entidade/"+e.nome.replaceAll(' ','_'))=e.nome
         hr
-        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-            b Opções  
-        .w3-row-padding.w3-center
-            .w3-col.m12(style="width:20%")
-                a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/fotos/" + rua._id) Adicionar Imagem
-            .w3-col.m12(style="width:20%")
-                a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/edit/" + rua._id) Atualizar Rua
-            .w3-col.m12(style="width:20%")
-                a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/add/") Criar Rua
-        br
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+            h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                b Opções  
+            .w3-row-padding.w3-center
+                .w3-col.m12(style="width:20%")
+                    a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/fotos/" + rua._id) Adicionar Imagem
+                .w3-col.m12(style="width:20%")
+                    a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/edit/" + rua._id) Atualizar Rua
+                .w3-col.m12(style="width:20%")
+                    a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/add/") Criar Rua
+                .w3-col.m12(style="width:20%")
+                    a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/" id="linkrua" target="_blank") Link Rua OpenStreetMap
+            br

@@ -5,16 +5,12 @@ var multer = require('multer')
 var upload = multer({dest:'uploads'})
 var fs = require('fs')
 
-
 function getDate()
 {
     var d = new Date().toISOString().substring(0, 16)
     d = d.replace('T', ' ')
     return d
 }
-
-
-
 
 router.get('/add/', (req, res, next)=>{
     var d = getDate()
