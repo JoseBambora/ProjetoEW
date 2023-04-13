@@ -35,9 +35,10 @@ block content
             p 
                 h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                     b Lista casas   
-                ul.w3-ul
+                ul.w3-ul(id="listacasasul")
+                    - var i = 0
                     each c in rua.casas
-                        li.w3-bar
+                        li.w3-bar(id='casa' + i style="display:none;")
                             .w3-panel.w3-leftbar.w3-border-blue
                                 p #[b Número: #{c.num}] 
                                 if c.enfiteuta.length > 0
@@ -45,6 +46,13 @@ block content
                                 if c.foro.length > 0
                                     p Foro: #{c.foro.slice(0,30)}
                                 p Descrição: #{c.desc.join('\n')}
+                        - i+=1
+            .w3-row-padding.w3-center
+                .w3-col.m12(style="width:20%")
+                    button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="mostrarmaiscasas") Mostrar mais
+                .w3-col.m12(style="width:20%")
+                    button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="mostrarmenoscasas") Mostrar menos
+            br
         hr
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
             b Links pesquisa

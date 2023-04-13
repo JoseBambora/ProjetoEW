@@ -1,4 +1,5 @@
 $(function(){
+    var casasshown = 0
     var select = false
     let expL = /\#L\d+/g
     let expD = /\#D\d+/g
@@ -13,6 +14,35 @@ $(function(){
     let ee = 'entidadeelem'
     let de = 'dataelem'
     let le = 'lugareelem'
+    let ncasas = casas = $('#listacasasul li').length
+    function showMoreHouses()
+    {
+        if(casasshown < ncasas)
+        {
+            for(var i = casasshown; i < casasshown + 5 && i < ncasas; i++)
+            {
+                $('#casa'+i).prop('style',"")
+            }
+            if(i == ncasas)
+                casasshown = ncasas
+            else
+                casasshown += 5
+        }
+    }
+    function showLessHouses()
+    {
+        if(casasshown > 0)
+        {
+            for(var i = casasshown; i > casasshown - 6 && i > -1; i--)
+            {
+                $('#casa'+i).prop('style',"display:none;")
+            }
+            if(i == -1)
+                casasshown = 0
+            else
+                casasshown -= 5
+        }
+    }
     function getMapa()
     {
         let streetname = $('#nome_rua')[0].textContent
@@ -24,7 +54,6 @@ $(function(){
         xhr.open("GET", url, true);
         xhr.onload = () => 
         {
-            console.log(streetname)
             if (xhr.status === 200) 
             {
                 const response = JSON.parse(xhr.responseText);
@@ -38,7 +67,11 @@ $(function(){
         };
         xhr.send();
     }
-    getMapa()
+    function initFun()
+    {
+        getMapa()
+        showMoreHouses()
+    }
     function matchAuxiliar(join,exp)
     {
         res = join.match(exp)
@@ -46,11 +79,9 @@ $(function(){
     }
     function validaInfo(data, join)
     {
-        console.log(join)
         let ll = data.lugares.length
         let ld = data.datas.length
         let le = data.entidades.length
-        console.log(ll)
         let il = matchAuxiliar(join,expL).map(s => Number(s.slice(2)))
         let id = matchAuxiliar(join,expD).map(s => Number(s.slice(2)))
         let ie = matchAuxiliar(join,expE).map(s => Number(s.slice(2)))
@@ -88,7 +119,6 @@ $(function(){
         let pos = Number($('.'+t).attr('id').slice(1))
         if(pos > 0)
         {
-            console.log('A trocar de posição')
             let v1 = $('#'+idt+pos)[0].textContent
             let v2 = $('#'+idt+(pos-1))[0].textContent
             let i1 = v1.match(exp)
@@ -112,7 +142,6 @@ $(function(){
             ll = [...$('.'+l)]
             if(pos < ll.length-1)
             {
-                console.log('A trocar de posição')
                 let v1 = $('#'+tid+pos)[0].textContent
                 let v2 = $('#'+tid+(pos+1))[0].textContent
                 let i1 = v1.match(exp)
@@ -128,7 +157,6 @@ $(function(){
             }
         }
     }
-
     function selectFun(t,seletor)
     {
         if(select)
@@ -141,7 +169,7 @@ $(function(){
         $(t).addClass(seletor)
         $(t).addClass('w3-blue')   
     }
-
+    initFun()
     $('#btnnlugar').click(function()
     {
         event.preventDefault();
@@ -189,10 +217,6 @@ $(function(){
         dat = [...$('.dataelem')].map(e => e.innerText.replace(expD2,''))
         ent = [...$('.entidadeelem')].map(e => { s = e.innerText.replace(expE2,'').split('('); return { nome: s[0], tipo: s[1].slice(0,-1)}})
         casas = [...$('.casaatrib')].map(c => {return {num: c.querySelector('.num').value,enfiteuta:c.querySelector('.enfiteuta').value,foro:c.querySelector('.foro').value,desc:c.querySelector('.desc').value.split('\n')}})
-        console.log(casas)
-        console.log(lug)
-        console.log(dat)
-        console.log(ent)
         data = {
             _id:id,
             paragrafos : par,
@@ -212,7 +236,6 @@ $(function(){
         }
         else
         {
-            console.log('Erro edição')
             // Informação errada
             var mensagem = '<div class="w3-panel w3-light-grey w3-border w3-border-indigo"> <ul class="w3-ul"> <li> <h4 class= "w3-text-blue w3-margin-left" tyle="text-shadow:2px 2px 0 #444"><b>Alterações não submetidas</b </h4> </li>'
             for(let m of mensagemerro)
@@ -249,7 +272,6 @@ $(function(){
             datas: [],
             entidades: []
         }
-        console.log(data)
         send = {d: JSON.stringify(data)}
         url = 'http://localhost:7777/rua/add/'
         $.post(url,send,function(response){
@@ -326,5 +348,13 @@ $(function(){
     $('#btnCasaElimina').click(function(){
         event.preventDefault();
         $('.'+selectedlicasa).remove()
+    })
+    $('#mostrarmaiscasas').click(function(){
+        event.preventDefault();
+        showMoreHouses()
+    })
+    $('#mostrarmenoscasas').click(function(){
+        event.preventDefault();
+        showLessHouses()
     })
 })
