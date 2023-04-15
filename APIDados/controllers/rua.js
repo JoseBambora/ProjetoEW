@@ -1,5 +1,4 @@
 const Rua = require('../models/rua')
-const axios = require('axios')
 
 function formatAux(pars,lugares,datas,entidades)
 {

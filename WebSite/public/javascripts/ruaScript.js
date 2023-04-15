@@ -61,6 +61,7 @@ $(function(){
                 {
                     const lat = response[0].lat;
                     const lon = response[0].lon;
+                    // distância euclidiana à sé de BRAGA 
                     $('#linkrua').attr("href",`https://www.openstreetmap.org/#map=17/${lat}/${lon}`);
                 }
             }

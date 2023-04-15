@@ -12,16 +12,5 @@ router.get('/', function(req, res, next) {
   .catch(erro => res.render('error', {error: erro,d:d}))
 });
 
-router.get('/data/:data', function(req,res,next){
-
-})
-
-
-
-router.get('/datas', function(req,res,next){
-
-})
-
-
 
 module.exports = router;
