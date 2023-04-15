@@ -1,20 +1,33 @@
 extends template 
-block content
+block content  
+
+    // page title
     h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;") 
         b.w3-margin-left Datas registadas no sistema
-        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-            b Datas:
-        ul.w3-ul
-        each d in datas
-            li.w3-hover-light-blue
-                .w3-panel.w3-leftbar.w3-border-blue
-                    b
-                        a(href=`/data/${d}`)= d
-                    p Referenciado nas Ruas:
-                    ul
-                        each r in ruas.filter(r => r.datas.includes(d))
-                            li
-                                a(href=`/rua/${r._id}`)= r._id.replaceAll('_', ' ')
-                                
-                           
+
+    // search bar
+    .w3-center
+        p Nesta página estão listadas todas as datas presentes no nosso sistema, se clicar no nome de uma data será redirecionado para uma nova página com informação individual da mesma.
+        p Caso pretanda aceder diretamente à pagina de uma data registada no sistema utilize a barra de pesquisas.
+        label.w3-text-blue(for="data") Pesquisar Datas
+        input.w3-input.w3-border(type="text" placeholder="Data" id="data" name="data")
+        button.w3-btn.w3-blue(onclick="buscaData($('#data').val())") Submeter Pesquisa
+    br
+
+    // content 
+    h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+        b Datas:
+    ul.w3-ul
+    each date in dates
+        li.w3-bar
+            .w3-panel.w3-leftbar.w3-border-blue
+                b   
+                    a.w3-hover-light-blue(href=`data/${date.replaceAll(' ','_')}`)= date
+                p Referenciado nas Ruas: &nbsp;
+                    each s, index in streets.filter(s => s.datas.includes(date))
+                        a.w3-hover-light-blue(href=`/rua/${s._id}`) #{s._id.replaceAll('_',' ')}
+                        if (index < streets.filter(s => s.datas.includes(date)).length - 1)
+                            | ,
+                            |&nbsp;
+                                                
                 
