@@ -4076,16 +4076,16 @@
         "casas": [
             {
                 "num": "1",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     "Corresponde ao n.º 7 da #L16, para onde tem a frontaria e serventia principais."
                 ]
             },
             {
                 "num": "2",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     "No ano de #D3, por escambo realizado entre o #E0 e a #E4, esta casa foi trocada com o #L17, situado na #L18. Confronta com quintal dos padres da #E4."
                 ]
@@ -5022,7 +5022,7 @@
             {
                 "num": "18",
                 "enfiteuta": " ",
-                "foro": null,
+                "foro": "",
                 "desc": [
                     "É foreira à #L32 desde o ano de #D10. por escambo feito com o cabido, ao qual ficou a pertencer o nº 46, que confronta, do nascente, com casa foreira à #E9. Paga, de pensão ou foro, 480 reis."
                 ]
@@ -5053,7 +5053,7 @@
             },
             {
                 "num": "22",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "75 reis (de censo)",
                 "desc": [
                     " À casa nº 23 pertence, ainda, o nº 10 da #L33.",
@@ -5192,7 +5192,7 @@
             {
                 "num": "39",
                 "enfiteuta": " ",
-                "foro": null,
+                "foro": "",
                 "desc": [
                     " Corresponde ao Passadiço do nº 5, da #L37, para onde tem a frontaria e serventia principais."
                 ]
@@ -7824,8 +7824,8 @@
             },
             {
                 "num": "3",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     " Corresponde ao n.º 22 da #L8, para onde tem a frontaria e serventia principais. "
                 ]
@@ -7840,8 +7840,8 @@
             },
             {
                 "num": "5",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     " Corresponde ao n.º 15 da #L11, para onde tem a frontaria e serventia principais. "
                 ]
@@ -8709,8 +8709,8 @@
         "casas": [
             {
                 "num": "1",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     "Corresponde à casa nº16 da #L5 para onde tem a frontaria e serventia principais. "
                 ]
@@ -9047,7 +9047,7 @@
         "casas": [
             {
                 "num": "1",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "38 reis e 6 pretos (de censo)",
                 "desc": [
                     "A casa é foreira aos Padres coreiros. O censo é pago por #E2"
@@ -9055,16 +9055,16 @@
             },
             {
                 "num": "2",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     "Corresponde ao nº1 da #L14, para onde tem a frontaria e serventia principais."
                 ]
             },
             {
                 "num": "3 e 4",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     "Corresponde ao nº 11 da #L15, para onde tem a frontaria e serventia principais. "
                 ]
@@ -9087,7 +9087,7 @@
             },
             {
                 "num": "7",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "160 reis (de censo)",
                 "desc": [
                     "Confronta, do poente, com o #L17. #E3, tercenário, paga de censo 160 reis. "
@@ -9103,8 +9103,8 @@
             },
             {
                 "num": "9",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     "Confronta, do norte, com o #L17; do sul, com o nº 8, da #L19; do nascente, com a mesma #L19 e, do poente, com quintal de uma casa da #L20. ",
                     "Foi demolida, depois do ano de #D1, \"para a obra da sacristia da #L0, por conta da fábrica da mesma #L0\"."
@@ -9112,8 +9112,8 @@
             },
             {
                 "num": "10 e 11",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     " Não aparecem desenhadas no Mapa por terem sido demolidas \"para a obra da sacristia da #L0\". A casa nº 10 situava-se no canto desta rua (parte nascente) e confrontava do norte, defronte da #L0, com a #L23 e, do nascente com o caminho que se dirigia das Oussias para a #L18 A casa nº 11 confronta, do nascente, com a nº 10. "
                 ]
@@ -9286,8 +9286,8 @@
         "casas": [
             {
                 "num": "1 e 2",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     " Pertencem ao n.º 38 da #L6, para onde tem a frontaria e serventia pricnipais. "
                 ]
@@ -9295,7 +9295,7 @@
             {
                 "num": "3, 4, 5, 6, 7 e 8",
                 "enfiteuta": "Os herdeiros de Bento Vaz Perreira, da freguesia de S. Martinho de Dume, casado com Maria Josefa de Macedo e Castro.",
-                "foro": null,
+                "foro": "",
                 "desc": [
                     " Pagam foro ao n.º 20 da #L7. Os n.º4 a 8 foram integrados na escritura do prazo n.º 3. "
                 ]
@@ -9303,7 +9303,7 @@
             {
                 "num": "9",
                 "enfiteuta": "Os herdeiros de Bento Vaz Perreira, da freguesia de S. Martinho de Dume, casado com Maria Josefa de Macedo e Castro.",
-                "foro": null,
+                "foro": "",
                 "desc": [
                     " Pertence ao n.º 36 da #L6, a qual, está integrada no prazo da casa n.º 20, da mesma rua. "
                 ]
@@ -9311,15 +9311,15 @@
             {
                 "num": "10",
                 "enfiteuta": "Os herdeiros de Bento Vaz Perreira, da freguesia de S. Martinho de Dume, casado com Maria Josefa de Macedo e Castro.",
-                "foro": null,
+                "foro": "",
                 "desc": [
                     " Pagam foro ao n.º 20 da #L7. "
                 ]
             },
             {
                 "num": "11",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     " Portal de serventia da casa n.º 33 do Arrabalde da Cruz de Pedra. "
                 ]
@@ -9327,15 +9327,15 @@
             {
                 "num": "12, 13, 14 e 15",
                 "enfiteuta": "Os herdeiros de Bento Vaz Perreira, da freguesia de S. Martinho de Dume, casado com Maria Josefa de Macedo e Castro.",
-                "foro": null,
+                "foro": "",
                 "desc": [
                     " Casas que pagam foro ao n.º 20 da #L6. "
                 ]
             },
             {
                 "num": "16 e 17",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     " Casa e portal de serventia do n.º 28 da #L6. "
                 ]
@@ -9343,15 +9343,15 @@
             {
                 "num": "19, 20 e 21",
                 "enfiteuta": "Os herdeiros de Bento Vaz Perreira, da freguesia de S. Martinho de Dume, casado com Maria Josefa de Macedo e Castro.",
-                "foro": null,
+                "foro": "",
                 "desc": [
                     " Corresponde a três casas que pagam foro ao n.º 20 da #L8. "
                 ]
             },
             {
                 "num": "22",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     " Portal de serventia do campo da casa n.º 20 da #L9. Confronta, do nascente, com casa pertencente à propriedade, denominada, «O Bispo». "
                 ]
@@ -9468,8 +9468,8 @@
             },
             {
                 "num": "7",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     "A frontaria e serventia principais correspondem ao nº 29 da #L7. No poente tem uma porta de serventia que dá para o referido nº 29. Confronta, do nascente,com casa dos #E2. "
                 ]
@@ -9484,24 +9484,24 @@
             },
             {
                 "num": "9",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     " Corresponde a uma porta e corredor de serventia do nº 25 da #L7. Situa-se por baixo da casa nº 8."
                 ]
             },
             {
                 "num": "10 ",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     "Pertence à casa nº 23, da #L7. para onde tem a serventia principal. "
                 ]
             },
             {
                 "num": "11",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     "Pertence à casa nº 21, da #L7, para onde tem a serventia principal."
                 ]
@@ -9746,7 +9746,7 @@
             },
             {
                 "num": "7",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "600 reis e 4 galinhas",
                 "desc": [
                     " Situa-se no terreiro da #L22, na esquina para a #L23 que vem da #L24. "
@@ -9782,7 +9782,7 @@
             },
             {
                 "num": "12",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "500 reis e 2 galinhas",
                 "desc": [
                     " Situa-se defronte d#L12 da Cividade. "
@@ -9790,7 +9790,7 @@
             },
             {
                 "num": "13",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "120 reis e 1 galinha",
                 "desc": [
                     " A casa n° 13 foi construída em pertenças do prazo n.º 14, depois do ano de #D5. "
@@ -9798,7 +9798,7 @@
             },
             {
                 "num": "14",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "120 reis e 1 galinha",
                 "desc": [
                     " A casa n° 13 foi construída em pertenças do prazo n.º 14, depois do ano de #D5. "
@@ -14177,8 +14177,8 @@
         "casas": [
             {
                 "num": "1",
-                "enfiteuta": null,
-                "foro": null,
+                "enfiteuta": "",
+                "foro": "",
                 "desc": [
                     "É morada dos Sacristãos da #L11. Parte desta casa pertence à obra da #L11 e a restante à #E5. A parte da obra da #L11 confronta, de nascente, com casas da dita Irmandade (antigas casas foreiras à #L16) e, de poente, com a casa nº2. O prazo era constituído por casa, com ênxido ao redor da #L17"
                 ]
@@ -14230,7 +14230,7 @@
             {
                 "num": "8",
                 "enfiteuta": " Vid. casa nº32, Rua de Maximinos(rua nº22).",
-                "foro": null,
+                "foro": "",
                 "desc": [
                     "Foi construída, depoisde #D5, no lugar de uma cozinha pertencente ao nº10, ao qual paga, de pensão ou foro, 60 reis. Confronta, do nascente, com o nº8 e , de poente, com parte da casa nº10. É subenfiteuta #E6, casado com #E7 ."
                 ]
@@ -14238,7 +14238,7 @@
             {
                 "num": "9",
                 "enfiteuta": "Vid. casa nº10.",
-                "foro": null,
+                "foro": "",
                 "desc": [
                     "Foi construída depois de #D6, no lugar de uma cozinha pertencente ao nº10, ao qual paga, de pensão ou foro, 60 reis.Confronta, do nascente, com o nº8 e, de poente, com parte da casa nº10. É subenfiteuta #E6, casado com #E7."
                 ]
@@ -14279,7 +14279,7 @@
             {
                 "num": "14",
                 "enfiteuta": "Vid. casa nº1 da Rua do Campo(rua nº1).",
-                "foro": null,
+                "foro": "",
                 "desc": [
                     "Foi construída, depois do ano de #D8, numa parte da casa nº15 e no lugar de uma cozinha do nº1 da #L23, às quais paga, de pensão ou foro, respetivamente, 200 reis e 1 galinha, e 110 reis. São subenfiteutas #E8, tratante, e sua mulher, #E9."
                 ]
@@ -16084,7 +16084,7 @@
             },
             {
                 "num": "24",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " #E25, da freguesia de #L15, casado com #E26, paga 200 reis ao n.° 18 da #L12. Confronta, do sul, com a casa n.° 2 da dita rua. "
@@ -16092,7 +16092,7 @@
             },
             {
                 "num": "25",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Não aparece desenhada no mapa. Foi demolida depois de #D11, para se fazer a entrada da #L16. "
@@ -16100,7 +16100,7 @@
             },
             {
                 "num": "26",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Os herdeiros de #E27, cabeiro, casado com #E28, pagam 200 reis, e 1 galinha ao enfiteuta do prazo do casal dos Chãos ou Quinteiro "
@@ -16108,7 +16108,7 @@
             },
             {
                 "num": "27",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Os herdeiros de #E29, solteira, pagam 220 reis e 1 galinha ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. "
@@ -16116,7 +16116,7 @@
             },
             {
                 "num": "28",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. "
@@ -16124,7 +16124,7 @@
             },
             {
                 "num": "29",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. "
@@ -16132,7 +16132,7 @@
             },
             {
                 "num": "30",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Os herdeiros de #E30, espingardeiro, casado com #E31, pagam 150 reis ao enfiteuta do prazo do Casal dos Chãos ou Quinteiro. "
@@ -16140,7 +16140,7 @@
             },
             {
                 "num": "31",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Paga foro ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. "
@@ -16148,7 +16148,7 @@
             },
             {
                 "num": "32",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Os herdeiros de #E32, serralheiro, casado com #E33, pagam 200 reis e 1 galinha ao enfiteuta do, prazo do casal dos Chãos ou Quinteiro. "
@@ -16156,7 +16156,7 @@
             },
             {
                 "num": "33",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Os herdeiros de #E34, alfaiate, casado com #E35, pagam 150 reis ao enfiteuta do prazo do casal dos Chãos do Quinteiro. Antes do ano de #D12 correspondia a duas casas. "
@@ -16164,7 +16164,7 @@
             },
             {
                 "num": "34",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Os herdeiros de #E36 ,pintor, casado com #E37, pagam 120 reis e 1 galinha, ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Antes do ano de #D13 correspondia a duas casas. "
@@ -16172,7 +16172,7 @@
             },
             {
                 "num": "35",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Antes do ano de #D14 pertenceu ao prazo do casal dos Chãos ou Quinteiro. "
@@ -16180,7 +16180,7 @@
             },
             {
                 "num": "36",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Os herdeiros do #E38 pagam 120 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. "
@@ -16188,7 +16188,7 @@
             },
             {
                 "num": "37",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " #E39 paga 1200 reis ao enfiteuta do prazo da casal dos Chãos ou Quinteiro. No ano de #D15 foi incorporado neste prazo um pedaço de quintal. "
@@ -16196,7 +16196,7 @@
             },
             {
                 "num": "38",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Os herdeiros de #E40, sangrador, casado com #E41, pagam 50 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. "
@@ -16204,7 +16204,7 @@
             },
             {
                 "num": "39",
-                "enfiteuta": null,
+                "enfiteuta": "",
                 "foro": "",
                 "desc": [
                     " Os herdeiros de #E42,vestimenteiro, pagam 50 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. "

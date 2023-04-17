@@ -140,7 +140,7 @@ def append_not_repetidos2(src,eid,append):
 
 def get_text(corpo,tag):
     elem = corpo.find(tag)
-    if elem is not None:
+    if elem is not None and elem.text is not None:
         elem = elem.text
     else:
         elem = ''
