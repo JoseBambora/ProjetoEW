@@ -92,6 +92,42 @@ module.exports.updateRua = rua => {
     .catch(erro => { return erro })
 }
 
+function updateOld(id,path,legenda)
+{
+    return Rua.updateOne({_id : id},{$push:{ 'figuras_antigas':{path:path,legenda:legenda}}})
+    .then(dados => { return dados })
+    .catch(erro => { return erro })
+}
+
+function updateNew(id,path,legenda)
+{
+    return Rua.updateOne({_id : id},{$push:{ 'figuras_atuais':{path:path,legenda:legenda}}})
+    .then(dados => { return dados })
+    .catch(erro => { return erro })
+}
+
+module.exports.updateFigurasRua = (id,dados) => {
+    let legenda = dados.legenda
+    let path = dados.path
+    let epoca = dados.epoca
+    if(epoca == 'figuras_atuais')
+        return updateNew(id,path,legenda)
+    else
+        return updateOld(id,path,legenda)
+
+}
+
+module.exports.updateFieldsRua = (id,dados) => {
+    let par = dados.paragrafos
+    let dat = dados.datas
+    let lug = dados.lugares
+    let ent = dados.entidades
+    let ca = dados.casas
+    return Rua.updateOne({_id : id},{$set :{paragrafos:par,datas:dat,lugares:lug,entidades:ent,casas:ca}})
+    .then(dados => { console.log('Rua atualizada'); return dados })
+    .catch(erro => { return erro })
+}
+
 
 module.exports.deleteRua = id => {
     return Rua.deleteOne({_id: id})

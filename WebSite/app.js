@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://172.17.0.2/RuasBragaDB';
+var mongoDB = 'mongodb://127.0.0.1/RuasBragaDB';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error...'));

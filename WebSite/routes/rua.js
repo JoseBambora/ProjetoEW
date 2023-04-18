@@ -37,7 +37,7 @@ function getRua(req,res)
     {
         if (data)
         {
-            r = Rua.formatParagraphRua(data)
+            r = data
             fwan = 100 / r.figuras_antigas.length
             fwat = 100 / r.figuras_atuais.length
             res.render('rua',{ rua: r, d:d, nome_rua: r._id.replaceAll('_',' '), fwan: fwan, fwat: fwat}); 
@@ -64,7 +64,7 @@ router.get('/:idrua', function(req, res, next) {
 
 router.get('/edit/:idrua', function(req, res, next) {
     var d = getDate()
-    Rua.getRua(req.params.idrua)
+    Rua.getRuaOriginal(req.params.idrua)
     .then(data => 
     {
         texto = data.paragrafos.join('\n')
@@ -77,16 +77,11 @@ router.get('/edit/:idrua', function(req, res, next) {
 router.post('/edit/:idrua',function(req,res,next){
     var d = getDate()
     console.log('Post edit ' +req.params.idrua)
-    Rua.getRua(req.params.idrua)
+    var data = JSON.parse(req.body.d)
+    Rua.updateFieldsRua(req.params.idrua,data)
     .then(data => 
     {
-        request = JSON.parse(req.body.d)
-        data.paragrafos = request.paragrafos
-        data.lugares = request.lugares
-        data.datas = request.datas
-        data.entidades = request.entidades
-        data.casas = request.casas
-        updateRua(data,d,res)
+        res.redirect('/rua/'+req.params.idrua)
     })
     .catch(erro => res.render('error', {error: erro, d:d}))
 })
@@ -117,16 +112,10 @@ router.post("/fotos/:idrua", upload.single('myfile'), (req, res)=>{
     oldPath = gp[0]
     newPath = gp[1]
     pat = gp[2]
+    data = {epoca: req.body.epoca, path:pat, legenda: req.body.desc}
     fs.rename(oldPath,newPath, erro => { if(erro) throw erro })
-    Rua.getRua(req.params.idrua)
-    .then(data => 
-    {
-        if (req.body.epoca=='atual')
-            data.figuras_atuais.push({path:pat, legenda: req.body.desc})
-        else
-            data.figuras_antigas.push({path:pat, legenda: req.body.desc})
-        updateRua(data,d)    
-    })
+    Rua.updateFiguraRua(req.params.idrua,data)
+    .then(data => { res.redirect('/rua/'+req.params.idrua)})
     .catch(erro => res.render('error', {error: erro, d:d}))
 })
 

@@ -70,8 +70,8 @@ $(function(){
     }
     function initFun()
     {
-        getMapa()
-        showMoreHouses()
+        // getMapa()
+        // showMoreHouses()
     }
     function matchAuxiliar(join,exp)
     {
@@ -226,6 +226,7 @@ $(function(){
             entidades: ent,
             casas: casas
         }
+        // console.log(data)
         let mensagemerro = validaInfo(data,$("#paragrafos").val() + '\n'+ casas.map(c => c.desc.join('\n')).join('\n'))
         if(mensagemerro.length == 0)
         {

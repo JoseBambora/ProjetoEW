@@ -15,9 +15,27 @@ router.get('/rua/:id', function(req, res, next) {
   .catch(error => res.jsonp({error:error}))
 });
 
+router.get('/rua/original/:id', function(req, res, next) {
+  Rua.getRua(req.params.id)
+  .then(data => res.jsonp(data))
+  .catch(error => res.jsonp({error:error}))
+});
+
 router.post('/rua/:id', function(req, res, next) {
   Rua.updateRua(req.body)
   .then(data => res.jsonp(data))
+  .catch(error => res.jsonp({error:error}))
+});
+
+router.post('/rua/fields/:id', function(req, res, next) {
+  Rua.updateFieldsRua(req.params.id,req.body)
+  .then(data => res.json(data))
+  .catch(error => res.jsonp({error:error}))
+});
+
+router.post('/rua/figures/:id', function(req, res, next) {
+  Rua.updateFigurasRua(req.params.id,req.body)
+  .then(data => res.json(data))
   .catch(error => res.jsonp({error:error}))
 });
 
@@ -39,8 +57,8 @@ router.get('/entidades/', function(req, res, next) {
   .catch(error => res.jsonp({error:error}))
 });
 
-router.get('/entidade/:nome', function(req, res, next) {
-  Rua.getNomeEntidades(req.params.nome)
+router.get('/entidadenomes/', function(req, res, next) {
+  Rua.getNomeEntidades()
   .then(data => res.jsonp(data))
   .catch(error => res.jsonp({error:error}))
 });

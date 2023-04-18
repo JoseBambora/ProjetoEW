@@ -42,9 +42,9 @@ block content
                             .w3-panel.w3-leftbar.w3-border-blue
                                 p #[b Número: #{c.num}] 
                                 if c.enfiteuta.length > 0
-                                    p Enfiteuta: #{c.enfiteuta.slice(0,30)} 
+                                    p Enfiteuta: #{c.enfiteuta.slice(0,30)} ...
                                 if c.foro.length > 0
-                                    p Foro: #{c.foro.slice(0,30)}
+                                    p Foro: #{c.foro.slice(0,30)} ...
                                 p Descrição: #{c.desc.join('\n')}
                         - i+=1
             .w3-row-padding.w3-center
@@ -73,7 +73,7 @@ block content
                         b Datas 
                 each d in rua.datas
                     li
-                        a(href="/data/"+d)=d
+                        a(href="/datas/data/"+d.replaceAll(' ','_'))=d
         center
             hr(style="width:95%") 
         .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
