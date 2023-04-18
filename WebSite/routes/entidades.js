@@ -6,10 +6,11 @@ var Rua = require('../controllers/rua')
 router.get('/', function(req,res,next){
     var d = new Date().toISOString().substring(0, 16)
     Rua.getEntidades()
-    .then(data => {
+    .then(response => {
+      entidades = response.data
       Rua.list()
       .then(ruas => {
-        res.render('entidades',{entidades:data,ruas:ruas,d:d})
+        res.render('entidades',{entidades:entidades,ruas:ruas,d:d})
       })
       .catch(erro => res.render('error', {error: erro,d:d}))
     })
