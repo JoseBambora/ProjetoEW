@@ -70,8 +70,11 @@ $(function(){
     }
     function initFun()
     {
-        // getMapa()
-        // showMoreHouses()
+        if ($('#nome_rua').length)
+        {
+            getMapa()
+            showMoreHouses()
+        }
     }
     function matchAuxiliar(join,exp)
     {
