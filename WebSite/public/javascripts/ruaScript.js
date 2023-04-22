@@ -15,33 +15,77 @@ $(function(){
     let de = 'dataelem'
     let le = 'lugareelem'
     let ncasas = casas = $('#listacasasul li').length
+    var casasShow = []
+    var casas = []
+    var indice = 0
+    let numcasas = 3
+    let paginas
+    var fotoAntiga = -1
+    var fotoAtual = -1
+    let nfoantiga = $('.img-antiga').length-1
+    let nfoatual = $('.img-atual').length-1
+    function manipulaFotos(string, variavel,avanca,num)
+    {
+        if((avanca && variavel < num) || (!avanca && fotoAntiga != 0))
+        {
+            var idfoto = string + variavel
+            if (variavel != -1)
+                $(idfoto).prop('style',"display:none;")
+            if (avanca)
+                variavel+=1
+            else
+                variavel-=1
+            idfoto = string + variavel
+            $(idfoto).prop('style',"")
+        }
+        return variavel
+    }
+
+    function avancaFotoAntiga(){fotoAntiga = manipulaFotos('#fant',fotoAntiga,true,nfoantiga)}
+    function recuaFotoAntiga(){fotoAntiga = manipulaFotos('#fant',fotoAntiga,false,nfoantiga)}
+    function avancaFotoAtual(){fotoAtual = manipulaFotos('#fatu',fotoAtual,true,nfoatual)}
+    function recuaFotoAtual(){fotoAtual = manipulaFotos('#fatu',fotoAtual,false,nfoatual)}
+
+    function loadcasas()
+    {
+        for(var i = 0; i < ncasas; i++)
+        {
+            casas.push('#casa'+i)
+        }
+        paginas = Math.ceil(casas.length/numcasas)
+    }
+    function clearHouses()
+    {
+        for(var casa of casasShow)
+        {
+            $(casa).prop('style',"display:none;")
+        }
+        casasShow = []
+    }
+    function showNHouses(index)
+    {
+        if(index >= 0 && index < casas.length)
+        {
+            clearHouses()
+            console.log(index)
+            var i = index;
+            for(; i < numcasas + index && i < casas.length; i++)
+            {
+                $(casas[i]).prop('style',"")
+                casasShow.push(casas[i])
+            }
+            indice = i
+            pag = Math.ceil(indice/numcasas)
+            $('#nrPaginasCasas')[0].innerText = "Página "+ pag +" de " + paginas
+        }
+    }
     function showMoreHouses()
     {
-        if(casasshown < ncasas)
-        {
-            for(var i = casasshown; i < casasshown + 5 && i < ncasas; i++)
-            {
-                $('#casa'+i).prop('style',"")
-            }
-            if(i == ncasas)
-                casasshown = ncasas
-            else
-                casasshown += 5
-        }
+        showNHouses(indice)
     }
     function showLessHouses()
     {
-        if(casasshown > 0)
-        {
-            for(var i = casasshown; i > casasshown - 6 && i > -1; i--)
-            {
-                $('#casa'+i).prop('style',"display:none;")
-            }
-            if(i == -1)
-                casasshown = 0
-            else
-                casasshown -= 5
-        }
+        showNHouses(indice-(numcasas*2))
     }
     function getMapa()
     {
@@ -72,6 +116,9 @@ $(function(){
     {
         if ($('#nome_rua').length)
         {
+            avancaFotoAtual()
+            avancaFotoAntiga()
+            loadcasas()
             getMapa()
             showMoreHouses()
         }
@@ -361,5 +408,25 @@ $(function(){
     $('#mostrarmenoscasas').click(function(){
         event.preventDefault();
         showLessHouses()
+    })
+
+    $('#proximafotoantiga').click(function(){
+        event.preventDefault();
+        avancaFotoAntiga()
+    })
+
+    $('#anteriorfotoantiga').click(function(){
+        event.preventDefault();
+        recuaFotoAntiga()
+    })
+
+    $('#proximafotoatual').click(function(){
+        event.preventDefault();
+        avancaFotoAtual()
+    })
+
+    $('#anteriorfotoatual').click(function(){
+        event.preventDefault();
+        recuaFotoAtual()
     })
 })

@@ -18,25 +18,43 @@ block content
                     a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/" id="linkrua" target="_blank") Link Rua OpenStreetMap
             br
         hr
-        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-            b Fotografias antigas
-        .w3-cell-row
-        each f in rua.figuras_antigas
-            .w3-cell(style="width:" + fwan + '%')
-                img.w3-border.w3-padding(src=f.path, style="width:100%;")
-                if f.legenda.length > 0
-                    .w3-container.w3-text-blue.w3-center
-                        h8 #[b Legenda]: #{f.legenda}
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+            h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                b Fotografias antigas
+            - var i = 0
+            each f in rua.figuras_antigas
+                .w3-center(style="display:none;width:" + fwan + '%' id='fant'+i)
+                    img.img-antiga.w3-border.w3-padding(src=f.path, style="width:100%;")
+                    if f.legenda.length > 0
+                        .w3-container.w3-text-blue.w3-center
+                            h8 #[b Legenda]: #{f.legenda}
+                - i += 1
+            br
+            .w3-row-padding.w3-center
+                .w3-col.m12(style="width:20%")
+                    button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="proximafotoantiga") Próxima fotografia
+                .w3-col.m12(style="width:20%")
+                    button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="anteriorfotoantiga") Fotografia anterior
+            br
         hr
-        h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-            b Fotografias atuais
-        .w3-cell-row.w3-center
-        each f in rua.figuras_atuais
-            .w3-cell(style="width:" + fwat + '%')
-                img.w3-border.w3-padding(src=f.path, style="width:100%;")
-                if f.legenda.length > 0
-                    .w3-container.w3-text-blue.w3-center
-                        h8 #[b Legenda]: #{f.legenda}
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+            h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                b Fotografias atuais
+            - var i = 0
+            each f in rua.figuras_atuais
+                .w3-center(style="display:none;width:" + fwat + '%' id='fatu'+i)
+                    img.img-atual.w3-border.w3-padding(src=f.path, style="width:100%;")
+                    if f.legenda.length > 0
+                        .w3-container.w3-text-blue.w3-center
+                            h8 #[b Legenda]: #{f.legenda}
+                - i += 1
+            br
+            .w3-row-padding.w3-center
+                .w3-col.m12(style="width:20%")
+                    button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="proximafotoatual") Próxima fotografia
+                .w3-col.m12(style="width:20%")
+                    button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="anteriorfotoatual") Fotografia anterior
+            br
         hr 
         .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
             p 
@@ -59,13 +77,19 @@ block content
                                     p Enfiteuta: #{c.enfiteuta.slice(0,30)} ...
                                 if c.foro.length > 0
                                     p Foro: #{c.foro.slice(0,30)} ...
-                                p Descrição: #{c.desc.join('\n')}
+                                p Descrição: #{c.desc.join('\n').slice(0,130)} ...
                         - i+=1
             .w3-row-padding.w3-center
                 .w3-col.m12(style="width:20%")
-                    button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="mostrarmaiscasas") Mostrar mais
+                    br
                 .w3-col.m12(style="width:20%")
-                    button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="mostrarmenoscasas") Mostrar menos
+                    br
+                .w3-col.m12(style="width:20%")
+                    button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="mostrarmaiscasas") Próxima página
+                .w3-col.m12(style="width:20%")
+                    button.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(id="mostrarmenoscasas") Página anterior
+                .w3-col.m12(style="width:20%")
+                    h6.w3-col(id="nrPaginasCasas") lalalal
             br
         hr
         h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
