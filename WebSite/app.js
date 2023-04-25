@@ -4,15 +4,6 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var mongoose = require('mongoose');
-var mongoDB = 'mongodb://127.0.0.1/RuasBragaDB';
-mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error...'));
-db.on('open', function() {
-  console.log('MongoDB: conexão estabelecida com sucesso...')
-})
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var ruasRouter = require('./routes/ruas');
