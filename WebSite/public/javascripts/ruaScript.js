@@ -24,9 +24,9 @@ $(function(){
     var fotoAtual = -1
     let nfoantiga = $('.img-antiga').length-1
     let nfoatual = $('.img-atual').length-1
-    function manipulaFotos(string, variavel,avanca,num)
+    function manipulaFotos(string, variavel,avanca,num,cmp)
     {
-        if((avanca && variavel < num) || (!avanca && fotoAntiga != 0))
+        if((avanca && variavel < num) || (!avanca && cmp != 0))
         {
             var idfoto = string + variavel
             if (variavel != -1)
@@ -41,10 +41,10 @@ $(function(){
         return variavel
     }
 
-    function avancaFotoAntiga(){fotoAntiga = manipulaFotos('#fant',fotoAntiga,true,nfoantiga)}
-    function recuaFotoAntiga(){fotoAntiga = manipulaFotos('#fant',fotoAntiga,false,nfoantiga)}
-    function avancaFotoAtual(){fotoAtual = manipulaFotos('#fatu',fotoAtual,true,nfoatual)}
-    function recuaFotoAtual(){fotoAtual = manipulaFotos('#fatu',fotoAtual,false,nfoatual)}
+    function avancaFotoAntiga(){fotoAntiga = manipulaFotos('#fant',fotoAntiga,true,nfoantiga,fotoAntiga)}
+    function recuaFotoAntiga(){fotoAntiga = manipulaFotos('#fant',fotoAntiga,false,nfoantiga,fotoAntiga)}
+    function avancaFotoAtual(){fotoAtual = manipulaFotos('#fatu',fotoAtual,true,nfoatual,fotoAtual)}
+    function recuaFotoAtual(){fotoAtual = manipulaFotos('#fatu',fotoAtual,false,nfoatual,fotoAtual)}
 
     function loadcasas()
     {
@@ -87,12 +87,16 @@ $(function(){
     {
         showNHouses(indice-(numcasas*2))
     }
+    function euclidianDistance(latcenter, loncenter,r)
+    {
+        return Math.sqrt(Math.pow(latcenter-r.lat,2)+Math.pow(loncenter-r.lon,2))
+    }
     function getMapa()
     {
         let streetname = $('#nome_rua')[0].textContent
         const countryname = 'Portugal'
         const cityname = 'Braga';
-        const query = `${streetname}, ${cityname}, ${countryname}`;
+        const query = `${streetname},${cityname}, ${cityname}, ${countryname}`;
         const url = `https://nominatim.openstreetmap.org/search?q=${query}&format=json`;
         const xhr = new XMLHttpRequest();
         xhr.open("GET", url, true);
@@ -103,9 +107,11 @@ $(function(){
                 const response = JSON.parse(xhr.responseText);
                 if (response.length > 0) 
                 {
+                    let latcenter = 41.54988, loncenter = -8.42682
+                    console.log(response)
+                    response.sort((r1,r2) => euclidianDistance(latcenter,loncenter,r1) - euclidianDistance(latcenter,loncenter,r2))
                     const lat = response[0].lat;
                     const lon = response[0].lon;
-                    // distância euclidiana à sé de BRAGA 
                     $('#linkrua').attr("href",`https://www.openstreetmap.org/#map=17/${lat}/${lon}`);
                 }
             }
