@@ -2,69 +2,61 @@ var express = require('express');
 var router = express.Router();
 var passport = require('passport')
 var User = require('../models/user')
-var fs = require('fs')
+var CUser = require('../controllers/user')
+var auth = require('../auth/auth')
+var jwt = require('jsonwebtoken')
 
-function verificaAutenticacao(req, res, next){
-  console.log('User (verif.): ' + JSON.stringify(req.user))
-  if(req.isAuthenticated()){
-  //req.isAuthenticated() will return true if user is logged in
-      next();
-  } else{
-    // res.send('negado')
-    res.redirect("/users/login");
-  }
+function createUser(req)
+{
+  return new User({
+    username : req.body.username,
+    email: req.body.email,
+    birth_date: req.body.birth_date,
+    address: req.body.address,
+    creation_date: new Date().toISOString().substring(0,19)
+  })
 }
 
-router.get('/protegida', verificaAutenticacao, 
-  (req,res) => {
-        //res.send('autorizado')
-   			//res.send('Atingiste a área protegida!!!' + 'User: ' + JSON.stringify(req.user))
-        res.render('protegida')
-})
+function createtoken(req,res)
+{
+  jwt.sign({ username: req.user.username, 
+    sub: 'novo utilizador RuasBraga'}, 
+    "RuasBragaEW",
+    {expiresIn: 3600},
+    function(e, token) 
+    {
+      if(e) res.status(500).jsonp({error: "Erro na geração do token: " + e}) 
+      else res.status(201).jsonp({token: token})
+    });
+}
 
-router.get('/login', function(req, res) {
-  console.log('Na cb do GET login...')
-  console.log(req.sessionID)
-  res.render('login')
-})
-
-router.post('/login', passport.authenticate('local'), function(req, res) {
-  console.log('Na cb do POST login...')
-  console.log('Auth: ' + JSON.stringify(req.user))
- 	res.redirect('/users/protegida/')
-})
-
-
-router.get('/logout', function(req,res){
-  console.log('Logout: a sair')
-  req.logout(() => { return ;})
-  fs.unlinkSync(__dirname + '/../sessions/' + req.sessionID + '.json')
-  res.redirect('/')
-})
-
-router.get('/register', function(req,res){
-  console.log('Na cb do GET register...')
-  console.log(req.sessionID)
-  res.render('register')
-})
-
-
+function posRegister (err, user,res,req) {
+  if (err) 
+    res.jsonp({error: err, message: "Register error: " + err})
+  else
+  {
+    passport.authenticate("local")(req,res,function()
+    {
+      createtoken(req,res)
+    })
+  }
+}     
 
 router.post('/register', function(req, res) {
   console.log('Na cb do POST register...')
-  User.register(new User({username:req.body.username}),req.body.password, function(err,user){
-    if(err)
-    {
-      console.log('Erro ' + err)
-      return res.render('register',{user : user})
-    }
-    else
-    {
-      passport.authenticate('local')(req,res,function () {
-        res.redirect('/')
-      })
-    }
-  })
+  // console.log(req.body)
+  // res.jsonp({message:'boas'})
+  User.register(createUser(req),req.body.password, function(err, user) {posRegister(err,user,res,req)})
+})
+
+router.put('/:id/password', auth.verificaAcesso, function(req, res) {
+  CUser.updateUserPassword(req.params.id, req.body)
+    .then(dados => {res.jsonp(dados)})
+    .catch(erro => {res.jsonp({error: erro, message: "Erro na alteração do utilizador"})})
+})
+  
+router.post('/login', passport.authenticate('local'), function(req, res){
+  createtoken(req,res)
 })
 
 module.exports = router;
