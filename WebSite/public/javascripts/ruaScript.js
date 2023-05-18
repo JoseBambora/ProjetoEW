@@ -112,7 +112,8 @@ $(function(){
                     response.sort((r1,r2) => euclidianDistance(latcenter,loncenter,r1) - euclidianDistance(latcenter,loncenter,r2))
                     const lat = response[0].lat;
                     const lon = response[0].lon;
-                    $('#linkrua').attr("href",`https://www.openstreetmap.org/#map=17/${lat}/${lon}`);
+                    $('#linkrua1').attr("href",`https://www.openstreetmap.org/#map=17/${lat}/${lon}`);
+                    $('#linkrua2').attr("href",`https://www.openstreetmap.org/#map=17/${lat}/${lon}`);
                 }
             }
         };
