@@ -5,7 +5,7 @@ module.exports.verificaAcesso = function (req, res, next){
     if(myToken){
       jwt.verify(myToken, "RuasBragaEW", function(e, payload){
         if(e){
-          res.status(401).jsonp({error: e})
+          res.status(401).jsonp({error: e, validade:false})
         }
         else{
           next()
@@ -13,6 +13,6 @@ module.exports.verificaAcesso = function (req, res, next){
       })
     }
     else{
-      res.status(401).jsonp({error: "Token inexistente!"})
+      res.status(401).jsonp({error: "Token inexistente!", validade:false})
     }
   }

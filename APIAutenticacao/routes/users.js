@@ -59,4 +59,8 @@ router.post('/login', passport.authenticate('local'), function(req, res){
   createtoken(req,res)
 })
 
+router.get('/verifytoken',auth.verificaAcesso, function(req, res) {
+  res.jsonp({validade:true})
+})
+
 module.exports = router;
