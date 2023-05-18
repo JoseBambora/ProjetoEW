@@ -265,7 +265,7 @@ $(function(){
         
         }
     })
-    $('#btnSubmitEditRua').click(function()
+    $('.btnSubmitEditRua').click(function()
     {
         event.preventDefault();
         par = $("#paragrafos").val().split('\n')
@@ -287,6 +287,7 @@ $(function(){
         if(mensagemerro.length == 0)
         {
             send = {d: JSON.stringify(data)}
+            console.log(send)
             url = 'http://localhost:7777/rua/edit/'+id
             $.post(url,send,function(response){
                 window.location.href = '/rua/' + id;         

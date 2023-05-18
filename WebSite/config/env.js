@@ -7,4 +7,5 @@ module.exports.entidades = "http://localhost:7776/entidades/"
 module.exports.entidadenome = "http://localhost:7776/entidadenomes/"
 module.exports.userlogin = "http://localhost:7775/users/login"
 module.exports.userregister = "http://localhost:7775/users/register"
+module.exports.verifytoken = "http://localhost:7775/users/verifytoken"
 

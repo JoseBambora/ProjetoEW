@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Rua = require('../controllers/rua')
 var multer = require('multer')
+var auth = require('../auth/auth')
 var upload = multer({dest:'uploads'})
 var fs = require('fs')
 
@@ -62,7 +63,8 @@ router.get('/:idrua', function(req, res, next) {
     getRua(req,res)
 });
 
-router.get('/edit/:idrua', function(req, res, next) {
+function getRuaEdit(req,res,next)
+{
     var d = getDate()
     Rua.getRuaOriginal(req.params.idrua)
     .then(data => 
@@ -72,9 +74,10 @@ router.get('/edit/:idrua', function(req, res, next) {
         console.log('Página edit rua ' + req.params.idrua)
     })
     .catch(erro => res.render('error', {error: erro, d:d}))
-});
+}
 
-router.post('/edit/:idrua',function(req,res,next){
+function postRuaEdit(req,res,next)
+{
     var d = getDate()
     console.log('Post edit ' +req.params.idrua)
     var data = JSON.parse(req.body.d)
@@ -84,14 +87,16 @@ router.post('/edit/:idrua',function(req,res,next){
         res.redirect('/rua/'+req.params.idrua)
     })
     .catch(erro => res.render('error', {error: erro, d:d}))
-})
+}
 
-router.get('/fotos/:idrua',function(req,res,next){
+function getFotosEdit(req,res,next)
+{
     var d = getDate()
     Rua.getRua(req.params.idrua)
     .then(data => {res.render('uploadimg',{ rua: data, d:d, nome_rua: data._id.replaceAll('_',' ')})})
     .catch(erro => res.render('error', {error: erro, d:d}))
-})
+}
+
 
 function getPaths(req)
 {
@@ -106,7 +111,8 @@ function getPaths(req)
     return [oldPath, newPath, pat]
 }
 
-router.post("/fotos/:idrua", upload.single('myfile'), (req, res)=>{
+function postFotosEdit(req,res,next)
+{
     var d = getDate()
     gp = getPaths(req)
     oldPath = gp[0]
@@ -117,6 +123,32 @@ router.post("/fotos/:idrua", upload.single('myfile'), (req, res)=>{
     Rua.updateFiguraRua(req.params.idrua,data)
     .then(data => { res.redirect('/rua/'+req.params.idrua)})
     .catch(erro => res.render('error', {error: erro, d:d}))
+}
+
+function protegidas(req,res,next,fun)
+{
+    auth.verificaAcesso(req)
+    .then(valido => {
+        if (valido) fun(req,res,next); 
+        else res.redirect('/users/login');
+    })
+    .catch(_ => res.redirect('/users/login'))
+}
+
+router.get('/edit/:idrua', function(req, res, next) {
+    protegidas(req,res,next,getRuaEdit)
+});
+
+router.post('/edit/:idrua',function(req,res,next){
+    protegidas(req,res,next,postRuaEdit)
+})
+
+router.get('/fotos/:idrua',function(req,res,next){
+    protegidas(req,res,next,getFotosEdit)
+})
+
+router.post("/fotos/:idrua",upload.single('myfile'), (req, res,next)=>{
+    protegidas(req,res,next,postFotosEdit)
 })
 
 module.exports = router;
