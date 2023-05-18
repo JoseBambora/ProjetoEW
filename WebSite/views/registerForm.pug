@@ -1,0 +1,21 @@
+extends template
+
+block content
+  .w3-card-4
+    h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;") 
+        b.w3-margin-left Register Form
+    form.w3-container(action="/users/register" method="POST")
+        fieldset 
+            legend Credenciais:
+            label Nome do utilizador
+            input.w3-input(type="text" name="username")
+            label Email
+            input.w3-input(type="text" name="email")
+            label Password 
+            input.w3-input(type="password" name="password")
+            label Data nascimento 
+            input.w3-input(type="text" name="birth_date")
+            label Morada
+            input.w3-input(type="text" name="address")
+        br
+        input.w3-btn.w3-blue(type="submit" value="Send")

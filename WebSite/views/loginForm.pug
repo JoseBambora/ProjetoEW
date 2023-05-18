@@ -1,0 +1,16 @@
+extends template
+
+block content
+  .w3-card-4
+    h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;") 
+        b.w3-margin-left Login Form
+    form.w3-container(action="/users/login" method="POST")
+        fieldset 
+            legend Credenciais: 
+            label Username 
+            input.w3-input(type="text" name="username")
+            label Password 
+            input.w3-input(type="password" name="password")
+        br
+        input.w3-btn.w3-blue(type="submit" value="Send")
+        br
