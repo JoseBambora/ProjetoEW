@@ -1,6 +1,29 @@
 extends template
 
 block content
-  h1 Projeto de Engenharia Web
-  p Este projeto está a ser desenvolvido no âmbito da UC de Engenharia Web, com o objetivo de apresentar um mapa das ruas da cidade de Braga. O tema do projeto centra-se em apresentar uma listagem das ruas, onde é possível aceder à descrição da mesma e a algumas imagens ilustrativas. É possível ainda aceder a páginas relativas às várias entidades e datas referenciadas nas ruas. Todas estas funcionalidades podem ser acedidas através do nosso website.
-
+  h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;")
+    b.w3-margin-left Bem vindo
+  h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+    b A preservar a história da cidade, uma rua de cada vez!  
+  p.w3-margin-left O mapa das ruas de Braga é um projeto fruto do trabalho prático realizado para a unidade curricular de Engenharia Web, cadeira opcional para o terceiro ano da licenciatura em Engenharia Informática da Universidade do Minho. Este trabalho utiliza ferramentas abordadas na disciplina, nomeadamente:
+  ul.w3-ul
+    li Node.js - esta plataforma é construida através de Express
+    li MongoDB - os dados que servem este projeto estão armazenados numa base de dados Mongo
+    li Pug - as páginas web que são apresentadas são geradas através do pug 
+    li Diversos pacotes como mongoose, passport, session-file-store, jsonwebtoken, etc 
+    li Docker - a plataforma corre em containers
+  h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+    b A ideia...
+  p.w3-margin-left Esta plataforma tem como objetivo hospedar um sistema open source que permita adicionar, remover e/ou alterar dados remetentes a ruas da cidade de Braga. Para além disso, é possivel aceder a listagens, tanto de entidades como de referências temporais que surjem nas descrições das ruas do sistema.
+  h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+    b Como posso utilizar a plataforma?
+  p.w3-margin-left É simples, no topo das páginas da plataforma terá sempre um menu com quatro opções, a primeira redireciona para esta página, a segunda apresenta a lista de ruas, a terceira a lista de datas e a quarta a lista de entidades.
+  p.w3-margin-left Ao aceder a qualquer uma das listagens, poderá consultar a informação presente no sistema, abrindo caso deseje páginas que contêm no caso das ruas, a informação específica de uma rua, e no caso das datas e das entidades a lista de ruas em que estas aparecem.
+  p.w3-margin-left As listagens de datas e de entidades são automáticamente geradas no sistema a partir das descrições presentes nas ruas. Caso deseje editar a informação de uma rua, apagar ruas ou adicionar ruas novas terá de se autenticar no sistema. Para editar a é recomendado que cumpra com as regras enunciadas na página de edição, respeitando a sintáxe necessária para adicionar entidades, referências temporais ou para referenciar outro local.
+  p.w3-margin-left Caso pretenda conhecer melhor os desenvolvedores do projeto, tem no fundo das páginas, acesso a informação dos mesmos.
+  h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+    b Links relevantes:
+  ul.w3-ul
+    li #[a( target="_blank",href="https://di.uminho.pt/") Website do departamento de informática da Universidade do Minho]
+    li #[a( target="_blank",href="https://epl.di.uminho.pt/~jcr/AULAS/EngWeb2023/index.html") Website da disciplina de Engenharia Web]
+  
