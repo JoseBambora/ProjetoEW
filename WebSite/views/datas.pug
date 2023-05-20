@@ -23,7 +23,7 @@ block content
             .w3-panel.w3-leftbar.w3-border-blue
                 b   
                     a.w3-hover-light-blue(href=`data/${date.replaceAll(' ','_')}`)= date
-                p Referenciado nas Ruas: &nbsp;
+                p Referenciado em: &nbsp;
                     each s, index in streets.filter(s => s.datas.includes(date))
                         a.w3-hover-light-blue(href=`/rua/${s._id}`) #{s._id.replaceAll('_',' ')}
                         if (index < streets.filter(s => s.datas.includes(date)).length - 1)
