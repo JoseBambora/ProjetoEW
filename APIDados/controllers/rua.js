@@ -68,7 +68,7 @@ module.exports.formatParagraphRuas = (ruas) =>
 }
 
 module.exports.list = () => {
-    return Rua.find()
+    return Rua.find().sort({_id:1})
     .then(data => { return data })
     .catch(erro => {return erro})
 }
@@ -132,18 +132,12 @@ module.exports.updateFieldsRua = (id,dados) => {
 module.exports.deleteRua = id => {
     return Rua.deleteOne({_id: id})
 }
- 
+
+
 module.exports.getNomeEntidades = () => {
-    return this.list()
+    return Rua.distinct("entidades.nome")
       .then(data => {
-        ruas = data
-        entidades = []
-        for(var rua of ruas){
-          const entityNames = rua.entidades.map(entity => entity.nome);
-          entidades = entidades.concat(entityNames);
-        }
-        entidades = Array.from(entidades).map(str => str.charAt(0).toUpperCase() + str.slice(1)).sort();
-        entidades = [...new Set(entidades)];
+        const entidades = Array.from(data).map(str => str.charAt(0).toUpperCase() + str.slice(1)).sort()
         return entidades
       })
       .catch(erro => {
@@ -152,22 +146,17 @@ module.exports.getNomeEntidades = () => {
   }
   
   module.exports.getEntidades = () => {
-    return this.list()
+    return Rua.aggregate([
+      { $project: { _id: 0, entidades: 1 } },
+      { $unwind: "$entidades" },
+      { $replaceRoot: { newRoot: "$entidades" } }
+    ])
       .then(data => {
-        ruas = data
-        entidades = []
-        for(var rua of ruas){
-          for(entidade of rua.entidades){
-            e={}
-            e["nome"] = entidade["nome"].charAt(0).toUpperCase() + entidade["nome"].slice(1)
-            e["tipo"] = entidade["tipo"]
-            if(!entidades.some(x => x.nome === e.nome)){
-                entidades.push(e)
-            }
-          }
-        }
-        entidades.sort((a, b) => a.nome.localeCompare(b.nome))
-        return entidades
+        const entidades = Array.from(data).map(e => ({ nome: (e.nome.charAt(0).toUpperCase() + e.nome.slice(1)), tipo: e.tipo }))
+        const nomes = Array.from(entidades).map(e => e.nome)
+        const uniqueEntidades = entidades.filter(e => nomes.filter(name => name === e.nome).length === 1)
+        uniqueEntidades.sort((a, b) => a.nome.localeCompare(b.nome))
+        return uniqueEntidades;
       })
       .catch(erro => {
         throw erro;

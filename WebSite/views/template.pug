@@ -13,8 +13,16 @@ html
         script(src='/javascripts/mapa.js')
     body
         header.w3-container.w3-indigo
-            h1.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                b Mapa das Ruas de Braga
+            .w3-row-padding
+                .w3-col.m12(style="width:70%")
+                    h1.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                        b Mapa das Ruas de Braga
+                .w3-col.m12(style="width:15%")
+                    br
+                    a.w3-col.w3-btn.w3-indigo.w3-border.w3-border-indigo.w3-hover-light-blue(href="/users/login") Log in
+                .w3-col.m12(style="width:15%")
+                    br
+                    a.w3-col.w3-btn.w3-indigo.w3-border.w3-border-indigo.w3-hover-light-blue(href="/users/register") Sign in
             .w3-bar.w3-center
                 a.w3-bar-item.w3-button.w3-mobile.w3-hover-light-blue(href="/",style="width:25%") Home
                 a.w3-bar-item.w3-button.w3-mobile.w3-hover-light-blue(href="/ruas/",style="width:25%") Ruas
