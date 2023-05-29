@@ -125,30 +125,30 @@ function postFotosEdit(req,res,next)
     .catch(erro => res.render('error', {error: erro, d:d}))
 }
 
-function protegidas(req,res,next,fun)
+function protegidas(req,res,next,fun,rota)
 {
     auth.verificaAcesso(req)
     .then(valido => {
         if (valido) fun(req,res,next); 
-        else res.redirect('/users/login');
+        else res.redirect('/users/login?rota='+rota);
     })
-    .catch(_ => res.redirect('/users/login'))
+    .catch(_ => res.redirect('/users/login?rota='+rota))
 }
 
 router.get('/edit/:idrua', function(req, res, next) {
-    protegidas(req,res,next,getRuaEdit)
+    protegidas(req,res,next,getRuaEdit,'/rua/edit/'+req.params.idrua)
 });
 
 router.post('/edit/:idrua',function(req,res,next){
-    protegidas(req,res,next,postRuaEdit)
+    protegidas(req,res,next,postRuaEdit,'/rua/edit/'+req.params.idrua)
 })
 
 router.get('/fotos/:idrua',function(req,res,next){
-    protegidas(req,res,next,getFotosEdit)
+    protegidas(req,res,next,getFotosEdit,'/rua/fotos/'+req.params.idrua)
 })
 
 router.post("/fotos/:idrua",upload.single('myfile'), (req, res,next)=>{
-    protegidas(req,res,next,postFotosEdit)
+    protegidas(req,res,next,postFotosEdit,'/rua/fotos/'+req.params.idrua)
 })
 
 module.exports = router;

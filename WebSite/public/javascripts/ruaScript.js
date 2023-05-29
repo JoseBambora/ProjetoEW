@@ -24,7 +24,7 @@ $(function(){
     var fotoAtual = -1
     let nfoantiga = $('.img-antiga').length-1
     let nfoatual = $('.img-atual').length-1
-    function manipulaFotos(string, variavel,avanca,num,cmp)
+    function manipulaFotos(string, variavel,avanca,num,cmp, idlabel)
     {
         if((avanca && variavel < num) || (!avanca && cmp != 0))
         {
@@ -36,15 +36,16 @@ $(function(){
             else
                 variavel-=1
             idfoto = string + variavel
+            $(idlabel)[0].innerText = "Foto "+ (variavel+1) +" de " + (num+1)
             $(idfoto).prop('style',"")
         }
         return variavel
     }
 
-    function avancaFotoAntiga(){fotoAntiga = manipulaFotos('#fant',fotoAntiga,true,nfoantiga,fotoAntiga)}
-    function recuaFotoAntiga(){fotoAntiga = manipulaFotos('#fant',fotoAntiga,false,nfoantiga,fotoAntiga)}
-    function avancaFotoAtual(){fotoAtual = manipulaFotos('#fatu',fotoAtual,true,nfoatual,fotoAtual)}
-    function recuaFotoAtual(){fotoAtual = manipulaFotos('#fatu',fotoAtual,false,nfoatual,fotoAtual)}
+    function avancaFotoAntiga(){fotoAntiga = manipulaFotos('#fant',fotoAntiga,true,nfoantiga,fotoAntiga,"#indexant")}
+    function recuaFotoAntiga(){fotoAntiga = manipulaFotos('#fant',fotoAntiga,false,nfoantiga,fotoAntiga,"#indexant")}
+    function avancaFotoAtual(){fotoAtual = manipulaFotos('#fatu',fotoAtual,true,nfoatual,fotoAtual,"#indexatu")}
+    function recuaFotoAtual(){fotoAtual = manipulaFotos('#fatu',fotoAtual,false,nfoatual,fotoAtual,"#indexatu")}
 
     function loadcasas()
     {

@@ -9,20 +9,28 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/login',function(req,res){
-  res.render('loginForm')
+  r = ''
+  if(req.query.rota)
+    r = req.query.rota
+  res.render('loginForm',{rota: r})
 })
 
 router.get('/register',function(req,res){
-  res.render('registerForm')
+  r = ''
+  if(req.query.rota)
+    r = req.query.rota
+  res.render('registerForm',{rota: r})
 })
 
 
 router.post('/login', function(req,res){
   axios.post(env.userlogin,req.body)
   .then(response => {
-    console.log(response.data)
     res.cookie('token',response.data.token)
-    res.redirect("/")
+    if(req.query.rota)
+      res.redirect(req.query.rota)
+    else
+      res.redirect("/")
     // res.json({token: response.data})
   })
   .catch(erro => res.json({error: erro}))
@@ -34,7 +42,10 @@ router.post('/register', function(req,res){
   .then(response => {
     console.log(response.data)
     res.cookie('token',response.data.token)
-    res.redirect("/")
+    if(req.query.rota)
+      res.redirect(req.query.rota)
+    else
+      res.redirect("/")
   })
   .catch(erro => res.json({error: erro}))
 })
