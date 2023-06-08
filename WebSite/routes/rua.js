@@ -41,6 +41,7 @@ function getRua(req,res)
             r = data
             fwan = 100 / r.figuras_antigas.length
             fwat = 100 / r.figuras_atuais.length
+            console.log(r.path)
             res.render('rua',{ rua: r, d:d, nome_rua: r._id.replaceAll('_',' '), fwan: fwan, fwat: fwat}); 
         }
         else

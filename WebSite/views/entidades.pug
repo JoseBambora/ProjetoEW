@@ -16,9 +16,9 @@ block content
         li.w3-bar
             .w3-panel.w3-leftbar.w3-border-blue
                 if e["tipo"] == "pessoa" || e["tipo"] == "instituição"  || e["tipo"] == "empresa"
-                    img.w3-bar-item.w3-circle(src="../../Data/entitytypes/"+e["tipo"]+".png", style="width:85px")
+                    img.w3-bar-item.w3-circle(src="/images/entitytypes/"+e["tipo"]+".png", style="width:85px")
                 else
-                    img.w3-bar-item-w3-circle(src="../../Data/entitytypes/outro.png", style="width:85px")
+                    img.w3-bar-item-w3-circle(src="/images/entitytypes/outro.png", style="width:85px")
                 b
                     a.w3-hover-light-blue(href=`entidade/${e["nome"].replaceAll(' ','_')}`)= e["nome"]
                 -var r=[]

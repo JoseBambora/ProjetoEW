@@ -29,7 +29,7 @@ app.use('/ruas', ruasRouter);
 app.use('/rua', ruaRouter);
 app.use('/datas', datasRouter);
 app.use('/entidades', entidadesRouter);
-app.use('/Data', imagemRouter);
+app.use('/images', imagemRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

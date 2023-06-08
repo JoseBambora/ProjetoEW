@@ -1,0 +1,56 @@
+version: "3"
+services:
+  main_server:
+    container_name: interface
+    build: ./WebSite
+    restart: always
+    ports:
+      - "7777:7777"
+    networks:
+      - ruasnet
+
+  data_server:
+    container_name: data
+    build: ./APIDados
+    restart: always
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/RuasBragaDB
+    ports:
+      - "7776:7776"
+    depends_on:
+      - mongodb
+    networks:
+      - ruasnet
+
+  mongodb:
+    container_name: ruas-mongodb
+    image: mongo
+    restart: always
+    ports:
+      - '27017:27017'
+    volumes:
+      - RuasData:/data/db
+    networks:
+      - ruasnet
+
+  auth_server:
+    container_name: authentication
+    build: ./APIAutenticacao
+    restart: always
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/RuasBragaDB
+    ports:
+      - "7775:7775"
+    depends_on:
+      - mongodb
+    networks:
+      - ruasnet
+      
+networks:
+  ruasnet:
+    name: ruasnet
+    driver: bridge
+
+volumes:
+  RuasData:
+  

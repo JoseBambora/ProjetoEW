@@ -6,11 +6,11 @@ block content
         .w3-cell(style="width:40%")
             .w3-container
                 if entidade.tipo == "pessoa" || entidade.tipo == "instituição"  || entidade.tipo == "empresa"
-                    img(src="../../Data/entitytypes/"+entidade.tipo+".png", style="width:250px; height:250px;")
+                    img(src="/images/entitytypes/"+entidade.tipo+".png", style="width:250px; height:250px;")
                     .w3-text-blue.w3-center
                         h8=entidade.tipo.slice(0,1).toUpperCase() + entidade.tipo.slice(1)
                 else
-                    img(src="../../Data/entitytypes/outro.png", style="width:250px; height:250px;")
+                    img(src="/images/entitytypes/outro.png", style="width:250px; height:250px;")
                     .w3-text-blue.w3-center
                         if entidade.tipo
                             h8=entidade.tipo.slice(0,1).toUpperCase() + entidade.tipo.slice(1)
