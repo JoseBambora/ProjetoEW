@@ -4,6 +4,9 @@ block content
   .w3-card-4
     h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;") 
         b.w3-margin-left Autentique-se no sistema
+    - if (erro != '')
+        h1.w3-red(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;") 
+            b.w3-margin-left=erro
     form.w3-container(action="/users/login?rota="+rota method="POST")
         fieldset 
             legend Credênciais: 

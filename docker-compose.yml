@@ -26,8 +26,6 @@ services:
     container_name: ruas-mongodb
     image: mongo
     restart: always
-    ports:
-      - '27017:27017'
     volumes:
       - RuasData:/data/db
     networks:
