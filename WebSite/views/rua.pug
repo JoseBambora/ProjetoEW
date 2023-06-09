@@ -1,6 +1,7 @@
 extends template
 
 block content 
+    .modal(id="confirmardelete")
     h1.w3-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;")
         b.w3-margin-left(id="nome_rua") #{nome_rua}
     .w3-container
@@ -14,8 +15,11 @@ block content
                     a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/edit/" + rua._id) Atualizar Rua
                 .w3-col.m12(style="width:20%")
                     a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/add/") Criar Rua
-                .w3-col.m12(style="width:30%")
+                .w3-col.m12(style="width:20%")
                     a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/" id="linkrua1" target="_blank") Link Rua OpenStreetMap
+                .w3-col.m12(style="width:20%")
+                    a.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/delete/" + rua._id) Eliminar Rua
+        
             br
         hr
         .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4

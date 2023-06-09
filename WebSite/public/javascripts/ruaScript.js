@@ -120,6 +120,7 @@ $(function(){
         };
         xhr.send();
     }
+
     function initFun()
     {
         if ($('#nome_rua').length)
@@ -166,9 +167,12 @@ $(function(){
         let pos = Number(codigo.slice(1))
         let cod2 = cod.slice(1)
         lug = [...$('.'+atr)]
+        console.log(lug)
+        console.log(codigo)
         for(var i = pos+1; i < lug.length; i++)
         {
             $('#'+cod2+i)[0].textContent = $('#'+cod2+i)[0].textContent.replace(exp,cod+(i-1))
+            $('#'+cod2+i).attr("id",cod2+(i-1))
         }
         $('#'+codigo).remove()
     }
@@ -319,26 +323,6 @@ $(function(){
         $('#atualcb').prop('checked', true);
         $('#antigacb').prop('checked', false);
     })
-
-    $('#btnSubmitRua').click(function()
-    {
-        event.preventDefault();
-        id = $('#id').val().replaceAll(' ','_')
-        data = {
-            _id:id,
-            figuras_antigas: [],
-            figuras_atuais: [],
-            paragrafos : [],
-            lugares: [],
-            datas: [],
-            entidades: []
-        }
-        send = {d: JSON.stringify(data)}
-        url = 'http://localhost:7777/rua/add/'
-        $.post(url,send,function(response){
-            window.location.href = '/ruas/';         
-        })
-    })
     $('#btnLugElimina').click(function(){
         event.preventDefault();
         remove(selectedlilugar,le,/#L\d+/g,'#L')
@@ -433,7 +417,6 @@ $(function(){
         event.preventDefault();
         avancaFotoAtual()
     })
-
     $('#anteriorfotoatual').click(function(){
         event.preventDefault();
         recuaFotoAtual()

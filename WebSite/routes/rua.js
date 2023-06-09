@@ -20,11 +20,20 @@ router.get('/add/', (req, res, next)=>{
 
 router.post("/add/", (req, res, next)=>{
     var d = getDate()
-    request = JSON.parse(req.body.d)
-    Rua.insertRua(request)
+    let name = req.body.nome.replaceAll(' ', '_')
+    let obj = {
+        _id:name,
+        figuras_antigas: [],
+        figuras_atuais: [],
+        paragrafos : [],
+        lugares: [],
+        datas: [],
+        entidades: []
+    }
+    Rua.insertRua(obj)
     .then(data => 
     {
-        res.redirect('/ruas/')
+        res.redirect('/rua/'+name)
     })
     .catch(erro => res.render('error', {error: erro, d:d}))
 
@@ -36,12 +45,11 @@ function getRua(req,res)
     Rua.getRua(req.params.idrua)
     .then(data => 
     {
-        if (data)
+        if (data && !data.error)
         {
             r = data
             fwan = 100 / r.figuras_antigas.length
             fwat = 100 / r.figuras_atuais.length
-            console.log(r.path)
             res.render('rua',{ rua: r, d:d, nome_rua: r._id.replaceAll('_',' '), fwan: fwan, fwat: fwat}); 
         }
         else
@@ -60,9 +68,6 @@ function updateRua(data, d,res)
     .catch(erro => res.render('error', {error: erro, d:d}))
 }
 
-router.get('/:idrua', function(req, res, next) {
-    getRua(req,res)
-});
 
 function getRuaEdit(req,res,next)
 {
@@ -126,6 +131,20 @@ function postFotosEdit(req,res,next)
     .catch(erro => res.render('error', {error: erro, d:d}))
 }
 
+function deleteRua(req,res,next)
+{
+    console.log('entrou')
+    Rua.deleteRua(req.params.idrua)
+    .then(data => {res.redirect('/ruas/')})
+    .catch(erro => res.render('error', {error: erro, d:d}))
+}
+
+
+function getDeleteRua(req,res,next)
+{
+    res.render('ruadelete',{id:req.params.idrua})
+}
+
 function protegidas(req,res,next,fun,rota)
 {
     auth.verificaAcesso(req)
@@ -135,6 +154,11 @@ function protegidas(req,res,next,fun,rota)
     })
     .catch(_ => res.redirect('/users/login?rota='+rota))
 }
+
+
+router.get('/:idrua', function(req, res, next) {
+    getRua(req,res)
+});
 
 router.get('/edit/:idrua', function(req, res, next) {
     protegidas(req,res,next,getRuaEdit,'/rua/edit/'+req.params.idrua)
@@ -150,6 +174,14 @@ router.get('/fotos/:idrua',function(req,res,next){
 
 router.post("/fotos/:idrua",upload.single('myfile'), (req, res,next)=>{
     protegidas(req,res,next,postFotosEdit,'/rua/fotos/'+req.params.idrua)
+})
+
+router.post("/delete/:idrua", function(req, res, next) {
+    protegidas(req,res,next,deleteRua,'/rua/'+req.params.idrua)
+});
+
+router.get("/delete/:idrua",function(req,res,next){
+    protegidas(req,res,next,getDeleteRua,'/rua/delete/'+req.params.idrua)
 })
 
 module.exports = router;

@@ -1,0 +1,14 @@
+extends template
+
+block content 
+    .w3-container
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo
+            h1.w3-text-blue(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;")
+                b Deseja remover a rua #{id} do sistema?
+            form(method="POST")
+                .w3-row-padding.w3-center
+                    .w3-col.m12(style="width:20%") 
+                        input.w3-col.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(type="submit" value="Confirmar")
+                    .w3-col.m12(style="width:20%") 
+                        a.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href = '/rua/'+id) Cancelar
+            br

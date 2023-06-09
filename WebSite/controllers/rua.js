@@ -49,7 +49,7 @@ module.exports.updateFiguraRua = (id,dados) => {
 
 
 module.exports.deleteRua = id => {
-    return axios.deleteRua(Env.rua+rua._id)
+    return axios.delete(Env.rua+id)
     .then(dados => { return dados })
     .catch(erro => { return erro })
 }
