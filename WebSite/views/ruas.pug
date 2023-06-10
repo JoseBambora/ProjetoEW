@@ -7,9 +7,12 @@ block content
         p Caso pretanda aceder diretamente à pagina de uma rua registada no sistema utilize a barra de pesquisas.
         label.w3-text-blue(for="nomeRua") Pesquisar Rua
         input.w3-input.w3-border(type="text" placeholder="Nome da Rua" id="nomeRua" name="nomeRua")
+        br
         button.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(onclick="buscaRua($('#nomeRua').val())") Submeter Pesquisa
     br
-    a.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/add/") Criar Rua
+    .w3-container
+        a.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/rua/add/") Criar Rua
+    br
     table.w3-table.w3-hoverable
         thead
             tr.w3-blue

@@ -1,5 +1,4 @@
 $(function(){
-    var casasshown = 0
     var select = false
     let expL = /\#L\d+/g
     let expD = /\#D\d+/g
@@ -15,18 +14,16 @@ $(function(){
     let de = 'dataelem'
     let le = 'lugareelem'
     let ncasas = casas = $('#listacasasul li').length
-    var casasShow = []
     var casas = []
-    var indice = 0
+    var indice = -1
     let numcasas = 3
-    let paginas
     var fotoAntiga = -1
     var fotoAtual = -1
     let nfoantiga = $('.img-antiga').length-1
     let nfoatual = $('.img-atual').length-1
     function manipulaFotos(string, variavel,avanca,num,cmp, idlabel)
     {
-        if((avanca && variavel < num) || (!avanca && cmp != 0))
+        if(num > -1 && ((avanca && variavel < num) || (!avanca && cmp != 0)))
         {
             var idfoto = string + variavel
             if (variavel != -1)
@@ -49,44 +46,49 @@ $(function(){
 
     function loadcasas()
     {
+        aux = []
         for(var i = 0; i < ncasas; i++)
         {
-            casas.push('#casa'+i)
+            aux.push('#casa'+i)
+            if(i % numcasas == numcasas-1)
+            {
+                casas.push(aux)
+                aux = []
+            }
         }
-        paginas = Math.ceil(casas.length/numcasas)
-    }
-    function clearHouses()
-    {
-        for(var casa of casasShow)
+        if(aux.length > 0)
         {
-            $(casa).prop('style',"display:none;")
+            casas.push(aux)
         }
-        casasShow = []
+        paginas = Math.ceil(casas.length)
+    }
+    function applyStyleHouse(index,aux)
+    {
+        for(var casa of casas[index])
+        {
+            $(casa).prop('style',aux)
+        }
     }
     function showNHouses(index)
     {
+        var res = indice
         if(index >= 0 && index < casas.length)
         {
-            clearHouses()
-            console.log(index)
-            var i = index;
-            for(; i < numcasas + index && i < casas.length; i++)
-            {
-                $(casas[i]).prop('style',"")
-                casasShow.push(casas[i])
-            }
-            indice = i
-            pag = Math.ceil(indice/numcasas)
-            $('#nrPaginasCasas')[0].innerText = "Página "+ pag +" de " + paginas
+            if(indice > -1)
+                applyStyleHouse(indice,"display:none;")
+            applyStyleHouse(index,"")
+            $('#nrPaginasCasas')[0].innerText = "Página "+ (index+1) +" de " + casas.length
+            res = index
         }
+        return res
     }
     function showMoreHouses()
     {
-        showNHouses(indice)
+        indice = showNHouses(indice+1)
     }
     function showLessHouses()
     {
-        showNHouses(indice-(numcasas*2))
+        indice = showNHouses(indice-1)
     }
     function euclidianDistance(latcenter, loncenter,r)
     {
@@ -109,7 +111,7 @@ $(function(){
                 if (response.length > 0) 
                 {
                     let latcenter = 41.54988, loncenter = -8.42682
-                    console.log(response)
+                    // console.log(response)
                     response.sort((r1,r2) => euclidianDistance(latcenter,loncenter,r1) - euclidianDistance(latcenter,loncenter,r2))
                     const lat = response[0].lat;
                     const lon = response[0].lon;
@@ -167,8 +169,8 @@ $(function(){
         let pos = Number(codigo.slice(1))
         let cod2 = cod.slice(1)
         lug = [...$('.'+atr)]
-        console.log(lug)
-        console.log(codigo)
+        // console.log(lug)
+        // console.log(codigo)
         for(var i = pos+1; i < lug.length; i++)
         {
             $('#'+cod2+i)[0].textContent = $('#'+cod2+i)[0].textContent.replace(exp,cod+(i-1))
@@ -293,7 +295,7 @@ $(function(){
         if(mensagemerro.length == 0)
         {
             send = {d: JSON.stringify(data)}
-            console.log(send)
+            // console.log(send)
             url = 'http://localhost:7777/rua/edit/'+id
             $.post(url,send,function(response){
                 window.location.href = '/rua/' + id;         

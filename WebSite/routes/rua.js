@@ -13,12 +13,12 @@ function getDate()
     return d
 }
 
-router.get('/add/', (req, res, next)=>{
+function getRuaForm(req,res,next){
     var d = getDate()
     res.render('ruaform',{d:d})
-})
+}
 
-router.post("/add/", (req, res, next)=>{
+function createRua(req,res,next){
     var d = getDate()
     let name = req.body.nome.replaceAll(' ', '_')
     let obj = {
@@ -31,13 +31,9 @@ router.post("/add/", (req, res, next)=>{
         entidades: []
     }
     Rua.insertRua(obj)
-    .then(data => 
-    {
-        res.redirect('/rua/'+name)
-    })
+    .then(data => { res.redirect('/rua/'+name)})
     .catch(erro => res.render('error', {error: erro, d:d}))
-
-})
+}
 
 function getRua(req,res)
 {
@@ -107,10 +103,10 @@ function getFotosEdit(req,res,next)
 function getPaths(req)
 {
     let oldPath = __dirname + '/../' + req.file.path
-    var pat = '/Data/imagem/'+ req.file.originalname
+    var pat = '/images/imagem/'+ req.file.originalname
     if (req.body.epoca=='atual')
-        pat = '/Data/atual/'+req.file.originalname
-    let newPath = __dirname + '/../..' + pat
+        pat = '/images/atual/'+req.file.originalname
+    let newPath = __dirname + '/../public/' + pat
     console.log('cdir: ' + __dirname)
     console.log('old: '  + oldPath)
     console.log('new: '  + newPath)
@@ -156,6 +152,12 @@ function protegidas(req,res,next,fun,rota)
 }
 
 
+router.get('/add/', (req, res, next)=>{
+    protegidas(req,res,next,getRuaForm,'/rua/add/')
+})
+router.post("/add/", (req, res, next)=>{
+    protegidas(req,res,next,createRua,'/rua/add/')
+})
 router.get('/:idrua', function(req, res, next) {
     getRua(req,res)
 });

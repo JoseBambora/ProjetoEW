@@ -45,7 +45,7 @@ router.post('/login', function(req,res){
       res.redirect("/")
     // res.json({token: response.data})
   })
-  .catch(erro => {res.cookie('erro',true); res.redirect('/users/login/')})
+  .catch(erro => {res.cookie('erro',true); res.redirect('/users/login/?rota='+req.query.rota)})
 })
 
 router.post('/register', function(req,res){
@@ -58,7 +58,7 @@ router.post('/register', function(req,res){
     else
       res.redirect("/")
   })
-  .catch(erro => {res.cookie('erro',true); res.redirect('/users/register/')})
+  .catch(erro => {res.cookie('erro',true); res.redirect('/users/register/?rota='+req.query.rota)})
 })
 
 module.exports = router;
