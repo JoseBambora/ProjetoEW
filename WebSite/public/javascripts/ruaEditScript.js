@@ -257,7 +257,7 @@ $(function(){
         else
         {
             // Informação errada
-            var mensagem = '<div class="w3-panel w3-light-grey w3-border w3-border-indigo"> <ul class="w3-ul"> <li> <h4 class= "w3-text-blue w3-margin-left" tyle="text-shadow:2px 2px 0 #444"><b>Alterações não submetidas</b </h4> </li>'
+            var mensagem = '<div class="w3-panel w3-light-grey w3-border w3-border-indigo"> <ul class="w3-ul"> <li> <h4 class= "w3-text-blue w3-margin-left" tyle="text-shadow:2px 2px 0 #444"><b>Alterações não submetidas</b> </h4> </li>'
             for(let m of mensagemerro)
             {
                 mensagem += '<li>'+m+'</li>'
