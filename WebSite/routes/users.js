@@ -9,29 +9,29 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/login',function(req,res){
-  r = ''
   e = ''
+  querys = ''
   if(req.query.rota)
-    r = req.query.rota
+    querys = '?rota=' + req.query.rota
   if(req.cookies.erro)
   {
     e = 'Credenciais erradas'
     res.clearCookie('erro')
   }
-  res.render('loginForm',{rota: r, erro: e})
+  res.render('loginForm',{erro: e, querys: querys})
 })
 
 router.get('/register',function(req,res){
-  r = ''
   e = ''
+  querys = ''
   if(req.query.rota)
-    r = req.query.rota
+    querys = '?rota=' + req.query.rota
   if(req.cookies.erro)
   {
     e = 'Erro ao registar utilizador'
     res.clearCookie('erro')
   }
-  res.render('registerForm',{rota: r, erro: e})
+  res.render('registerForm',{erro: e, querys: querys})
 })
 
 

@@ -7,17 +7,19 @@ block content
     - if (erro != '')
         h1.w3-red(tyle="text-shadow:2px 2px 0 #444",style="margin-top: 0px;") 
             b.w3-margin-left=erro
-    form.w3-container(action="/users/login?rota="+rota method="POST")
-        fieldset 
-            legend Credenciais: 
-            label Username 
-            input.w3-input(type="text" name="username")
-            label Password 
-            input.w3-input(type="password" name="password")
+    form.w3-container(action="/users/login"+querys method="POST")
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+            h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                b Nome do utilizador
+            input.w3-input.w3-border.w3-border-indigo(type="text" name="username")
+            h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                b Palavra Passe
+            input.w3-input.w3-border.w3-border-indigo(type="password" name="password")
+            br
         br
         .w3-row-padding.w3-center
             .w3-col.m12(style="width:10%")
-                input.w3-btn.w3-blue(type="submit" value="Submeter")
+                input.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(type="submit" value="Submeter")
             .w3-col.m12(style="width:10%")
-                a.w3-btn.w3-blue.w3-hover-light-blue(href="/users/register/?rota="+rota) Registar
+                a.w3-btn.w3-blue.w3-border.w3-border-indigo.w3-hover-light-blue(href="/users/register/"+querys) Registar
         br
