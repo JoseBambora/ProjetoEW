@@ -171,8 +171,13 @@ module.exports.getNomeEntidades = () => {
     ])
       .then(data => {
         const entidades = Array.from(data).map(e => ({ nome: (e.nome.charAt(0).toUpperCase() + e.nome.slice(1)), tipo: e.tipo }))
-        const nomes = Array.from(entidades).map(e => e.nome)
-        const uniqueEntidades = entidades.filter(e => nomes.filter(name => name === e.nome).length === 1)
+        const uniqueEntidades = entidades.reduce((acc, cur) => {
+            const found = acc.find(obj => obj.nome === cur.nome);
+            if (!found) {
+              acc.push(cur);
+            }
+            return acc;
+          }, []);
         uniqueEntidades.sort((a, b) => a.nome.localeCompare(b.nome))
         return uniqueEntidades;
       })

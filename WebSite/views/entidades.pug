@@ -24,7 +24,7 @@ block content
                 -var r=[]
                 each rua in ruas 
                     -var aux = rua.entidades
-                    -const regex = new RegExp(e["nome"],"i")
+                    -const regex = new RegExp("^"+e["nome"]+"$", "i");
                     each a in aux
                         -nome = a.nome
                         -if(nome.match(regex)) r.push((rua._id).replaceAll('_',' '))
