@@ -8,3 +8,8 @@ function buscaEntidade(nomeEntidade) {
   window.location.href='/entidades/entidade/' + entidade;
 }
 
+function buscaData(nomeData) {
+  var entidade = nomeData.replaceAll(' ', '_');
+  window.location.href='/datas/data/' + entidade;
+}
+
