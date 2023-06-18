@@ -25,8 +25,7 @@ module.exports.getRuaOriginal = (id) => {
 module.exports.insertRua = (rua,token) => {
     return axios.get(Env.decodetoken+'?token='+token)
     .then(response => {
-        rua.updates = [{username: response.data.username , message: 'Criação da rua', date: new Date().toISOString().substring(0,16)}]
-        return axios.put(Env.ruas,rua)
+        return axios.put(Env.ruas+'?username='+response.data.username,rua)
         .then(dados => { return dados })
         .catch(erro => { return erro })
     })

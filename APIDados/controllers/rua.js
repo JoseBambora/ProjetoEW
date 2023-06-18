@@ -57,7 +57,7 @@ function formatUpdate(username,msg)
     return {
         username: username,
         message: msg,
-        date: new Date().toISOString().substring(0, 16)
+        date: new Date().toISOString().substring(0, 10)
     }
 }
 
@@ -89,7 +89,8 @@ module.exports.getRua = (id) => {
     .catch(erro => {return erro}) 
 }
 
-module.exports.insertRua = rua => {
+module.exports.insertRua = (rua,username) => {
+    rua.updates = [formatUpdate(username,'Criação da rua')]
     return Rua.create(rua)
     .then(dados => { return dados })
     .catch(erro => { return erro })
@@ -104,7 +105,7 @@ module.exports.updateRua = rua => {
 
 function updateOld(id,path,legenda,username)
 {
-    let msg = formatUpdate(username, 'Nova imagem antiga')
+    let msg = formatUpdate(username, 'Adicionou uma nova imagem antiga')
     return Rua.updateOne({_id : id},{$push:{ 'figuras_antigas':{path:path,legenda:legenda}, 'updates':msg}})
     .then(dados => { return dados })
     .catch(erro => { return erro })
@@ -112,7 +113,7 @@ function updateOld(id,path,legenda,username)
 
 function updateNew(id,path,legenda,username)
 {
-    let msg = formatUpdate(username, 'Nova imagem atual')
+    let msg = formatUpdate(username, 'Adicionou uma nova imagem atual')
     return Rua.updateOne({_id : id},{$push:{ 'figuras_atuais':{path:path,legenda:legenda}, 'updates':msg}})
     .then(dados => { return dados })
     .catch(erro => { return erro })

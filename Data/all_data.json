@@ -3,11 +3,11 @@
         "_id": "Rua_de_Sto._António",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-19-RuaDeStoAntonio-nascente.jpg",
+                "path": "/images/imagem/imagem/MRB-19-RuaDeStoAntonio-nascente.jpg",
                 "legenda": "Rua de Sto. António - nascente"
             },
             {
-                "path": "/images/imagem/MRB-19-RuaDeStoAntonio-poente.jpg",
+                "path": "/images/imagem/imagem/MRB-19-RuaDeStoAntonio-poente.jpg",
                 "legenda": "Rua de Sto. António - poente"
             }
         ],
@@ -182,25 +182,32 @@
                     " A casa n.º 22 confronta, do norte, com a travessa que vem da #L3. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_da_Ponte_de_Guimarães",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-a.jpg",
+                "path": "/images/imagem/imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-a.jpg",
                 "legenda": "Rua da Ponte de Guimarães - Nascente-a."
             },
             {
-                "path": "/images/imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-b.jpg",
+                "path": "/images/imagem/imagem/MRB-38-RuaDaPonteDeGuimaraes-Nascente-b.jpg",
                 "legenda": "Rua da Ponte de Guimarães - Nascente-b."
             },
             {
-                "path": "/images/imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-a.jpg",
+                "path": "/images/imagem/imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-a.jpg",
                 "legenda": "Rua da Ponte de Guimarães - Poente-a."
             },
             {
-                "path": "/images/imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-b.jpg",
+                "path": "/images/imagem/imagem/MRB-38-RuaDaPonteDeGuimaraes-Poente-b.jpg",
                 "legenda": "Rua da Ponte de Guimarães - Poente-b."
             }
         ],
@@ -1282,17 +1289,24 @@
                     "#E108, ferreiro, casado com #E109, paga 1603 reis ao nº 89 e 1 galinha. em nome do mesmo subenfiteuta, ao n° 42 da Rua de #L1. Este número corresponde a um «chão de casa» e confronta, do norte, com casa foreira à #L22."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_Santo_André",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-46-RuaDeSantoAndre-a(norte).jpg",
+                "path": "/images/imagem/imagem/MRB-46-RuaDeSantoAndre-a(norte).jpg",
                 "legenda": "Praça do Gavião - Nascente."
             },
             {
-                "path": "/images/imagem/MRB-46-RuaDeSantoAndre-a(sul).jpg",
+                "path": "/images/imagem/imagem/MRB-46-RuaDeSantoAndre-a(sul).jpg",
                 "legenda": "Praça do Gavião - Nascente."
             }
         ],
@@ -1887,17 +1901,24 @@
                     " #E53, casado com #E54, paga 2000 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Ficaram unidas em #D10. A casa n.° 49 confronta, do poente, com o quintal da casa n.° 27 da #L6."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_S.João",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-9-RuaDeSJoao-Norte.jpg",
+                "path": "/images/imagem/imagem/MRB-9-RuaDeSJoao-Norte.jpg",
                 "legenda": "Rua de S.João - vista norte. "
             },
             {
-                "path": "/images/imagem/MRB-9-RuaDeSJoao-Sul.jpg",
+                "path": "/images/imagem/imagem/MRB-9-RuaDeSJoao-Sul.jpg",
                 "legenda": "Rua de S.João - vista sul. "
             }
         ],
@@ -1957,17 +1978,24 @@
                 "tipo": "pessoa"
             }
         ],
-        "casas": []
+        "casas": [],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
+        ]
     },
     {
         "_id": "Rua_de_S._Lázaro",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-37-RuaDeSLazaro-Nascente.jpg",
+                "path": "/images/imagem/imagem/MRB-37-RuaDeSLazaro-Nascente.jpg",
                 "legenda": "Rua de S.Lázaro - Nascente."
             },
             {
-                "path": "/images/imagem/MRB-37-RuaDeSLazaro-Poente.jpg",
+                "path": "/images/imagem/imagem/MRB-37-RuaDeSLazaro-Poente.jpg",
                 "legenda": "Rua de S.Lázaro - Poente."
             }
         ],
@@ -2647,17 +2675,24 @@
                     "#E56, estudante, paga 2000 reis ao nº 42. Confronta, do norte, com a cangosta que vem de trás de #L19 para a #L8. Foi construída antes #D17."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Ponte_de_Guimarães",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-39-PonteDeGuimaraes-Norte.jpg",
+                "path": "/images/imagem/imagem/MRB-39-PonteDeGuimaraes-Norte.jpg",
                 "legenda": "Ponte de Guimarães - Norte"
             },
             {
-                "path": "/images/imagem/MRB-39-PonteDeGuimaraes-Poente.jpg",
+                "path": "/images/imagem/imagem/MRB-39-PonteDeGuimaraes-Poente.jpg",
                 "legenda": "Ponte de Guimarães - Poente"
             }
         ],
@@ -2921,17 +2956,24 @@
                     "Confronta, do sul, com a dita rua."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Travessa_da_Rua_do_Poço_para_a_de_D.Gualdim",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-15-TravessaDaRuaDoPocoParaADeDGualdim-Norte.jpg",
+                "path": "/images/imagem/imagem/MRB-15-TravessaDaRuaDoPocoParaADeDGualdim-Norte.jpg",
                 "legenda": "Travessa da Rua do Poço para a de D.Gualdim - vista norte."
             },
             {
-                "path": "/images/imagem/MRB-15-TravessaDaRuaDoPocoParaADeDGualdim-Sul.jpg",
+                "path": "/images/imagem/imagem/MRB-15-TravessaDaRuaDoPocoParaADeDGualdim-Sul.jpg",
                 "legenda": "Travessa da Rua do Poço para a de D.Gualdim - vista sul."
             }
         ],
@@ -3046,17 +3088,24 @@
                     " Corresponde ao n° 22 da #L2, para onde tem a frontaria principal. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Terreiro_de_Sto._António_e_Postigo",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-20-TerreiroDeStoAntonioEPostigo-norte.jpg",
+                "path": "/images/imagem/imagem/MRB-20-TerreiroDeStoAntonioEPostigo-norte.jpg",
                 "legenda": "RUa das Chagas - norte"
             },
             {
-                "path": "/images/imagem/MRB-20-TerreiroDeStoAntonioEPostigo-sul.jpg",
+                "path": "/images/imagem/imagem/MRB-20-TerreiroDeStoAntonioEPostigo-sul.jpg",
                 "legenda": "RUa das Chagas - poente"
             }
         ],
@@ -3177,17 +3226,24 @@
                     " Corresponde ao n.º 11 da #L11, para onde tem frontaria e serventia principais. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_Verde",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-21-RuaVerde-nascente.jpg",
+                "path": "/images/imagem/imagem/MRB-21-RuaVerde-nascente.jpg",
                 "legenda": "Rua Verde - nascente."
             },
             {
-                "path": "/images/imagem/MRB-21-RuaVerde-poente.jpg",
+                "path": "/images/imagem/imagem/MRB-21-RuaVerde-poente.jpg",
                 "legenda": "Rua Verde - poente."
             }
         ],
@@ -3390,17 +3446,24 @@
                     "Corresponde ao n.º 12 da Rua de #L4, para onde tem a fronteira e serventia principais."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_do_Paymanta",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-40-RuaDoPaymanta-Sul.jpg",
+                "path": "/images/imagem/imagem/MRB-40-RuaDoPaymanta-Sul.jpg",
                 "legenda": "Rua do Paymanta - Sul."
             },
             {
-                "path": "/images/imagem/MRB-40-RuaDoPaymanta-Norte.jpg",
+                "path": "/images/imagem/imagem/MRB-40-RuaDoPaymanta-Norte.jpg",
                 "legenda": "Rua do Paymanta - Norte."
             }
         ],
@@ -3698,17 +3761,24 @@
                     "Corresponde ao nº 51 da #L5, para onde tem a frontaria principal."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Campo_de_S._Tiago",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-33-CampoDeSTiagoRuaDoAnjo-primeira.jpg",
+                "path": "/images/imagem/imagem/MRB-33-CampoDeSTiagoRuaDoAnjo-primeira.jpg",
                 "legenda": "Campo de São Tiago - Sul"
             },
             {
-                "path": "/images/imagem/MRB-33-CampoDeSTiagoRuaDoAnjo-segunda.jpg",
+                "path": "/images/imagem/imagem/MRB-33-CampoDeSTiagoRuaDoAnjo-segunda.jpg",
                 "legenda": "Rua do Anjo - Sul."
             }
         ],
@@ -3979,17 +4049,24 @@
                     " Os herdeiros de #E29, viúva de #E30, pagam 160 reis ao nº 2. Confronta, do poente, com a #L16 e, do sul, com o nº 2 da mesma rua. Foi edificada em #D10. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Travessa_da_Rua_de_S._João_para_a_do_Forno",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-10-TravessaDaRuaDeSJoaoParaADoForno-Norte.jpg",
+                "path": "/images/imagem/imagem/MRB-10-TravessaDaRuaDeSJoaoParaADoForno-Norte.jpg",
                 "legenda": "Travessa da Rua de S. João para a do Forno - vista norte. "
             },
             {
-                "path": "/images/imagem/MRB-10-TravessaDaRuaDeSJoaoParaADoForno-Sul.jpg",
+                "path": "/images/imagem/imagem/MRB-10-TravessaDaRuaDeSJoaoParaADoForno-Sul.jpg",
                 "legenda": "Travessa da Rua de S. João para a do Forno - vista sul. "
             }
         ],
@@ -4168,17 +4245,24 @@
                     "Confronta, do nascente, com casa foreira ao #L21."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_S._Marcos",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-35-RuaDeSMarcosRuaDosGranjinhos-primeira.jpg",
+                "path": "/images/imagem/imagem/MRB-35-RuaDeSMarcosRuaDosGranjinhos-primeira.jpg",
                 "legenda": "Rua de São Marcos - Nascente"
             },
             {
-                "path": "/images/imagem/MRB-35-RuaDeSMarcosRuaDosGranjinhos-segunda.jpg",
+                "path": "/images/imagem/imagem/MRB-35-RuaDeSMarcosRuaDosGranjinhos-segunda.jpg",
                 "legenda": "Rua dos Granjinhos - Nascente"
             }
         ],
@@ -4269,17 +4353,24 @@
                     " Posteriormente, no ano de #D5, o cabido escambou as casas, que foram demolidas, sendo o terreno integrado no referido convento. Todas as casas estavam incorporadas no nº 1, da qual se separaram através de escrituras de prazo realizadas em #D6, #D7 e #D8, referentes às casas nº 4, 3 e 2, respectivamente. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Campo_de_S._Sebastião_e_em_Frente_do_Açougue",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-25-CampoDeSSebastiaoEEmFrenteDoAcougue-Poente-A.png",
+                "path": "/images/imagem/imagem/MRB-25-CampoDeSSebastiaoEEmFrenteDoAcougue-Poente-A.png",
                 "legenda": "Campo de S. Sebastião - Poente."
             },
             {
-                "path": "/images/imagem/MRB-25-CampoDeSSebastiaoEEmFrenteDoAcougue-Poente-B.png",
+                "path": "/images/imagem/imagem/MRB-25-CampoDeSSebastiaoEEmFrenteDoAcougue-Poente-B.png",
                 "legenda": "Em Frente do Assougue - Poente."
             }
         ],
@@ -4376,17 +4467,24 @@
                     " em #D8 o n.º3 e as nove casas que constituiam este prazo foram unidas ao n.º2. A casa n.º2 confronta, do sul, com terreiro da casa n.º1 e, o n.º11, do norte, com casa foreira ao #L13 "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_Sta._Maria_ou_do_Poço",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-14-RuaDeSMariaOuDoPoco-Nascente.jpg",
+                "path": "/images/imagem/imagem/MRB-14-RuaDeSMariaOuDoPoco-Nascente.jpg",
                 "legenda": "Rua de Sta. Maria ou do Poço - vista Nascente."
             },
             {
-                "path": "/images/imagem/MRB-14-RuaDeSMariaOuDoPoco-Poente.jpg",
+                "path": "/images/imagem/imagem/MRB-14-RuaDeSMariaOuDoPoco-Poente.jpg",
                 "legenda": "Rua de Sta. Maria ou do Poço - vista Poente."
             }
         ],
@@ -4709,17 +4807,24 @@
                     "Corresponde ao n.º 1 da #L31, para onde tem a frontaria e serventia principais."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "_Rua_do_Souto_Porta_do_Souto_",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-06-RuaDoSouto.PortaDoSouto-norte.png",
+                "path": "/images/imagem/imagem/MRB-06-RuaDoSouto.PortaDoSouto-norte.png",
                 "legenda": "Rua do Souto, Porta do Souto - vista norte."
             },
             {
-                "path": "/images/imagem/MRB-06-RuaDoSouto.PortaDoSouto-sul.png",
+                "path": "/images/imagem/imagem/MRB-06-RuaDoSouto.PortaDoSouto-sul.png",
                 "legenda": "Rua do Souto, Porta do Souto - vista sul."
             }
         ],
@@ -5285,13 +5390,20 @@
                     "Do nascente e poente confronta com casas dízimas a Deus. Até ao ano de #D24 o cabido possuía apenas as traseiras desta casa. A parte da frente era dízima a Deus. Posteriormente, #E16 doou ao cabido a parte que lhe cabia \"se alcançasse sentença a seu favor no pleito que trazia sobre a dita parte com #E17, viúva\". "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_do_Alcaide",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-31-DoAlcaide-Sul.png",
+                "path": "/images/imagem/imagem/MRB-31-DoAlcaide-Sul.png",
                 "legenda": "Rua do Alcaide - Sul."
             }
         ],
@@ -5402,17 +5514,24 @@
                     " Portal de serventia do campo da casa nº 20 da #L3 Confronta, do nascente, com a casa pertencente à propriedade, denominada, \"O Bispo\"."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_S._Gonçalo",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-49-RuaDeSGoncalo-a.jpg",
+                "path": "/images/imagem/imagem/MRB-49-RuaDeSGoncalo-a.jpg",
                 "legenda": "Rua de S.Gonçalo - Vista nascente-"
             },
             {
-                "path": "/images/imagem/MRB-49-RuaDeSGoncalo-b.jpg",
+                "path": "/images/imagem/imagem/MRB-49-RuaDeSGoncalo-b.jpg",
                 "legenda": "Rua de S.Gonçalo - Vista poente."
             }
         ],
@@ -5707,17 +5826,24 @@
                     " #E21, albardeiro, casado com #E14, paga 3710 reis ao enfiteuta do prazo do #E1, à face do qual foi subemprazado, no ano de #D5. A casa n.º 26 correspondia, antes desta data, a duas moradas de casas. Confronta, do sul, com o quintal do #L10."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_Direita",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-28-RuaDireita-Poente.png",
+                "path": "/images/imagem/imagem/MRB-28-RuaDireita-Poente.png",
                 "legenda": "Rua Direita - poente"
             },
             {
-                "path": "/images/imagem/MRB-28-RuaDireita-Nascente.png",
+                "path": "/images/imagem/imagem/MRB-28-RuaDireita-Nascente.png",
                 "legenda": " Rua Direita - nascente"
             }
         ],
@@ -5754,13 +5880,20 @@
                     " Não tem casas foreiras ao cabido. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_Infias",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-55-RuaDeInfias-norte.jpg",
+                "path": "/images/imagem/imagem/MRB-55-RuaDeInfias-norte.jpg",
                 "legenda": "Rua de Infias - vista norte."
             }
         ],
@@ -6200,17 +6333,24 @@
                     " #E35, casado com #E36, paga 800 reis ao enfiteuta do prazo da 1.ª metade do #L1. Confronta, do nascente, com casa foreira à Misericórdia."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_S.Miguel_O_Anjo",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-26-SaoMiguelOAnjo-Norte.png",
+                "path": "/images/imagem/imagem/MRB-26-SaoMiguelOAnjo-Norte.png",
                 "legenda": "Rua de S.Miguel O Anjo - Norte"
             },
             {
-                "path": "/images/imagem/MRB-26-SaoMiguelOAnjo-Sul.png",
+                "path": "/images/imagem/imagem/MRB-26-SaoMiguelOAnjo-Sul.png",
                 "legenda": "Rua de S.Miguel O Anjo - Sul"
             }
         ],
@@ -6361,17 +6501,24 @@
                     " A casa e parte do quintal são foreiras ao #E9. Pela outra parte do quintal paga-se, de foro, 451 reis ao nº1 do Campo de S.Sebastião. Encontra-se subemprazada aos herdeiros do #E10, beneficiado. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_Pequena",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-13-RuaPequena-Nascente.jpg",
+                "path": "/images/imagem/imagem/MRB-13-RuaPequena-Nascente.jpg",
                 "legenda": "RuaPequena - vista nascente."
             },
             {
-                "path": "/images/imagem/MRB-13-RuaPequena-Poente.jpg",
+                "path": "/images/imagem/imagem/MRB-13-RuaPequena-Poente.jpg",
                 "legenda": "RuaPequena - vista poente."
             }
         ],
@@ -6511,17 +6658,24 @@
                     " Corresponde ao n.º 9 da #L9, para onde tem a frontaria e serventia principais. Situa-se na esquina da #L14 e #L15. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Campo_de_Santa_Ana",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-41-CampoDeSantaAna-Norte.jpg",
+                "path": "/images/imagem/imagem/MRB-41-CampoDeSantaAna-Norte.jpg",
                 "legenda": "Campo de Santa Ana - Norte."
             },
             {
-                "path": "/images/imagem/MRB-41-CampoDeSantaAna-Sul.jpg",
+                "path": "/images/imagem/imagem/MRB-41-CampoDeSantaAna-Sul.jpg",
                 "legenda": "Campo de Santa Ana - Sul."
             }
         ],
@@ -6709,17 +6863,24 @@
                     "A casa e a outra parte do quintal não são foreiras ao #E14."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_da_Cónega",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-58-RuaDaCónega-norte.jpg",
+                "path": "/images/imagem/imagem/MRB-58-RuaDaCónega-norte.jpg",
                 "legenda": "RuaDaCónega - norte."
             },
             {
-                "path": "/images/imagem/MRB-58-RuaDaCónega-sul.jpg",
+                "path": "/images/imagem/imagem/MRB-58-RuaDaCónega-sul.jpg",
                 "legenda": "RuaDaCónega- sul."
             }
         ],
@@ -7226,17 +7387,24 @@
                     " Os herdeiros de #E33, casado com #E34, pagam 2000 reis e 2 galinhas ao enfiteuta da Quinta da #L4. A casa nº171 confronta, do nascente, com a cangosta do #L17"
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Campo_de_Nossa_Senhora_a_Branca._Rua_da_Régua._Rua_Nova_da_Seara",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-43-CampoDeNossaSenhoraABranca-RuaDaRegua-RuaDaSeara-Norte.jpg",
+                "path": "/images/imagem/imagem/MRB-43-CampoDeNossaSenhoraABranca-RuaDaRegua-RuaDaSeara-Norte.jpg",
                 "legenda": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara- Norte."
             },
             {
-                "path": "/images/imagem/MRB-43-CampoDeNossaSenhoraABranca-RuaDaRegua-RuaDaSeara-Sul.jpg",
+                "path": "/images/imagem/imagem/MRB-43-CampoDeNossaSenhoraABranca-RuaDaRegua-RuaDaSeara-Sul.jpg",
                 "legenda": "Campo de Nossa Senhora a Branca. Rua da Régua. Rua Nova da Seara- Sul"
             }
         ],
@@ -7501,17 +7669,24 @@
                     "A casa n.º22 confronta, do nascente, com casa foeira à Mitra. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_dos_Sapateiros_e_Rossio_da_Praça",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-23-RuaDosSapateirosERossioDaPraca-nascente.jpg",
+                "path": "/images/imagem/imagem/MRB-23-RuaDosSapateirosERossioDaPraca-nascente.jpg",
                 "legenda": "Rua dos Sapateiros e do Rossio da Praça - nascente."
             },
             {
-                "path": "/images/imagem/MRB-23-RuaDosSapateirosERossioDaPraca-poente.jpg",
+                "path": "/images/imagem/imagem/MRB-23-RuaDosSapateirosERossioDaPraca-poente.jpg",
                 "legenda": "Rua dos Sapateiros e do Rossio da Praça - poente."
             }
         ],
@@ -7756,17 +7931,24 @@
                     "O foro é respeitante à cozinha, dado que o resto da casa não pertence ao cabido. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Travessa_da_Rua_de_D.Gualdim_até_ao_Couto_do_Arvoredo",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-17-TravessaDaRuaDeDGualdimAteAoCoutoDoArvoredo-norte.jpg",
+                "path": "/images/imagem/imagem/MRB-17-TravessaDaRuaDeDGualdimAteAoCoutoDoArvoredo-norte.jpg",
                 "legenda": "Travessa da Rua de Gualdim até ao Couto do Arvoredo - norte"
             },
             {
-                "path": "/images/imagem/MRB-17-TravessaDaRuaDeDGualdimAteAoCoutoDoArvoredo-sul.jpg",
+                "path": "/images/imagem/imagem/MRB-17-TravessaDaRuaDeDGualdimAteAoCoutoDoArvoredo-sul.jpg",
                 "legenda": "Travessa da Rua de Gualdim até ao Couto do Arvoredo - sul"
             }
         ],
@@ -7846,17 +8028,24 @@
                     " Corresponde ao n.º 15 da #L11, para onde tem a frontaria e serventia principais. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_S._Barnabé",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-47-RuaDeS.Barnabe-a(nascente).jpg",
+                "path": "/images/imagem/imagem/MRB-47-RuaDeS.Barnabe-a(nascente).jpg",
                 "legenda": "Praça do Gavião - Nascente."
             },
             {
-                "path": "/images/imagem/MRB-47-RuaDeS.Barnabe-a(poente).jpg",
+                "path": "/images/imagem/imagem/MRB-47-RuaDeS.Barnabe-a(poente).jpg",
                 "legenda": "Praça do Gavião - Nascente."
             }
         ],
@@ -8093,17 +8282,24 @@
                     " Pertence à casa n.° 15 da #L4, para onde tem a frontaria e serventia principais. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_Da_Oliveira",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-51-RuaDaOliveira-a.jpg",
+                "path": "/images/imagem/imagem/MRB-51-RuaDaOliveira-a.jpg",
                 "legenda": "Rua da Oliveira - Vista nascente."
             },
             {
-                "path": "/images/imagem/MRB-51-RuaDaOliveira-b.jpg",
+                "path": "/images/imagem/imagem/MRB-51-RuaDaOliveira-b.jpg",
                 "legenda": "Rua da Oliveira - Vista poente."
             }
         ],
@@ -8411,17 +8607,24 @@
                     "Confronta, do sul, com a casa n.° 17 da #L8."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Cangosta_das_Cruzes",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-34-QuingostaDasCruzes-primeira.jpg",
+                "path": "/images/imagem/imagem/MRB-34-QuingostaDasCruzes-primeira.jpg",
                 "legenda": "Quingosta das Cruzes - Norte."
             },
             {
-                "path": "/images/imagem/MRB-34-QuingostaDasCruzes-segunda.jpg",
+                "path": "/images/imagem/imagem/MRB-34-QuingostaDasCruzes-segunda.jpg",
                 "legenda": "Quingosta das Cruzes - Sul."
             }
         ],
@@ -8521,17 +8724,24 @@
                     " Os subenfiteutas pagam foro ao nº 1 do #L5. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_em_Frente_de_Nossa_Senhora_de_Guadalupe",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-52-RuaEmFrenteDeNossaSDeGuadalupe-a.jpg",
+                "path": "/images/imagem/imagem/MRB-52-RuaEmFrenteDeNossaSDeGuadalupe-a.jpg",
                 "legenda": "Rua em frente da N. Sra. de Guadalupe - Vista poente."
             },
             {
-                "path": "/images/imagem/MRB-52-RuaEmFrenteDeNossaSDeGuadalupe-b.jpg",
+                "path": "/images/imagem/imagem/MRB-52-RuaEmFrenteDeNossaSDeGuadalupe-b.jpg",
                 "legenda": "Rua da Regueira Margarida - Vista norte."
             }
         ],
@@ -8649,17 +8859,24 @@
                     "Chãos de casa do prazo do #E4."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_dos_Açougues_velhos",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-03-RuaDosAcouguesVelhos-nascente.PNG",
+                "path": "/images/imagem/imagem/MRB-03-RuaDosAcouguesVelhos-nascente.PNG",
                 "legenda": "Rua dos Açougues Velhos - vista nascente. "
             },
             {
-                "path": "/images/imagem/MRB-03-RuaDosAcouguesVelhos-poente.PNG",
+                "path": "/images/imagem/imagem/MRB-03-RuaDosAcouguesVelhos-poente.PNG",
                 "legenda": "Rua dos Açougues Velhos - vista poente. "
             }
         ],
@@ -8755,17 +8972,24 @@
                     "Foi demolida para alargamento das casas do #E0, depois do ano de #D7."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Praça_do_Pão",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-04-PracaDoPao-norte.PNG",
+                "path": "/images/imagem/imagem/MRB-04-PracaDoPao-norte.PNG",
                 "legenda": "Praça do Pão - vista norte."
             },
             {
-                "path": "/images/imagem/MRB-04-PracaDoPao-sul.PNG",
+                "path": "/images/imagem/imagem/MRB-04-PracaDoPao-sul.PNG",
                 "legenda": "Praça do Pão - vista sul."
             }
         ],
@@ -8941,13 +9165,20 @@
                 "foro": "260 reis e 1 capão",
                 "desc": []
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_das_Oucias",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-05-RuaDasOucias.png",
+                "path": "/images/imagem/imagem/MRB-05-RuaDasOucias.png",
                 "legenda": "Rua das Oucias."
             }
         ],
@@ -9159,17 +9390,24 @@
                     "A casa nº16 foi unida ao nº17, no ano de #D3 . O nº17 confronta com a #L24 . "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Estrada_de_Real",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-57-EstradaDeReal-norte.jpg",
+                "path": "/images/imagem/imagem/MRB-57-EstradaDeReal-norte.jpg",
                 "legenda": "Estrada de Real - norte."
             },
             {
-                "path": "/images/imagem/MRB-57-EstradaDeReal-sul.jpg",
+                "path": "/images/imagem/imagem/MRB-57-EstradaDeReal-sul.jpg",
                 "legenda": "Estrada de Real - sul."
             }
         ],
@@ -9230,17 +9468,24 @@
                     "Corresponde a um campo do prazo da #L4. Confronta, do nascente, com a casa nº22 da #L9."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Cangosta_De_S._Sebastião",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-30-CangostaDeSSbebastiao-Norte.png",
+                "path": "/images/imagem/imagem/MRB-30-CangostaDeSSbebastiao-Norte.png",
                 "legenda": "Cangosta De S. Sebastião - norte"
             },
             {
-                "path": "/images/imagem/MRB-30-CangostaDeSSbebastiao-Sul.png",
+                "path": "/images/imagem/imagem/MRB-30-CangostaDeSSbebastiao-Sul.png",
                 "legenda": "Cangosta De S. Sebastião - sul"
             }
         ],
@@ -9356,13 +9601,20 @@
                     " Portal de serventia do campo da casa n.º 20 da #L9. Confronta, do nascente, com casa pertencente à propriedade, denominada, «O Bispo». "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_Janes_",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-08-RuaDeJanes.JPG",
+                "path": "/images/imagem/imagem/MRB-08-RuaDeJanes.JPG",
                 "legenda": "Rua de Janes."
             }
         ],
@@ -9562,13 +9814,20 @@
                     "O nº 20 confronta, do poente, com casa de vínculo. O nº 21 situa-se por detrás da #L10 e, por sentença que alcançou #E4 contra o cabido, ficou-lhe a pertencer o nº 19. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_D._Gualdim",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-16-RuaDeDGualdim-Poente.jpg",
+                "path": "/images/imagem/imagem/MRB-16-RuaDeDGualdim-Poente.jpg",
                 "legenda": "Rua de D. Gualdim - vista Poente."
             }
         ],
@@ -9894,17 +10153,24 @@
                     " Situa-se defronte da #L4 e foi mandada edificar, em #D8, pelo Arcebispo #E3. No ano de #D9 procedeu-se à sua ampliação, tendo para o efeito sido efectuado um contrato (nota do tabelião #E11), através do qual, o #E6 cedeu as casas n.º 26 da #L22 e n.° 1 da #L33 ao Senado da #L9 de #L19, abrigando-se este a pagar àquela entidade a quantia anual de 4000 reis. Posteriormente, já no pontificado do arcebispo D. José de #L19nça ( #D10), dado o mau estado de conservação e a falta de espaço, (agravada pelas audiências dos ministros judiciais, que nelas se realizavam), foi decidido construir uma casa mais ampla na actual #L34, então denominada Campo de Touros. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_dos_Chãos_de_Cima",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-53-RuaDosChaosDeCima-norte.JPG",
+                "path": "/images/imagem/imagem/MRB-53-RuaDosChaosDeCima-norte.JPG",
                 "legenda": "Rua dos Chãos de Cima - vista norte."
             },
             {
-                "path": "/images/imagem/MRB-53-RuaDosChaosDeCima-sul.JPG",
+                "path": "/images/imagem/imagem/MRB-53-RuaDosChaosDeCima-sul.JPG",
                 "legenda": "Rua dos Chãos de Cima - vista sul."
             }
         ],
@@ -11313,17 +11579,24 @@
                     "Os herdeiros de #E119, ferreiro, casado com #E3, pagam 200 reis e 1 galinha ao enfeiteuta do prazo do #L28. Confronta, do sul, com a entrada da #L32."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_da_Vielinha",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-24-RuaDaVielinha-nascente.jpg",
+                "path": "/images/imagem/imagem/MRB-24-RuaDaVielinha-nascente.jpg",
                 "legenda": "Rua da Vielinha - nascente."
             },
             {
-                "path": "/images/imagem/MRB-24-RuaDaVielinha-poente.jpg",
+                "path": "/images/imagem/imagem/MRB-24-RuaDaVielinha-poente.jpg",
                 "legenda": "Rua da Vielinha - poente."
             }
         ],
@@ -11426,13 +11699,20 @@
                     "Corresponde ao n.º 18 da #L0, para onde tem a frontaria e serventia principais."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_dos_Biscaínhos",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-59-RuaDosBiscainhos-norte.jpg",
+                "path": "/images/imagem/imagem/MRB-59-RuaDosBiscainhos-norte.jpg",
                 "legenda": "Rua Dos Biscaínhos - norte."
             }
         ],
@@ -11494,17 +11774,24 @@
                     "A fachada situa-se no #L5."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_do_Campo",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-01-RuaDoCampo-nascente.PNG",
+                "path": "/images/imagem/imagem/MRB-01-RuaDoCampo-nascente.PNG",
                 "legenda": "Rua do Campo - vista nascente. "
             },
             {
-                "path": "/images/imagem/MRB-01-RuaDoCampo-poente.PNG",
+                "path": "/images/imagem/imagem/MRB-01-RuaDoCampo-poente.PNG",
                 "legenda": "Rua do Campo - vista poente."
             }
         ],
@@ -11593,17 +11880,24 @@
                     "Confronta, de Sul, com parte da mesma casa foreira à #E1, antiga #E2 e, de Norte, com casa dízima a Deus"
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Travessa_Da_Rua_Do_Forno_Para_A_Do_Poco",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-12-TravessaDaRuaDoFornoParaADoPoco-Norte.jpg",
+                "path": "/images/imagem/imagem/MRB-12-TravessaDaRuaDoFornoParaADoPoco-Norte.jpg",
                 "legenda": "Travessa Da Rua Do Forno Para A Do Poço - vista norte."
             },
             {
-                "path": "/images/imagem/MRB-12-TravessaDaRuaDoFornoParaADoPoco-Sul.jpg",
+                "path": "/images/imagem/imagem/MRB-12-TravessaDaRuaDoFornoParaADoPoco-Sul.jpg",
                 "legenda": "Travessa Da Rua Do Forno Para A Do Poço - vista sul."
             }
         ],
@@ -11757,17 +12051,24 @@
                     " Corresponde ao n.º 20 da #L6, para onde tem a frontaria e serventia principais. Confronta, do poente, com casa foreira à cororaria. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_Da_Cruz_De_Pedra",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-27-RuaDaCruzDePedra-Poente.png",
+                "path": "/images/imagem/imagem/MRB-27-RuaDaCruzDePedra-Poente.png",
                 "legenda": "Rua Da Cruz De Pedra - poente"
             },
             {
-                "path": "/images/imagem/MRB-27-RuaDaCruzDePedra-Nascente.png",
+                "path": "/images/imagem/imagem/MRB-27-RuaDaCruzDePedra-Nascente.png",
                 "legenda": "Rua Da Cruz De Pedra - nascente"
             }
         ],
@@ -12305,17 +12606,24 @@
                     "Pagam foro ao n.º50. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_do_Beco",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-29-Beco-Norte.png",
+                "path": "/images/imagem/imagem/MRB-29-Beco-Norte.png",
                 "legenda": "Rua do Beco - Norte"
             },
             {
-                "path": "/images/imagem/MRB-29-Beco-Sul.png",
+                "path": "/images/imagem/imagem/MRB-29-Beco-Sul.png",
                 "legenda": "Rua do Beco - Sul"
             }
         ],
@@ -12361,17 +12669,24 @@
                     " Não tem casas foreiras ao #E0. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_das_Palhotas",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-54-RuaDasPalhotas-nascente.jpg",
+                "path": "/images/imagem/imagem/MRB-54-RuaDasPalhotas-nascente.jpg",
                 "legenda": "Rua das Palhotas - vista nascente."
             },
             {
-                "path": "/images/imagem/MRB-54-RuaDasPalhotas-poente.jpg",
+                "path": "/images/imagem/imagem/MRB-54-RuaDasPalhotas-poente.jpg",
                 "legenda": "Rua das Palhotas - vista poente."
             }
         ],
@@ -12932,17 +13247,24 @@
                     " #E42, filha de #E43, paga 230 reis ao enfiteuta da 1.ª metade do #L16. A casa é foreira a #E0 e confronta, de ambas as partes, com casas que lhe pertencem. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Campo_e_Calçada_de_Nossa_Senhora_a_Branca",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-42-CampoECalcadaDeNossaSenhoraABranca-Norte.jpg",
+                "path": "/images/imagem/imagem/MRB-42-CampoECalcadaDeNossaSenhoraABranca-Norte.jpg",
                 "legenda": "Campo e Calçada de Nossa Senhora a Branca- Norte."
             },
             {
-                "path": "/images/imagem/MRB-42-CampoECalcadaDeNossaSenhoraABranca-Sul.jpg",
+                "path": "/images/imagem/imagem/MRB-42-CampoECalcadaDeNossaSenhoraABranca-Sul.jpg",
                 "legenda": "Campo e Calçada de Nossa Senhora a Branca- Sul."
             }
         ],
@@ -13398,17 +13720,24 @@
                     "A casa n.º40 confronta, do norte, com casa foreira à #L9."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_das_Águas",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-36-RuaDasAgoas-primeira.jpg",
+                "path": "/images/imagem/imagem/MRB-36-RuaDasAgoas-primeira.jpg",
                 "legenda": "Rua das Águas - Poente."
             },
             {
-                "path": "/images/imagem/MRB-36-RuaDasAgoas-segunda.jpg",
+                "path": "/images/imagem/imagem/MRB-36-RuaDasAgoas-segunda.jpg",
                 "legenda": "Rua das Águas - Nascente."
             }
         ],
@@ -13724,17 +14053,24 @@
                     " Pertencem, ainda, ao prazo da casa nº 33 os nº 37 a 42 da cangosta da #L6. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_dos_Pelames",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-32-Nascente.png",
+                "path": "/images/imagem/imagem/MRB-32-Nascente.png",
                 "legenda": "Rua dos Pelames - Nascente."
             },
             {
-                "path": "/images/imagem/MRB-32-Poente.png",
+                "path": "/images/imagem/imagem/MRB-32-Poente.png",
                 "legenda": "Rua dos Pelames - Poente."
             }
         ],
@@ -14057,17 +14393,24 @@
                     " Os herdeiros de #E28, filho de #E29 e de sua 1ª mulher, #E30, pagam 160 reis e 1 galinha ao nº 2 do #L7. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_Nova",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-02-RuaNova-norte.png",
+                "path": "/images/imagem/imagem/MRB-02-RuaNova-norte.png",
                 "legenda": "Rua Nova - vista norte. "
             },
             {
-                "path": "/images/imagem/MRB-02-RuaNova-sul.png",
+                "path": "/images/imagem/imagem/MRB-02-RuaNova-sul.png",
                 "legenda": "Rua Nova - vista sul. "
             }
         ],
@@ -14292,17 +14635,24 @@
                     "Corresponde ao nº1 da #L23, para onde se tem a fronteira e serventia principais.A frontaria que dá para a #L24 é foreira, à comenda de #L25."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_dos_Cegos_ou_do_Forno",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-11-RuaDosCegosOuDoForno-Nascente.jpg",
+                "path": "/images/imagem/imagem/MRB-11-RuaDosCegosOuDoForno-Nascente.jpg",
                 "legenda": "Rua dos Cegos ou do Forno - vista nascente."
             },
             {
-                "path": "/images/imagem/MRB-11-RuaDosCegosOuDoForno-Poente.jpg",
+                "path": "/images/imagem/imagem/MRB-11-RuaDosCegosOuDoForno-Poente.jpg",
                 "legenda": "Rua dos Cegos ou do Forno - vista poente."
             }
         ],
@@ -14538,25 +14888,32 @@
                     "O emprazamento foi feito em #D11."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Praça_do_Gavião",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-48-PracaDoGaviao-a(nascente).jpg",
+                "path": "/images/imagem/imagem/MRB-48-PracaDoGaviao-a(nascente).jpg",
                 "legenda": "Praça do Gavião - Nascente."
             },
             {
-                "path": "/images/imagem/MRB-48-PracaDoGaviao-a(norte).jpg",
+                "path": "/images/imagem/imagem/MRB-48-PracaDoGaviao-a(norte).jpg",
                 "legenda": "Praça do Gavião - Norte."
             },
             {
-                "path": "/images/imagem/MRB-48-PracaDoGaviao-a(poente).jpg",
+                "path": "/images/imagem/imagem/MRB-48-PracaDoGaviao-a(poente).jpg",
                 "legenda": "Praça do Gavião - Poente."
             },
             {
-                "path": "/images/imagem/MRB-48-PracaDoGaviao-a(sul).jpg",
+                "path": "/images/imagem/imagem/MRB-48-PracaDoGaviao-a(sul).jpg",
                 "legenda": "Praça do Gavião - Sul."
             }
         ],
@@ -14721,17 +15078,24 @@
                     " «Chãos de casa» do prazo do casal dos Chãos ou Quinteiro. O chão n.° 36 confronta, do sul, com o chão n.° 12 da #L3. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_das_Chagas",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-18-RuaDasChagas-nascente.jpg",
+                "path": "/images/imagem/imagem/MRB-18-RuaDasChagas-nascente.jpg",
                 "legenda": "Rua das Chagas - nascente"
             },
             {
-                "path": "/images/imagem/MRB-18-RuaDasChagas-poente.jpg",
+                "path": "/images/imagem/imagem/MRB-18-RuaDasChagas-poente.jpg",
                 "legenda": "Rua das Chagas - poente"
             }
         ],
@@ -14876,17 +15240,24 @@
                     " Corresponde ao n.º 10 da #L5, para onde tem a frontaria e serventia principais. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_Nossa_Senhora_de_Guadalupe",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-50-RuaDeNossaSenhoraDeGuadalupe-a.jpg",
+                "path": "/images/imagem/imagem/MRB-50-RuaDeNossaSenhoraDeGuadalupe-a.jpg",
                 "legenda": "Rua de Nossa Senhora de Guadalupe - Vista norte."
             },
             {
-                "path": "/images/imagem/MRB-50-RuaDeNossaSenhoraDeGuadalupe-b.jpg",
+                "path": "/images/imagem/imagem/MRB-50-RuaDeNossaSenhoraDeGuadalupe-b.jpg",
                 "legenda": "Rua de Nossa Senhora de Guadalupe - Vista sul"
             }
         ],
@@ -15032,17 +15403,24 @@
                     "«Chãos de casa» do prazo do #E1. O n.° 35 confronta, do poente, com o n.° 27 da #L6."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Cangosta_da_Escoura",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-56-CangostaDaEscoura-norte.jpg",
+                "path": "/images/imagem/imagem/MRB-56-CangostaDaEscoura-norte.jpg",
                 "legenda": "Cangosta da Escoura - vista norte."
             },
             {
-                "path": "/images/imagem/MRB-56-CangostaDaEscoura-sul.jpg",
+                "path": "/images/imagem/imagem/MRB-56-CangostaDaEscoura-sul.jpg",
                 "legenda": "Cangosta da Escoura - vista sul."
             }
         ],
@@ -15360,13 +15738,20 @@
                     "Pertence à casa n.° 10 da #L3, para onde tem a frontaria principal."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "_Loura_e_Terreiro_do_Castelo__",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-07-LouraETerreiroDoCastelo.JPG",
+                "path": "/images/imagem/imagem/MRB-07-LouraETerreiroDoCastelo.JPG",
                 "legenda": "Loura e Terreiro do Castelo."
             }
         ],
@@ -15452,17 +15837,24 @@
                     " Antes de #D6 funcionou aqui o \" #L10\""
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_da_Fonte_da_Carcova",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-44-RuaDaFonteDaCarcova.RuaDoCarvalhal-Norte.jpg",
+                "path": "/images/imagem/imagem/MRB-44-RuaDaFonteDaCarcova.RuaDoCarvalhal-Norte.jpg",
                 "legenda": "Rua da Fonte da Carcova- Norte."
             },
             {
-                "path": "/images/imagem/MRB-44-RuaDaFonteDaCarcova.RuaDoCarvalhal-Sul.jpg",
+                "path": "/images/imagem/imagem/MRB-44-RuaDaFonteDaCarcova.RuaDoCarvalhal-Sul.jpg",
                 "legenda": "Rua da Fonte da Carcova- Sul"
             }
         ],
@@ -15603,17 +15995,24 @@
                     "Confronta, do nascente, com o #L7."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_dos_Chãos_de_Baixo",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-45-RuaDosChaosDeBaixo-a(nascente).jpg",
+                "path": "/images/imagem/imagem/MRB-45-RuaDosChaosDeBaixo-a(nascente).jpg",
                 "legenda": "Praça do Gavião - Nascente."
             },
             {
-                "path": "/images/imagem/MRB-45-RuaDosChaosDeBaixo-a(poente).jpg",
+                "path": "/images/imagem/imagem/MRB-45-RuaDosChaosDeBaixo-a(poente).jpg",
                 "legenda": "Praça do Gavião - Nascente."
             }
         ],
@@ -16334,13 +16733,20 @@
                     " Os herdeiros de #E54, viúva de #E55, mercador, e sua filha #E56, pagam 20 reis ao enfiteuta do prazo do casal dos Chãos ou Quinteiro. Confronta, do sul, com casa foreira à #E57 e do poente, com o #L8. Antes do ano de #D12 correspondia a duas casas. "
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Cangosta_da_Rua_das_Águas",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-60-CangostaDaRuaDasAguas-norte.jpg",
+                "path": "/images/imagem/imagem/MRB-60-CangostaDaRuaDasAguas-norte.jpg",
                 "legenda": "Cangosta da Rua das Águas - norte."
             }
         ],
@@ -16383,17 +16789,24 @@
                     "A casa nº37 confronta, de poente, com o nº36 da #L0."
                 ]
             }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
+            }
         ]
     },
     {
         "_id": "Rua_de_Maximinos",
         "figuras_antigas": [
             {
-                "path": "/images/imagem/MRB-22-RuaDeMaximinos-norte.jpg",
+                "path": "/images/imagem/imagem/MRB-22-RuaDeMaximinos-norte.jpg",
                 "legenda": "Rua de Maximinos - norte."
             },
             {
-                "path": "/images/imagem/MRB-22-RuaDeMaximinos-sul.jpg",
+                "path": "/images/imagem/imagem/MRB-22-RuaDeMaximinos-sul.jpg",
                 "legenda": "Rua de Maximinos - sul."
             }
         ],
@@ -16770,6 +17183,13 @@
                 "desc": [
                     "Encontram-se unidas, num só prazo, desde o ano de #D8."
                 ]
+            }
+        ],
+        "updates": [
+            {
+                "username": "Sistema",
+                "message": "Criação da rua",
+                "date": "2023-06-18"
             }
         ]
     }

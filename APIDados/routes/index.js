@@ -40,7 +40,7 @@ router.post('/rua/figures/:id', function(req, res, next) {
 });
 
 router.put('/ruas/', function(req, res, next) {
-  Rua.insertRua(req.body)
+  Rua.insertRua(req.body,req.query.username)
   .then(data => res.jsonp(data))
   .catch(error => res.jsonp({error:error}))
 });

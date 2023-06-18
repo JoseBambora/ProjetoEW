@@ -3,25 +3,26 @@ import os
 import xml.etree.ElementTree as ET
 import re
 import json
+from datetime import date
 
 def trata_figuras_antigas(corpo):
     res = []
     figuras = corpo.findall('figura')
     for figura in figuras:
         fig = {}
-        fig['path'] = re.sub(r'\.\.','/Data',figura.find('imagem').attrib['path']) 
+        fig['path'] = re.sub(r'\.\.','/images/imagem',figura.find('imagem').attrib['path']) 
         fig['legenda'] = figura.find('legenda').text
         res.append(fig)
     return res
 
-def trata_figuras_atuais(num,path='atual'):
+def trata_figuras_atuais(num,path='../WebSite/public/images/atual/'):
     res = []
     p = str(num) + '-'
     for filename in os.listdir(path):
         if re.match(p,filename):
             fig = {}
             fig['legenda'] = ''
-            fig['path'] = '/Data/' + path + '/' + filename
+            fig['path'] = '/images/atual/' + filename
             res.append(fig)
     return res
 
@@ -199,6 +200,7 @@ for filename in os.listdir(directory):
     rua['lugares'] = lugares
     rua['entidades'] = enti
     rua['casas'] = trata_lista_casas(corpo,dates,lugares,enti)
+    rua['updates'] = [{'username':'Sistema','message':'Criação da rua','date':str(date.today())}]
     listaruas.append(rua)
 
 f = 'all_data.json'
