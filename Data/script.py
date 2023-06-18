@@ -10,7 +10,7 @@ def trata_figuras_antigas(corpo):
     figuras = corpo.findall('figura')
     for figura in figuras:
         fig = {}
-        fig['path'] = re.sub(r'\.\.','/images/imagem',figura.find('imagem').attrib['path']) 
+        fig['path'] = re.sub(r'\.\.','/images',figura.find('imagem').attrib['path']) 
         fig['legenda'] = figura.find('legenda').text
         res.append(fig)
     return res
