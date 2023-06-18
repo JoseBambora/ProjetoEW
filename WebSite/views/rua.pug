@@ -135,6 +135,16 @@ block content
                 each e in rua.entidades
                     li
                         a(href="/entidades/entidade/"+e.nome.replaceAll(' ','_'))=e.nome
+        center
+            hr(style="width:95%")
+        .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
+            ul.w3-ul
+                li
+                    h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
+                        b Últimas  atualizações 
+                each u in rua.updates
+                    li
+                        p=`${u.username} : ${u.message} (${u.date})`
         hr
         .w3-panel.w3-light-grey.w3-border.w3-border-indigo.w3-card-4
             h3.w3-text-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")

@@ -17,6 +17,12 @@ var casaSchema = new mongoose.Schema({
     desc: [String]
 })
 
+var updateSchema = new mongoose.Schema({
+    username: String,
+    message : String,
+    date: String
+})
+
 var ruaSchema = new mongoose.Schema({
     _id : String,
     figuras_antigas: [figuraSchema],
@@ -25,8 +31,8 @@ var ruaSchema = new mongoose.Schema({
     datas: [String],
     lugares: [String],
     entidades: [entidadeSchema],
-    casas: [casaSchema]
-    
+    casas: [casaSchema],
+    updates : [updateSchema]
 })
 
 module.exports = mongoose.model('rua',ruaSchema)

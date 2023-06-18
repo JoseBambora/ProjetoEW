@@ -19,6 +19,7 @@ function getRuaForm(req,res,next){
 }
 
 function createRua(req,res,next){
+    var myToken = ( req.cookies && req.cookies.token ) || req.query.token || req.body.token
     var d = getDate()
     let name = req.body.nome.replaceAll(' ', '_')
     let obj = {
@@ -30,7 +31,7 @@ function createRua(req,res,next){
         datas: [],
         entidades: []
     }
-    Rua.insertRua(obj)
+    Rua.insertRua(obj,myToken)
     .then(data => { res.redirect('/rua/'+name)})
     .catch(erro => res.render('error', {error: erro, d:d}))
 }
@@ -80,10 +81,11 @@ function getRuaEdit(req,res,next)
 
 function postRuaEdit(req,res,next)
 {
+    var myToken = ( req.cookies && req.cookies.token ) || req.query.token || req.body.token
     var d = getDate()
     console.log('Post edit ' +req.params.idrua)
     var data = JSON.parse(req.body.d)
-    Rua.updateFieldsRua(req.params.idrua,data)
+    Rua.updateFieldsRua(req.params.idrua,data,myToken)
     .then(data => 
     {
         res.redirect('/rua/'+req.params.idrua)
@@ -115,6 +117,7 @@ function getPaths(req)
 
 function postFotosEdit(req,res,next)
 {
+    var myToken = ( req.cookies && req.cookies.token ) || req.query.token || req.body.token
     var d = getDate()
     gp = getPaths(req)
     oldPath = gp[0]
@@ -122,7 +125,7 @@ function postFotosEdit(req,res,next)
     pat = gp[2]
     data = {epoca: req.body.epoca, path:pat, legenda: req.body.desc}
     fs.rename(oldPath,newPath, erro => { if(erro) throw erro })
-    Rua.updateFiguraRua(req.params.idrua,data)
+    Rua.updateFiguraRua(req.params.idrua,data,myToken)
     .then(data => { res.redirect('/rua/'+req.params.idrua)})
     .catch(erro => res.render('error', {error: erro, d:d}))
 }

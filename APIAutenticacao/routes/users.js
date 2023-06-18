@@ -42,6 +42,13 @@ function posRegister (err, user,res,req) {
   }
 }     
 
+router.get('/decode',function (req,res){
+  var myToken = req.query.token || req.body.token
+  const decodedToken = jwt.verify(myToken, 'RuasBragaEW');
+  const username = decodedToken.username;
+  res.jsonp({username:username})
+})
+
 router.post('/register', function(req, res) {
   console.log('Na cb do POST register...')
   // console.log(req.body)

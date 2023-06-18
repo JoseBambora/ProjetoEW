@@ -36,6 +36,7 @@ function formatAux(pars,lugares,datas,entidades)
 }
 
 function formatRua(rua) {
+    rua.entidades = rua.entidades.sort((e1,e2) => e1.nome.localeCompare(e2.nome))
     datas = rua.datas
     entidades = rua.entidades
     lugares = rua.lugares
@@ -49,6 +50,15 @@ function formatRua(rua) {
     rua.datas = [...new Set(rua.datas)].sort()
     rua.entidades = rua.entidades.sort((e1,e2) => e1.nome.localeCompare(e2.nome))
     return rua
+}
+
+function formatUpdate(username,msg)
+{
+    return {
+        username: username,
+        message: msg,
+        date: new Date().toISOString().substring(0, 16)
+    }
 }
 
 module.exports.formatParagraphRua = (rua) =>
@@ -92,16 +102,18 @@ module.exports.updateRua = rua => {
     .catch(erro => { return erro })
 }
 
-function updateOld(id,path,legenda)
+function updateOld(id,path,legenda,username)
 {
-    return Rua.updateOne({_id : id},{$push:{ 'figuras_antigas':{path:path,legenda:legenda}}})
+    let msg = formatUpdate(username, 'Nova imagem antiga')
+    return Rua.updateOne({_id : id},{$push:{ 'figuras_antigas':{path:path,legenda:legenda}, 'updates':msg}})
     .then(dados => { return dados })
     .catch(erro => { return erro })
 }
 
-function updateNew(id,path,legenda)
+function updateNew(id,path,legenda,username)
 {
-    return Rua.updateOne({_id : id},{$push:{ 'figuras_atuais':{path:path,legenda:legenda}}})
+    let msg = formatUpdate(username, 'Nova imagem atual')
+    return Rua.updateOne({_id : id},{$push:{ 'figuras_atuais':{path:path,legenda:legenda}, 'updates':msg}})
     .then(dados => { return dados })
     .catch(erro => { return erro })
 }
@@ -110,10 +122,11 @@ module.exports.updateFigurasRua = (id,dados) => {
     let legenda = dados.legenda
     let path = dados.path
     let epoca = dados.epoca
+    let username = dados.username
     if(epoca == 'figuras_atuais')
-        return updateNew(id,path,legenda)
+        return updateNew(id,path,legenda,username)
     else
-        return updateOld(id,path,legenda)
+        return updateOld(id,path,legenda,username)
 
 }
 
@@ -123,7 +136,11 @@ module.exports.updateFieldsRua = (id,dados) => {
     let lug = dados.lugares
     let ent = dados.entidades
     let ca = dados.casas
-    return Rua.updateOne({_id : id},{$set :{paragrafos:par,datas:dat,lugares:lug,entidades:ent,casas:ca}})
+    let username = dados.username
+    let msg = formatUpdate(username, 'Atualizou dados da ruas')
+    return Rua.updateOne({_id : id},{
+        $push: {'updates': msg}, 
+        $set :{paragrafos:par,datas:dat,lugares:lug,entidades:ent,casas:ca}})
     .then(dados => { console.log('Rua atualizada'); return dados })
     .catch(erro => { return erro })
 }

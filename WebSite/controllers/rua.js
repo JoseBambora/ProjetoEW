@@ -22,10 +22,16 @@ module.exports.getRuaOriginal = (id) => {
 }
 
 
-module.exports.insertRua = rua => {
-    return axios.put(Env.ruas,rua)
-    .then(dados => { return dados })
+module.exports.insertRua = (rua,token) => {
+    return axios.get(Env.decodetoken+'?token='+token)
+    .then(response => {
+        rua.updates = [{username: response.data.username , message: 'Criação da rua', date: new Date().toISOString().substring(0,16)}]
+        return axios.put(Env.ruas,rua)
+        .then(dados => { return dados })
+        .catch(erro => { return erro })
+    })
     .catch(erro => { return erro })
+
 }
 
 
@@ -35,15 +41,25 @@ module.exports.updateRua = rua => {
     .catch(erro => { return erro })
 }
 
-module.exports.updateFieldsRua = (id,dados) => {
-    return axios.post(Env.ruaFields+id,dados)
-    .then(dados => { return dados })
+module.exports.updateFieldsRua = (id,dados,token) => {
+    axios.get(Env.decodetoken+'?token='+token)
+    .then(response => {
+        dados.username = response.data.username
+        return axios.post(Env.ruaFields+id,dados)
+        .then(dados => { return dados })
+        .catch(erro => { return erro })
+    })
     .catch(erro => { return erro })
 }
 
-module.exports.updateFiguraRua = (id,dados) => {
-    return axios.post(Env.ruaFiguras+id,dados)
-    .then(dados => { return dados })
+module.exports.updateFiguraRua = (id,dados,token) => {
+    return axios.get(Env.decodetoken+'?token='+token)
+    .then(response => {
+        dados.username = response.data.username
+        return axios.post(Env.ruaFiguras+id,dados)
+        .then(dados => { return dados })
+        .catch(erro => { return erro })
+    })
     .catch(erro => { return erro })
 }
 

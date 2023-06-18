@@ -49,7 +49,6 @@ router.post('/login', function(req,res){
 })
 
 router.post('/register', function(req,res){
-  console.log(req.body)
   axios.post(env.userregister,req.body)
   .then(response => {
     res.cookie('token',response.data.token)
@@ -60,5 +59,6 @@ router.post('/register', function(req,res){
   })
   .catch(erro => {res.cookie('erro',true); res.redirect('/users/register/?rota='+req.query.rota)})
 })
+
 
 module.exports = router;
