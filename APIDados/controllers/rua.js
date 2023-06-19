@@ -1,3 +1,4 @@
+const e = require('express')
 const Rua = require('../models/rua')
 
 function formatAux(pars,lugares,datas,entidades)
@@ -149,39 +150,39 @@ module.exports.updateFieldsRua = (id,dados) => {
 
 module.exports.deleteRua = id => {
     return Rua.deleteOne({_id: id})
+    .then(dados => { return dados })
+    .catch(erro => { return erro })
 }
 
-
-module.exports.getNomeEntidades = () => {
-    return Rua.distinct("entidades.nome")
-      .then(data => {
-        const entidades = Array.from(data).map(str => str.charAt(0).toUpperCase() + str.slice(1)).sort()
-        return entidades
-      })
-      .catch(erro => {
-        throw erro;
-      })
-  }
-  
-  module.exports.getEntidades = () => {
-    return Rua.aggregate([
-      { $project: { _id: 0, entidades: 1 } },
-      { $unwind: "$entidades" },
-      { $replaceRoot: { newRoot: "$entidades" } }
-    ])
-      .then(data => {
-        const entidades = Array.from(data).map(e => ({ nome: (e.nome.charAt(0).toUpperCase() + e.nome.slice(1)), tipo: e.tipo }))
-        const uniqueEntidades = entidades.reduce((acc, cur) => {
+module.exports.getEntidades = () => {
+    return Rua.aggregate([{$project:{_id:1,entidades:1}},{$unwind:"$entidades"}])
+    .then(data => {
+        const entidades = Array.from(data).map(e => ({rua:e._id, nome: (e.entidades.nome.charAt(0).toUpperCase() + e.entidades.nome.slice(1)), tipo: e.entidades.tipo }))
+        const entidadesNomes = entidades.map(e=>({nome:e.nome,tipo:e.tipo}))
+        const uniqueEntidades = entidadesNomes.reduce((acc, cur) => {
             const found = acc.find(obj => obj.nome === cur.nome);
             if (!found) {
               acc.push(cur);
             }
             return acc;
           }, []);
-        uniqueEntidades.sort((a, b) => a.nome.localeCompare(b.nome))
-        return uniqueEntidades;
-      })
-      .catch(erro => {
+        const result = []
+        for (var eNome of uniqueEntidades){
+            const aux = entidades.filter(e=>e.nome.localeCompare(eNome.nome)==0).map(e=>e.rua.replaceAll('_',' '))
+            result.push({nome:eNome.nome,tipo:eNome.tipo,ruas:aux})
+        }
+        result.sort((a, b) => a.nome.localeCompare(b.nome))
+        return result;
+    })
+    .catch(erro => {
         throw erro;
-      })
-  }
+    })
+}
+
+module.exports.getEntidade = entidade => {
+    return this.getEntidades()
+    .then(dados => {
+        return dados.filter(e=>e.nome===entidade)})
+    .catch(erro => { return erro })
+}
+

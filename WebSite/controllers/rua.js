@@ -68,15 +68,15 @@ module.exports.deleteRua = id => {
     .then(dados => { return dados })
     .catch(erro => { return erro })
 }
- 
-module.exports.getNomeEntidades = () => {
-    return axios.get(Env.entidadenome)
-    .then(dados => { return dados.data })
-    .catch(erro => { return erro })
-}
-  
+
 module.exports.getEntidades = () => {
     return axios.get(Env.entidades)
+    .then(dados => { return dados })
+    .catch(erro => { return erro })
+}
+
+module.exports.getEntidade = (entidade) => {
+    return axios.get(Env.entidades+entidade)
     .then(dados => { return dados })
     .catch(erro => { return erro })
 }

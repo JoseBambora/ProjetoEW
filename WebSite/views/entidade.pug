@@ -30,17 +30,17 @@ block content
                         span.w3-text-black(style="display:inline;")=entidade.tipo.slice(0,1).toUpperCase() + entidade.tipo.slice(1)
                     else
                         span.w3-text-black(style="display:inline;") Outro
-                p Referenciado na descrição de #{ruas.length} rua/s
+                p Referenciado na descrição de #{entidade.ruas.length} rua/s
         .w3-container.w3-center
             h3.w3-blue.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
                 b Lista de Ruas em que é referenciado/a:
                 br
             h3.w3-text-black.w3-margin-left(tyle="text-shadow:2px 2px 0 #444")
-                -ruas.sort()
+                -entidade.ruas.sort()
                 ul.w3-ul
-                    each r in ruas 
+                    each r in entidade.ruas 
                         li
-                            a(href=`/rua/${r}`) #{r.replaceAll('_',' ')}
+                            a(href=`/rua/${r.replaceAll(' ','_')}`)=r
             br
             a.w3-btn.w3-blue.w3-hover-light-blue(href="/entidades/") Voltar
                 

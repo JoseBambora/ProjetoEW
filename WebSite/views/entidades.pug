@@ -21,17 +21,10 @@ block content
                     img.w3-bar-item-w3-circle(src="/images/entitytypes/outro.png", style="width:85px")
                 b
                     a.w3-hover-light-blue(href=`entidade/${e["nome"].replaceAll(' ','_')}`)= e["nome"]
-                -var r=[]
-                each rua in ruas 
-                    -var aux = rua.entidades
-                    -const regex = new RegExp("^"+e["nome"]+"$", "i");
-                    each a in aux
-                        -nome = a.nome
-                        -if(nome.match(regex)) r.push((rua._id).replaceAll('_',' '))
                 p Referenciado em: 
                     - var i = 1
-                    each street in r
-                        if(i < r.length)
+                    each street in e.ruas
+                        if(i < e.ruas.length)
                             a.w3-hover-light-blue(href=`/rua/${street.replaceAll(' ','_')}`) #{street}, 
                         else 
                             a.w3-hover-light-blue(href=`/rua/${street.replaceAll(' ','_')}`) #{street}

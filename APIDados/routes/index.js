@@ -57,11 +57,10 @@ router.get('/entidades/', function(req, res, next) {
   .catch(error => res.jsonp({error:error}))
 });
 
-router.get('/entidadenomes/', function(req, res, next) {
-  Rua.getNomeEntidades()
+router.get('/entidades/:id', function(req, res, next) {
+  Rua.getEntidade(req.params.id)
   .then(data => res.jsonp(data))
   .catch(error => res.jsonp({error:error}))
 });
-
 
 module.exports = router;
