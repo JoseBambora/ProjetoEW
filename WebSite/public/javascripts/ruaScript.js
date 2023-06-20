@@ -103,6 +103,7 @@ $(function(){
                     const lon = response[0].lon;
                     $('#linkrua1').attr("href",`https://www.openstreetmap.org/#map=17/${lat}/${lon}`);
                     $('#linkrua2').attr("href",`https://www.openstreetmap.org/#map=17/${lat}/${lon}`);
+                    $('#openstreetmap1, #openstreetmap2').show();
                 }
             }
         };
