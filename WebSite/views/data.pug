@@ -21,7 +21,7 @@ block content
                 ul.w3-ul
                     each s in streets 
                         li
-                            a(href=`/rua/${s}`) #{s.replaceAll('_',' ')}
+                            a(href=`/rua/${s.replaceAll(' ','_')}`) #{s}
             br
             a.w3-btn.w3-blue.w3-hover-light-blue(href="/datas/") Voltar
                 

@@ -80,3 +80,15 @@ module.exports.getEntidade = (entidade) => {
     .then(dados => { return dados })
     .catch(erro => { return erro })
 }
+
+module.exports.getDatas = () => {
+    return axios.get(Env.datas)
+    .then(dados => { return dados.data })
+    .catch(erro => { return erro })
+}
+
+module.exports.getData = (data) => {
+    return axios.get(Env.datas+data)
+    .then(dados => { return dados.data })
+    .catch(erro => { return erro })
+}

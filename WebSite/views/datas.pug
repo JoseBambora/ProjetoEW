@@ -22,11 +22,11 @@ block content
         li.w3-bar
             .w3-panel.w3-leftbar.w3-border-blue
                 b   
-                    a.w3-hover-light-blue(href=`data/${date.replaceAll(' ','_')}`)= date
+                    a.w3-hover-light-blue(href=`data/${date.data.replaceAll(' ','_')}`)= date.data
                 p Referenciado em: &nbsp;
-                    each s, index in streets.filter(s => s.datas.includes(date))
-                        a.w3-hover-light-blue(href=`/rua/${s._id}`) #{s._id.replaceAll('_',' ')}
-                        if (index < streets.filter(s => s.datas.includes(date)).length - 1)
+                    each s, index in date.ruas
+                        a.w3-hover-light-blue(href=`/rua/${s.replaceAll(' ','_')}`) #{s}
+                        if (index < date.ruas.length - 1)
                             | ,
                             |&nbsp;
                                                 

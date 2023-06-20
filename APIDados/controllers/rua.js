@@ -157,7 +157,7 @@ module.exports.deleteRua = id => {
 module.exports.getEntidades = () => {
     return Rua.aggregate([{$project:{_id:1,entidades:1}},{$unwind:"$entidades"}])
     .then(data => {
-        const entidades = Array.from(data).map(e => ({rua:e._id, nome: (e.entidades.nome.charAt(0).toUpperCase() + e.entidades.nome.slice(1)), tipo: e.entidades.tipo }))
+        const entidades = data.map(e => ({rua:e._id, nome: (e.entidades.nome.charAt(0).toUpperCase() + e.entidades.nome.slice(1)), tipo: e.entidades.tipo }))
         const entidadesNomes = entidades.map(e=>({nome:e.nome,tipo:e.tipo}))
         const uniqueEntidades = entidadesNomes.reduce((acc, cur) => {
             const found = acc.find(obj => obj.nome === cur.nome);
@@ -166,11 +166,7 @@ module.exports.getEntidades = () => {
             }
             return acc;
           }, []);
-        const result = []
-        for (var eNome of uniqueEntidades){
-            const aux = entidades.filter(e=>e.nome.localeCompare(eNome.nome)==0).map(e=>e.rua.replaceAll('_',' '))
-            result.push({nome:eNome.nome,tipo:eNome.tipo,ruas:aux})
-        }
+        const result = uniqueEntidades.map(eNome => ({nome:eNome.nome,tipo:eNome.tipo,ruas:entidades.filter(e=>e.nome.localeCompare(eNome.nome)==0).map(e=>e.rua.replaceAll('_',' '))}))
         result.sort((a, b) => a.nome.localeCompare(b.nome))
         return result;
     })
@@ -181,8 +177,26 @@ module.exports.getEntidades = () => {
 
 module.exports.getEntidade = entidade => {
     return this.getEntidades()
-    .then(dados => {
-        return dados.filter(e=>e.nome===entidade)})
+    .then(dados => {return dados.filter(e=>e.nome===entidade)})
+    .catch(erro => { return erro })
+}
+
+module.exports.getDatas = () => {
+    return Rua.aggregate([{$project:{_id:1,datas:1}},{$unwind:"$datas"}])
+    .then(data => {
+        const uniqueDatas = [...new Set(data.map(e => e.datas))]
+        const result = uniqueDatas.map(d => ({data:d,ruas: data.filter(e=>e.datas === d).map(e=>e._id.replaceAll('_',' '))}))
+        result.sort((a, b) => a.data.localeCompare(b.data))
+        return result;
+    })
+    .catch(erro => {
+        throw erro;
+    })
+}
+
+module.exports.getData = data => {
+    return this.getDatas()
+    .then(dados => {return dados.filter(e=>e.data===data)})
     .catch(erro => { return erro })
 }
 

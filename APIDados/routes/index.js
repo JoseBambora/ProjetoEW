@@ -63,4 +63,16 @@ router.get('/entidades/:id', function(req, res, next) {
   .catch(error => res.jsonp({error:error}))
 });
 
+router.get('/datas/', function(req, res, next) {
+  Rua.getDatas()
+  .then(data => res.jsonp(data))
+  .catch(error => res.jsonp({error:error}))
+});
+
+router.get('/datas/:id', function(req, res, next) {
+  Rua.getData(req.params.id)
+  .then(data => res.jsonp(data))
+  .catch(error => res.jsonp({error:error}))
+});
+
 module.exports = router;
