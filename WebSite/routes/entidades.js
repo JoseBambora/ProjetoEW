@@ -15,10 +15,10 @@ router.get('/', function(req,res,next){
 
 
 router.get('/entidade/:entidade', function(req, res, next) {
+  var entity = req.params.entidade.replaceAll('_', ' ')
   var d = new Date().toISOString().substring(0, 16);
-  Rua.getEntidade(req.params.entidade)
+  Rua.getEntidade(entity)
   .then(response=>{
-      console.log(response.data)
         if (response.data.length!=0){
           res.render('entidade', { entidade: response.data[0], d:d });
         }
