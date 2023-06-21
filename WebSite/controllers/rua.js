@@ -1,4 +1,3 @@
-const Rua = require('../models/rua')
 const axios = require('axios')
 const Env = require('../config/env')
 
