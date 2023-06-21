@@ -20,7 +20,7 @@ block content
                 else
                     img.w3-bar-item-w3-circle(src="/images/entitytypes/outro.png", style="width:85px")
                 b
-                    a.w3-hover-light-blue(href=`entidade/${e["nome"].replaceAll(' ','_')}`)= e["nome"]
+                    a.w3-hover-light-blue(href=`entidade/${e["nome"].replaceAll('_',' ')}`)= e["nome"]
                 p Referenciado em: 
                     - var i = 1
                     each street in e.ruas
